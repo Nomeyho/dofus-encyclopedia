@@ -11,4 +11,9 @@ class CharacteristicBonus {
         operator = json['operator'],
         min = json['min'],
         max = json['max'];
+
+  @override
+  String toString() {
+    return 'CharacteristicBonus{characteristic: $characteristic, operator: $operator, min: $min, max: $max}';
+  }
 }

@@ -17,4 +17,9 @@ class Bonuses {
         otherBonuses = (json['others'] as List)
             .map((j) => OtherBonus.fromJson(j))
             .toList(growable: false);
+
+  @override
+  String toString() {
+    return 'Bonuses{characteristicBonuses: $characteristicBonuses, damageBonuses: $damageBonuses, otherBonuses: $otherBonuses}';
+  }
 }

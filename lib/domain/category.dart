@@ -41,12 +41,16 @@ List<ItemType> resolveItemTypes(Category category) {
         ItemType.Shovel,
         ItemType.Axe,
         ItemType.Scythe,
+        ItemType.Pickaxe,
+        ItemType.Tool,
       ];
     case Category.Pets:
       return const [
         ItemType.Pet,
         ItemType.Dragoturkey,
         ItemType.Petsmount,
+        ItemType.Seemyool,
+        ItemType.Rhineetle,
       ];
     default:
       return const [];

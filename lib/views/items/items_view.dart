@@ -6,7 +6,6 @@ import 'package:provider/provider.dart';
 import 'widgets/d2_item_card.dart';
 
 class ItemsView extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);

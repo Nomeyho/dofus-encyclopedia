@@ -11,4 +11,9 @@ class DamageBonus {
         min = json['min'],
         max = json['max'],
         steal = json['steal'];
+
+  @override
+  String toString() {
+    return 'DamageBonus{element: $element, min: $min, max: $max, steal: $steal}';
+  }
 }

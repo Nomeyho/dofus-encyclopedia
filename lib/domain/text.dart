@@ -11,6 +11,12 @@ class Text {
         en = '';
 
   bool match(String pattern) {
-    return fr.toLowerCase().contains(pattern) || en.toLowerCase().contains(pattern);
+    return fr.toLowerCase().contains(pattern) ||
+        en.toLowerCase().contains(pattern);
+  }
+
+  @override
+  String toString() {
+    return 'Text{fr: $fr, en: $en}';
   }
 }

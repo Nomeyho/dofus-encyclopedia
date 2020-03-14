@@ -18,12 +18,15 @@ enum ItemType {
   Hammer,
   Shovel,
   Axe,
-  // Fixme: Tool,
+  Pickaxe,
   Scythe,
+  Tool,
   //
   Pet,
   Dragoturkey,
   Petsmount,
+  Seemyool,
+  Rhineetle,
 }
 
 extension ItemTypeExtension on ItemType {
@@ -34,5 +37,7 @@ extension ItemTypeExtension on ItemType {
 
 ItemType getItemTypeFromString(String string) {
   return ItemType.values
-      .firstWhere((type) => type.name == string, orElse: () => null);
+      .firstWhere((type) => type.name == string, orElse: () {
+  print(string); return null;
+  });
 }

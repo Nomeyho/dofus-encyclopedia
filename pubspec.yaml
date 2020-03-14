@@ -22,8 +22,8 @@ flutter:
   assets:
     - 'assets/data/items.json'
     - 'assets/data/sets.json'
-   # - 'assets/icons/'
     - 'assets/img/categories/'
+    - 'assets/img/items/'
   fonts:
     - family: AppIcons
       fonts:

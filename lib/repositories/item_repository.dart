@@ -23,23 +23,4 @@ class ItemRepository {
     print('Read ${items.length} items in ${stopwatch.elapsedMilliseconds}ms');
     return items;
   }
-
-/*
-  List<Item> find(ItemType type, String name, int minLevel, int maxLevel) {
-    return _items
-        .where((item) => item.type == type)
-        .where((item) => item.level >= minLevel && item.level <= maxLevel)
-        .where((item) => item.name.match(name))
-        .toList(growable: false);
-  }
-
-  Item get(String id) {
-    // TODO sort & binary search
-    return _items.firstWhere((item) => item.id == id, orElse: () => null);
-  }
-
-  int count(ItemType type) {
-    return _count[type];
-  }
-  */
 }

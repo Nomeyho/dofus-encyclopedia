@@ -5,4 +5,9 @@ class OtherBonus {
 
   OtherBonus.fromJson(final Map<String, dynamic> json)
       : description = Text.fromJson(json);
+
+  @override
+  String toString() {
+    return 'OtherBonus{description: $description}';
+  }
 }

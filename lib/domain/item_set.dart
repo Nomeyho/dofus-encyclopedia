@@ -14,4 +14,9 @@ class ItemSet {
         bonuses = (json['bonuses'] as List)
             .map((b) => Bonuses.fromJson(b))
             .toList(growable: false);
+
+  @override
+  String toString() {
+    return 'ItemSet{id: $id, name: $name, level: $level, bonuses: $bonuses}';
+  }
 }

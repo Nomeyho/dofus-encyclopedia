@@ -1,7 +1,13 @@
 import 'dart:convert' show jsonDecode;
 
 import 'package:d2_encyclopedia/domain/item_set.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
+
+List<ItemSet> parseSets(String str) {
+  final List<dynamic> json = jsonDecode(str);
+  return json.map((i) => ItemSet.fromJson(i)).toList(growable: false);
+}
 
 class SetRepository {
   static const path = 'assets/data/sets.json';
@@ -12,25 +18,9 @@ class SetRepository {
     print('Start reading sets from $path');
 
     final String str = await rootBundle.loadString(path);
-    final List<dynamic> json = jsonDecode(str);
-    final List<ItemSet> sets =
-        json.map((i) => ItemSet.fromJson(i)).toList(growable: false);
+    final List<ItemSet> sets = await compute(parseSets, str);
 
     print('Read ${sets.length} sets in ${stopwatch.elapsedMilliseconds}ms');
     return sets;
   }
-
-/*
-  List<ItemSet> find(String name, int minLevel, int maxLevel) {
-    return _sets
-        .where((item) => item.level >= minLevel && item.level <= maxLevel)
-        .where((item) => item.name.match(name))
-        .toList(growable: false);
-  }
-
-  ItemSet get(String id) {
-    // TODO sort & binary search
-    return _sets.firstWhere((item) => item.id == id, orElse: () => null);
-  }
-  */
 }

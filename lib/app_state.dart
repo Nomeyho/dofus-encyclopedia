@@ -1,59 +1,41 @@
 import 'package:d2_encyclopedia/domain/category.dart';
 import 'package:d2_encyclopedia/domain/item.dart';
-import 'package:d2_encyclopedia/domain/item_set.dart';
 import 'package:d2_encyclopedia/domain/item_type.dart';
-import 'package:d2_encyclopedia/repositories/item_repository.dart';
-import 'package:d2_encyclopedia/repositories/set_repository.dart';
+import 'package:d2_encyclopedia/services/item_service.dart';
 import 'package:flutter/widgets.dart';
 
 class AppState with ChangeNotifier {
-  final ItemRepository itemRepository;
-  final SetRepository setRepository;
+  final ItemService itemService;
 
-  AppState(this.itemRepository, this.setRepository);
+  AppState(this.itemService);
 
-  List<Item> _items = [];
-  List<ItemSet> _sets = [];
-  Map<ItemType, int> _count = {};
   bool _loading;
-
   Category _selectedCategory = Category.All;
+  Item _selectedItem;
   ItemType _type;
   String _name = '';
   int _minLevel = 0;
   int _maxLevel = 200;
 
-  Future<String> loadItemsAndSets() async {
+  Future<void> loadItemsAndSets() async {
     _loading = true;
     notifyListeners();
 
     try {
-      _items = await itemRepository.load();
-      _sets = await setRepository.load();
-      _items.map((item) => item.type).forEach((type) {
-        final count = _count.putIfAbsent(type, () => 0);
-        _count[type] = count + 1;
-      });
+      await itemService.load();
     } catch (e) {
       print(e);
     }
 
     _loading = false;
     notifyListeners();
-    return 'ok';
   }
 
   List<Item> get items {
-    return _items
-      .where((item) => item.type == type)
-      .where((item) => item.level >= minLevel && item.level <= maxLevel)
-      .where((item) => item.name.match(name))
-      .toList(growable: false);
+    return itemService.find(type, name, minLevel, maxLevel);
   }
 
-  List<ItemSet> get sets => _sets;
-
-  int count(ItemType itemType) => _count[itemType];
+  int count(ItemType itemType) => itemService.count(itemType);
 
   bool get loading => _loading;
 
@@ -61,6 +43,13 @@ class AppState with ChangeNotifier {
 
   set selectedCategory(Category value) {
     _selectedCategory = value;
+    notifyListeners();
+  }
+
+  Item get selectedItem => _selectedItem;
+
+  set selectedItem(Item value) {
+    _selectedItem = value;
     notifyListeners();
   }
 

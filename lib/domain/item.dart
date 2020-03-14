@@ -1,5 +1,6 @@
 import 'package:d2_encyclopedia/domain/Text.dart';
 import 'package:d2_encyclopedia/domain/bonuses.dart';
+import 'package:d2_encyclopedia/domain/item_set.dart';
 import 'package:d2_encyclopedia/domain/item_type.dart';
 
 class Item {
@@ -20,6 +21,9 @@ class Item {
   final int criticalHitProbability;
   final int utilizationPerTurn;
 
+  // computed fields
+  ItemSet set;
+
   Item.fromJson(final Map<String, dynamic> json)
       : id = json['id'],
         name = Text.fromJson(json['name']),
@@ -38,4 +42,9 @@ class Item {
         criticalHitBonus = json['criticalHitBonus'],
         criticalHitProbability = json['criticalHitProbability'],
         utilizationPerTurn = json['utilizationPerTurn'];
+
+  @override
+  String toString() {
+    return 'Item{id: $id, name: $name, description: $description, type: $type, level: $level, iconId: $iconId, setId: $setId, bonuses: $bonuses, minRange: $minRange, range: $range, apCost: $apCost, criticalHitBonus: $criticalHitBonus, criticalHitProbability: $criticalHitProbability, utilizationPerTurn: $utilizationPerTurn, set: $set}';
+  }
 }
