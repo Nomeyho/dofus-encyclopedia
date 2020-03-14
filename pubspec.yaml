@@ -1,0 +1,38 @@
+name: d2_encyclopedia
+description: Dofus item encyclopedia
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  provider: 4.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  assets:
+    - 'assets/data/items.json'
+    - 'assets/data/sets.json'
+   # - 'assets/icons/'
+    - 'assets/img/categories/'
+  fonts:
+    - family: AppIcons
+      fonts:
+          - asset: 'assets/fonts/AppIcons.ttf'
+    - family: Lato
+      fonts:
+        - asset: 'assets/fonts/Lato-Bold.ttf'
+          weight: 700
+        - asset: 'assets/fonts/Lato-Regular.ttf'
+          weight: 400
+        - asset: 'assets/fonts/Lato-Light.ttf'
+          weight: 300
