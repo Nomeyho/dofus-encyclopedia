@@ -5,10 +5,10 @@ import 'package:d2_encyclopedia/router.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class D2Card extends StatelessWidget {
+class CategoryCard extends StatelessWidget {
   final ItemType itemType;
 
-  const D2Card({Key key, this.itemType}) : super(key: key);
+  const CategoryCard({Key key, this.itemType}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -5,41 +5,67 @@ import 'package:d2_encyclopedia/domain/item_type.dart';
 import 'package:flutter/material.dart' hide Title;
 import 'package:provider/provider.dart';
 
-import 'widgets/d2_card.dart';
-import 'widgets/d2_categories.dart';
-import 'widgets/d2_navbar.dart';
+import 'widgets/category_card.dart';
+import 'widgets/category_selector.dart';
 
 class HomeView extends StatelessWidget {
   // TODO animate the list
 
   Widget _buildView(List<ItemType> types) {
-    return Column(children: <Widget>[
-      D2Navbar(),
-      D2Categories(),
-      Expanded(
-        child: Container(
-          foregroundDecoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.bottomCenter,
-              end: Alignment(0, 0.8),
-              colors: [
-                AppTheme.white.withOpacity(1),
-                AppTheme.white.withOpacity(0),
-              ],
+    return CustomScrollView(
+      slivers: <Widget>[
+        SliverAppBar(
+          backgroundColor: AppTheme.gray_300,
+          expandedHeight: 100,
+          flexibleSpace: FlexibleSpaceBar(
+            stretchModes: [StretchMode.fadeTitle],
+            collapseMode: CollapseMode.none,
+            title: Text(
+              'Categories',
+              style: TextStyle(
+                fontFamily: 'Lato',
+                fontWeight: FontWeight.w700,
+                fontSize: 28,
+                color: AppTheme.gray_800,
+              ),
             ),
           ),
-          child: GridView.count(
-            crossAxisCount: 2,
-            children: types
-                .map((type) => D2Card(itemType: type))
-                .toList(growable: false),
-            mainAxisSpacing: 12,
-            crossAxisSpacing: 12,
-            padding: EdgeInsets.all(12),
+          pinned: true,
+          floating: false,
+          elevation: 0,
+        ),
+        SliverList(
+          delegate: SliverChildListDelegate([
+            CategorySelector(),
+          ]),
+        ),
+        SliverPadding(
+          padding: EdgeInsets.all(12),
+          sliver: Container(
+            /*
+            foregroundDecoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.bottomCenter,
+                end: Alignment(0, 0.8),
+                colors: [
+                  AppTheme.white.withOpacity(1),
+                  AppTheme.white.withOpacity(0),
+                ],
+              ),
+            ),
+            */
+            child: SliverGrid.count(
+              crossAxisCount: 2, // TODO make it dynamic based on screen width
+              children: types
+                  .map((type) => CategoryCard(itemType: type))
+                  .toList(growable: false),
+              mainAxisSpacing: 12,
+              crossAxisSpacing: 12,
+            ),
           ),
         ),
-      )
-    ]);
+      ],
+    );
   }
 
   Widget _buildLoader() {
