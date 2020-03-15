@@ -1,10 +1,10 @@
-import 'package:d2_encyclopedia/views/home/home_view.dart';
+import 'package:d2_encyclopedia/views/category/category_view.dart';
 import 'package:d2_encyclopedia/views/item/item_view.dart';
 import 'package:d2_encyclopedia/views/items/items_view.dart';
 import 'package:flutter/material.dart';
 
 class Router {
-  static const home = '/';
+  static const categories = '/';
   static const items = '/items';
   static const item = '/item';
 
@@ -12,8 +12,8 @@ class Router {
     print('Navitaging to ${settings.name}');
 
     switch (settings.name) {
-      case home:
-        return MaterialPageRoute(builder: (_) => HomeView());
+      case categories:
+        return MaterialPageRoute(builder: (_) => CategoryView());
       case items:
         return MaterialPageRoute(builder: (_) => ItemsView());
       case item:

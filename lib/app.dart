@@ -11,7 +11,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Dofus Item Encyclopedia',
-      initialRoute: Router.home,
+      initialRoute: Router.categories,
       onGenerateRoute: Router.generateRoute,
       localizationsDelegates: [S.delegate],
       supportedLocales: S.delegate.supportedLocales,

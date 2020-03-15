@@ -8,7 +8,7 @@ import 'widgets/category_list.dart';
 import 'widgets/category_loader.dart';
 import 'widgets/category_title.dart';
 
-class HomeView extends StatelessWidget {
+class CategoryView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
