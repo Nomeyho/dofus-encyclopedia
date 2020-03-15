@@ -14,6 +14,7 @@ class CategorySelector extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
       child: ChoiceChip(
+        pressElevation: 0,
         label: Text(
           label,
           style: TextStyle(

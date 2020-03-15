@@ -12,6 +12,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   provider: 4.0.1
+  flutter_statusbarcolor: ^0.2.3
 
 dev_dependencies:
   flutter_test:

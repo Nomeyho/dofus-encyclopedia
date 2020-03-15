@@ -38,6 +38,7 @@ class ItemCard extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       '${item.name.en}', // TODO
+                      overflow: TextOverflow.ellipsis,
                       style: const TextStyle(
                         fontFamily: 'Lato',
                         fontSize: 16,
@@ -48,6 +49,7 @@ class ItemCard extends StatelessWidget {
                     Padding(padding: const EdgeInsets.all(2)),
                     Text(
                       item.set == null ? '' : '${item.set.name.en}', // TODO
+                      overflow: TextOverflow.ellipsis,
                       style: const TextStyle(
                         fontFamily: 'Lato',
                         fontSize: 14,
