@@ -26,10 +26,9 @@ flutter:
     - 'assets/data/sets.json'
     - 'assets/img/categories/'
     - 'assets/img/items/'
+    - 'assets/img/characteristics/'
+    - 'assets/img/damages/'
   fonts:
-    - family: AppIcons
-      fonts:
-          - asset: 'assets/fonts/AppIcons.ttf'
     - family: Lato
       fonts:
         - asset: 'assets/fonts/Lato-Bold.ttf'

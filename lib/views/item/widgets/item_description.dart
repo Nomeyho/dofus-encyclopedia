@@ -1,4 +1,5 @@
 import 'package:d2_encyclopedia/app_state.dart';
+import 'package:d2_encyclopedia/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -8,6 +9,15 @@ class ItemDescription extends StatelessWidget {
     final state = Provider.of<AppState>(context);
     final item = state.selectedItem;
 
-    return Text('${item.description.en}');
+    return Text(
+      '${item.description.en}',
+      textAlign: TextAlign.justify,
+      style: TextStyle(
+        fontFamily: 'Lato',
+        fontWeight: FontWeight.w400,
+        fontSize: 16,
+        color: AppTheme.gray_700,
+      ),
+    );
   }
 }

@@ -19,7 +19,7 @@ class ItemView extends StatelessWidget {
 
   Widget _buildHeading(String heading) {
     return Container(
-      padding: EdgeInsets.only(top: 8, bottom: 4),
+      padding: EdgeInsets.only(top: 12, bottom: 4),
       child: Text(
         heading,
         style: TextStyle(
@@ -32,6 +32,7 @@ class ItemView extends StatelessWidget {
     );
   }
 
+  // TODO try to "unform" the listing...
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
@@ -42,7 +43,7 @@ class ItemView extends StatelessWidget {
         child: CustomScrollView(slivers: <Widget>[
           ItemTitle(),
           SliverPadding(
-            padding: EdgeInsets.symmetric(horizontal: 24),
+            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
             sliver: SliverList(
               delegate: SliverChildListDelegate.fixed([
                 ItemImage(),
@@ -51,13 +52,13 @@ class ItemView extends StatelessWidget {
                 ItemLevel(),
                 _buildHeading('Description'),
                 ItemDescription(),
-                _buildHeading('Characteristics'),
-                ItemCharacteristics(),
                 // Weapons only
                 if (_isWeapon(itemType)) ...[
                   _buildHeading('Effects'),
                   ItemEffects(),
                 ],
+                _buildHeading('Characteristics'),
+                ItemCharacteristics(),
               ]),
             ),
           )
