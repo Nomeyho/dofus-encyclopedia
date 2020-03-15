@@ -10,73 +10,89 @@ class ItemCard extends StatelessWidget {
 
   const ItemCard({Key key, this.item}) : super(key: key);
 
+  Widget _buildIcon() {
+    return Padding(
+      padding: const EdgeInsets.only(right: 8),
+      child: Image.asset(
+        'assets/img/items/${item.iconId}.png',
+        height: 60,
+      ),
+    );
+  }
+
+  Widget _buildTitle() {
+    return Text(
+      '${item.name.en}', // TODO
+      style: const TextStyle(
+        fontFamily: 'Lato',
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
+        color: AppTheme.gray_700,
+      ),
+    );
+  }
+
+  Widget _buildSubtitle() {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 2),
+      child: Text(
+        item.set == null ? '' : '${item.set.name.en}', // TODO
+        style: const TextStyle(
+          fontFamily: 'Lato',
+          fontSize: 14,
+          fontWeight: FontWeight.w300,
+          color: AppTheme.gray_600,
+        ),
+      ),
+    );
+  }
+
+  Widget _buildTrailing() {
+    return Container(
+      child: Text(
+        'lvl. ${item.level}',
+        style: const TextStyle(
+          fontFamily: 'Lato',
+          fontSize: 14,
+          fontWeight: FontWeight.w300,
+          color: AppTheme.gray_600,
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context, listen: false);
 
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 10),
-      child: GestureDetector(
+    return Card(
+      elevation: 0,
+      clipBehavior: Clip.hardEdge,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12.0),
+      ),
+      child: InkWell(
         onTap: () {
           state.selectedItem = item;
           Navigator.of(context).pushNamed(Router.item);
-          // TODO open modal with details
         },
-        child: Container(
-          child: Padding(
-            padding: const EdgeInsets.all(12.0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Image.asset(
-                  'assets/img/items/${item.iconId}.png',
-                  height: 60,
-                ),
-                Padding(padding: const EdgeInsets.all(8)),
-                Column(
+        child: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              _buildIcon(),
+              Expanded(
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(
-                      '${item.name.en}', // TODO
-                      overflow: TextOverflow.ellipsis,
-                      style: const TextStyle(
-                        fontFamily: 'Lato',
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400,
-                        color: AppTheme.gray_700,
-                      ),
-                    ),
-                    Padding(padding: const EdgeInsets.all(2)),
-                    Text(
-                      item.set == null ? '' : '${item.set.name.en}', // TODO
-                      overflow: TextOverflow.ellipsis,
-                      style: const TextStyle(
-                        fontFamily: 'Lato',
-                        fontSize: 14,
-                        fontWeight: FontWeight.w300,
-                        color: AppTheme.gray_600,
-                      ),
-                    )
+                    _buildTitle(),
+                    _buildSubtitle(),
                   ],
                 ),
-                Expanded(child: Container()),
-                Container(
-                  child: Text(
-                    '${item.level}',
-                    style: const TextStyle(
-                      fontFamily: 'Lato',
-                      fontSize: 14,
-                      fontWeight: FontWeight.w300,
-                      color: AppTheme.gray_600,
-                    ),
-                  ),
-                )
-              ],
-            ),
-          ),
-          decoration: BoxDecoration(
-            color: AppTheme.white,
-            borderRadius: BorderRadius.circular(8),
+              ),
+              _buildTrailing(),
+            ],
           ),
         ),
       ),

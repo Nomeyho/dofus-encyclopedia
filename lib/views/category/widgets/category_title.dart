@@ -13,7 +13,7 @@ class CategoryTitle extends StatelessWidget {
           style: TextStyle(
             fontFamily: 'Lato',
             fontWeight: FontWeight.w700,
-            fontSize: 28,
+            fontSize: 24,
             color: AppTheme.gray_800,
           ),
         ),

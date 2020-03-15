@@ -15,14 +15,15 @@ class ItemList extends StatelessWidget {
     return SliverPadding(
       padding: EdgeInsets.all(12),
       sliver: Container(
-          child: SliverList(
-        delegate: SliverChildBuilderDelegate(
-          (BuildContext context, int index) {
-            return ItemCard(item: items[index]);
-          },
-          childCount: items.length,
+        child: SliverList(
+          delegate: SliverChildBuilderDelegate(
+            (BuildContext context, int index) {
+              return ItemCard(item: items[index]);
+            },
+            childCount: items.length,
+          ),
         ),
-      )),
+      ),
     );
   }
 }

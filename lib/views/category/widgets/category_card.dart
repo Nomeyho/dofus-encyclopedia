@@ -57,48 +57,5 @@ class CategoryCard extends StatelessWidget {
         ),
       ),
     );
-
-    GestureDetector(
-      onTap: () {
-        state.type = itemType;
-        Navigator.of(context).pushNamed(Router.items);
-      },
-      child: Container(
-        child: Padding(
-          padding: const EdgeInsets.all(32.0),
-          child: Column(
-            children: <Widget>[
-              Expanded(
-                child: Image.asset(
-                  'assets/img/categories/$type.png',
-                ),
-              ),
-              Padding(padding: EdgeInsets.all(2)),
-              Text(
-                '$type',
-                style: TextStyle(
-                    fontFamily: 'Lato',
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600),
-              ),
-              Padding(padding: EdgeInsets.all(2)),
-              Text(
-                state.count(itemType).toString(),
-                style: TextStyle(
-                  fontFamily: 'Lato',
-                  fontSize: 12,
-                  fontWeight: FontWeight.w400,
-                  color: AppTheme.gray_600,
-                ),
-              ),
-            ],
-          ),
-        ),
-        decoration: BoxDecoration(
-          color: AppTheme.white,
-          borderRadius: BorderRadius.circular(8),
-        ),
-      ),
-    );
   }
 }

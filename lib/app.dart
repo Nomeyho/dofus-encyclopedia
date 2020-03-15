@@ -21,7 +21,9 @@ class App extends StatelessWidget {
       localeResolutionCallback: S.delegate.resolution(fallback: en),
       debugShowCheckedModeBanner: false,
       color: AppTheme.primary_700,
-      theme: ThemeData(splashColor: Colors.transparent),
+      theme: ThemeData(
+        splashColor: Colors.transparent,
+      ),
     );
   }
 }
