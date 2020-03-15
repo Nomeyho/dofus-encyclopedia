@@ -56,3 +56,40 @@ List<ItemType> resolveItemTypes(Category category) {
       return const [];
   }
 }
+
+Category resolveCategory(ItemType type) {
+  switch (type) {
+    case ItemType.Amulet:
+    case ItemType.Amulet:
+    case ItemType.Ring:
+    case ItemType.Belt:
+    case ItemType.Boots:
+    case ItemType.Hat:
+    case ItemType.Cloak:
+    case ItemType.Backpack:
+    case ItemType.Dofus:
+    case ItemType.Shield:
+    case ItemType.Trophy:
+      return Category.Equipment;
+    case ItemType.Sword:
+    case ItemType.Bow:
+    case ItemType.Wand:
+    case ItemType.Staff:
+    case ItemType.Dagger:
+    case ItemType.Hammer:
+    case ItemType.Shovel:
+    case ItemType.Axe:
+    case ItemType.Scythe:
+    case ItemType.Pickaxe:
+    case ItemType.Tool:
+      return Category.Weapons;
+    case ItemType.Pet:
+    case ItemType.Dragoturkey:
+    case ItemType.Petsmount:
+    case ItemType.Seemyool:
+    case ItemType.Rhineetle:
+      return Category.Pets;
+    default:
+      throw Exception('Unexpected item type $type}');
+  }
+}
