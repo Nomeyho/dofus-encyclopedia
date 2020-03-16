@@ -21,7 +21,7 @@ class ItemCharacteristic extends StatelessWidget {
           text: ' $min ',
           style: const TextStyle(fontWeight: FontWeight.w600),
         ),
-        TextSpan(text: ' $characteristic.name'),
+        TextSpan(text: ' ${characteristic.name}'),
       ];
     } else {
       return [

@@ -10,7 +10,7 @@ class AppState with ChangeNotifier {
   AppState(this.itemService);
 
   bool _loading;
-  Category _selectedCategory = Category.All;
+  Category _selectedCategory = Category.Equipment;
   Item _selectedItem;
   ItemType _type;
   String _name = '';
@@ -79,5 +79,11 @@ class AppState with ChangeNotifier {
   set maxLevel(int value) {
     _maxLevel = value;
     notifyListeners();
+  }
+
+  void clearFilters() {
+    _name = '';
+    _minLevel = 0;
+    _maxLevel = 200;
   }
 }

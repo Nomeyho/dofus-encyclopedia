@@ -1,7 +1,6 @@
 import 'package:d2_encyclopedia/domain/item_type.dart';
 
 enum Category {
-  All,
   Equipment,
   Weapons,
   Pets,
@@ -15,8 +14,6 @@ extension CategoryExtension on Category {
 
 List<ItemType> resolveItemTypes(Category category) {
   switch (category) {
-    case Category.All:
-      return ItemType.values;
     case Category.Equipment:
       return const [
         ItemType.Amulet,

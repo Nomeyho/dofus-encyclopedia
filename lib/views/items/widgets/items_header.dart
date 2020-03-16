@@ -1,6 +1,6 @@
 import 'package:d2_encyclopedia/app_state.dart';
 import 'package:d2_encyclopedia/app_theme.dart';
-import 'package:d2_encyclopedia/utils/SliverHeaderDelegate.dart';
+import 'package:d2_encyclopedia/widgets/SliverHeaderDelegate.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -14,6 +14,14 @@ class ItemsHeader extends StatelessWidget {
         child: Container(
           height: 12,
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 2),
+          decoration: BoxDecoration(
+            border: Border(
+              bottom: BorderSide(
+                color: AppTheme.gray_700,
+                width: 0.1,
+              ),
+            ),
+          ),
           child: TextField(
             onChanged: (value) {
               state.name = value;
