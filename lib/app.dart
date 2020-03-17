@@ -10,7 +10,7 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    FlutterStatusbarcolor.setStatusBarWhiteForeground(false);
+    FlutterStatusbarcolor.setStatusBarWhiteForeground(true);
 
     return MaterialApp(
       title: 'Dofus Item Encyclopedia',
@@ -20,8 +20,8 @@ class App extends StatelessWidget {
       supportedLocales: S.delegate.supportedLocales,
       localeResolutionCallback: S.delegate.resolution(fallback: en),
       debugShowCheckedModeBanner: false,
-      color: AppTheme.primary_700,
       theme: ThemeData(
+        brightness: Brightness.dark,
         splashColor: Colors.transparent,
       ),
     );

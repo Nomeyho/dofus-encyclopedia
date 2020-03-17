@@ -13,7 +13,7 @@ class CategoryHeader extends StatelessWidget {
           decoration: BoxDecoration(
             border: Border(
               bottom: BorderSide(
-                color: AppTheme.gray_700,
+                color: AppTheme.high_emphasis,
                 width: 0.1,
               ),
             ),
@@ -22,7 +22,7 @@ class CategoryHeader extends StatelessWidget {
         ),
         minHeight: 70,
         maxHeight: 70,
-        background: AppTheme.gray_300,
+        background: AppTheme.surface,
       ),
       pinned: true,
       floating: false,

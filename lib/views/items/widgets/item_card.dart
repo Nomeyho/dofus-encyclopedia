@@ -27,7 +27,7 @@ class ItemCard extends StatelessWidget {
         fontFamily: 'Lato',
         fontSize: 16,
         fontWeight: FontWeight.w400,
-        color: AppTheme.gray_700,
+        color: AppTheme.high_emphasis,
       ),
     );
   }
@@ -41,7 +41,7 @@ class ItemCard extends StatelessWidget {
           fontFamily: 'Lato',
           fontSize: 14,
           fontWeight: FontWeight.w300,
-          color: AppTheme.gray_600,
+          color: AppTheme.medium_emphasis,
         ),
       ),
     );
@@ -55,7 +55,7 @@ class ItemCard extends StatelessWidget {
           fontFamily: 'Lato',
           fontSize: 14,
           fontWeight: FontWeight.w300,
-          color: AppTheme.gray_600,
+          color: AppTheme.disabled,
         ),
       ),
     );
@@ -68,6 +68,7 @@ class ItemCard extends StatelessWidget {
     return Card(
       elevation: 0,
       clipBehavior: Clip.hardEdge,
+      color: AppTheme.surface,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12.0),
       ),

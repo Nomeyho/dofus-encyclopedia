@@ -26,7 +26,7 @@ class ItemView extends StatelessWidget {
           fontFamily: 'Lato',
           fontWeight: FontWeight.w700,
           fontSize: 18,
-          color: AppTheme.gray_800,
+          color: AppTheme.high_emphasis,
         ),
       ),
     );
@@ -64,7 +64,7 @@ class ItemView extends StatelessWidget {
           )
         ]),
       ),
-      backgroundColor: AppTheme.gray_300,
+      backgroundColor: AppTheme.background,
     );
   }
 }

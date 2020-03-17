@@ -17,7 +17,7 @@ class ItemsHeader extends StatelessWidget {
           decoration: BoxDecoration(
             border: Border(
               bottom: BorderSide(
-                color: AppTheme.gray_700,
+                color: AppTheme.high_emphasis,
                 width: 0.1,
               ),
             ),
@@ -31,15 +31,15 @@ class ItemsHeader extends StatelessWidget {
             decoration: InputDecoration(
               labelText: 'Search',
               labelStyle: TextStyle(
-                color: AppTheme.gray_700,
+                color: AppTheme.medium_emphasis,
                 fontFamily: 'Lato',
               ),
               hasFloatingPlaceholder: false,
               filled: true,
-              fillColor: AppTheme.white,
+              fillColor: AppTheme.surface,
               suffixIcon: Icon(
                 Icons.search,
-                color: AppTheme.gray_700,
+                color: AppTheme.medium_emphasis,
               ),
               border: OutlineInputBorder(),
               enabledBorder: OutlineInputBorder(
@@ -56,7 +56,7 @@ class ItemsHeader extends StatelessWidget {
         ),
         minHeight: 70,
         maxHeight: 70,
-        background: AppTheme.gray_300,
+        background: AppTheme.background,
       ),
       pinned: true,
       floating: false,

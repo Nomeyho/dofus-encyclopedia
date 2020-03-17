@@ -13,8 +13,7 @@ class ItemsTitle extends StatelessWidget {
     final count = state.items.length;
 
     return SliverAppBar(
-      iconTheme: IconThemeData(color: AppTheme.gray_800),
-      backgroundColor: AppTheme.gray_300,
+      backgroundColor: AppTheme.background,
       expandedHeight: 100,
       flexibleSpace: FlexibleSpaceBar(
         title: Row(
@@ -27,7 +26,7 @@ class ItemsTitle extends StatelessWidget {
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.w700,
                 fontSize: 24,
-                color: AppTheme.gray_800,
+                color: AppTheme.high_emphasis,
               ),
             ),
             Padding(

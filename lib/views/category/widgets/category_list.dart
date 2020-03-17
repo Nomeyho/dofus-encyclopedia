@@ -30,7 +30,7 @@ class CategoryList extends StatelessWidget {
             fontFamily: 'Lato',
             fontWeight: FontWeight.w400,
             fontSize: 18,
-            color: AppTheme.gray_700,
+            color: AppTheme.high_emphasis,
           ),
         ),
       ),

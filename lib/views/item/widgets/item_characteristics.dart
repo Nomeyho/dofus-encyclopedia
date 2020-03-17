@@ -29,7 +29,7 @@ class ItemCharacteristics extends StatelessWidget {
               fontFamily: 'Lato',
               fontWeight: FontWeight.w400,
               fontSize: 16,
-              color: AppTheme.gray_700,
+              color: AppTheme.medium_emphasis,
             ),
           ),
         ],

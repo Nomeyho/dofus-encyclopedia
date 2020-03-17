@@ -10,8 +10,8 @@ class ItemTitle extends StatelessWidget {
     final item = state.selectedItem;
 
     return SliverAppBar(
-      backgroundColor: AppTheme.gray_300,
-      iconTheme: IconThemeData(color: AppTheme.gray_800),
+      forceElevated: true,
+      backgroundColor: AppTheme.background,
       expandedHeight: 100,
       flexibleSpace: FlexibleSpaceBar(
         title: Text(
@@ -20,13 +20,13 @@ class ItemTitle extends StatelessWidget {
             fontFamily: 'Lato',
             fontWeight: FontWeight.w700,
             fontSize: 16,
-            color: AppTheme.gray_800,
+            color: AppTheme.high_emphasis,
           ),
         ),
       ),
       pinned: true,
       floating: false,
-      elevation: 0,
+      elevation: 0.3,
     );
   }
 }

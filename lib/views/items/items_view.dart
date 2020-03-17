@@ -22,7 +22,7 @@ class ItemsView extends StatelessWidget {
           ],
         ),
       ),
-      backgroundColor: AppTheme.gray_300,
+      backgroundColor: AppTheme.background,
     );
   }
 }

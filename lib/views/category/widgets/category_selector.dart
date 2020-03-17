@@ -20,8 +20,8 @@ class CategorySelector extends StatelessWidget {
           style: TextStyle(
             fontFamily: 'Lato',
             fontSize: 16,
-            color: selected ? AppTheme.white : AppTheme.primary_700,
-            fontWeight: FontWeight.w500,
+            color: selected ? AppTheme.background : AppTheme.primary_700,
+            fontWeight: FontWeight.w700,
           ),
         ),
         onSelected: (_) {
@@ -29,7 +29,7 @@ class CategorySelector extends StatelessWidget {
         },
         selected: selected,
         selectedColor: AppTheme.primary_700,
-        backgroundColor: AppTheme.gray_300,
+        backgroundColor: AppTheme.surface,
       ),
     );
   }

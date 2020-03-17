@@ -9,14 +9,24 @@ class ItemDescription extends StatelessWidget {
     final state = Provider.of<AppState>(context);
     final item = state.selectedItem;
 
-    return Text(
-      '${item.description.en}',
-      textAlign: TextAlign.justify,
-      style: TextStyle(
-        fontFamily: 'Lato',
-        fontWeight: FontWeight.w400,
-        fontSize: 16,
-        color: AppTheme.gray_700,
+    return Card(
+      elevation: 0,
+      clipBehavior: Clip.hardEdge,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12.0),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+        child: Text(
+          '${item.description.en}',
+          textAlign: TextAlign.justify,
+          style: TextStyle(
+            fontFamily: 'Lato',
+            fontWeight: FontWeight.w400,
+            fontSize: 16,
+            color: AppTheme.medium_emphasis,
+          ),
+        ),
       ),
     );
   }

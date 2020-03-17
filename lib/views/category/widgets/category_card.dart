@@ -18,6 +18,7 @@ class CategoryCard extends StatelessWidget {
     return Card(
       elevation: 0,
       clipBehavior: Clip.hardEdge,
+      color: AppTheme.surface,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12.0),
       ),
@@ -40,6 +41,7 @@ class CategoryCard extends StatelessWidget {
                   fontFamily: 'Lato',
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
+                  color: AppTheme.high_emphasis
                 ),
               ),
               Padding(padding: EdgeInsets.all(2)),
@@ -49,7 +51,7 @@ class CategoryCard extends StatelessWidget {
                   fontFamily: 'Lato',
                   fontSize: 12,
                   fontWeight: FontWeight.w400,
-                  color: AppTheme.gray_600,
+                  color: AppTheme.disabled,
                 ),
               ),
             ],
