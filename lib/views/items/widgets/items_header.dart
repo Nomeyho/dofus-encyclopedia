@@ -12,7 +12,6 @@ class ItemsHeader extends StatelessWidget {
     return SliverPersistentHeader(
       delegate: SliverHeaderDelegate(
         child: Container(
-          height: 12,
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 2),
           decoration: BoxDecoration(
             border: Border(

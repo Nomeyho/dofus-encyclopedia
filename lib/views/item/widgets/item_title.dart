@@ -14,14 +14,29 @@ class ItemTitle extends StatelessWidget {
       backgroundColor: AppTheme.background,
       expandedHeight: 100,
       flexibleSpace: FlexibleSpaceBar(
-        title: Text(
-          '${item.name.en}',
-          style: TextStyle(
-            fontFamily: 'Lato',
-            fontWeight: FontWeight.w700,
-            fontSize: 16,
-            color: AppTheme.high_emphasis,
-          ),
+        title: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          //crossAxisAlignment: CrossAxisAlignment.end,
+          children: <Widget>[
+            Text(
+              '${item.name.en} ',
+              style: TextStyle(
+                fontFamily: 'Lato',
+                fontWeight: FontWeight.w700,
+                fontSize: 16,
+                color: AppTheme.high_emphasis,
+              ),
+            ),
+            Text(
+              ' lvl. ${item.level}',
+              style: TextStyle(
+                fontFamily: 'Lato',
+                fontWeight: FontWeight.w400,
+                fontSize: 10,
+                color: AppTheme.primary_700,
+              ),
+            ),
+          ],
         ),
       ),
       pinned: true,

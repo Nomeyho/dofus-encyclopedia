@@ -9,7 +9,6 @@ import 'widgets/item_characteristics.dart';
 import 'widgets/item_description.dart';
 import 'widgets/item_effects.dart';
 import 'widgets/item_image.dart';
-import 'widgets/item_level.dart';
 import 'widgets/item_title.dart';
 
 class ItemView extends StatelessWidget {
@@ -42,14 +41,12 @@ class ItemView extends StatelessWidget {
       body: SafeArea(
         child: CustomScrollView(slivers: <Widget>[
           ItemTitle(),
+          ItemImage(),
           SliverPadding(
             padding: EdgeInsets.symmetric(horizontal: 24, vertical: 8),
             sliver: SliverList(
               delegate: SliverChildListDelegate.fixed([
-                ItemImage(),
                 Padding(padding: EdgeInsets.all(8)),
-                _buildHeading('Level'),
-                ItemLevel(),
                 _buildHeading('Description'),
                 ItemDescription(),
                 // Weapons only
