@@ -30,13 +30,13 @@ List<ItemType> resolveItemTypes(Category category) {
     case Category.Weapons:
       return const [
         ItemType.Sword,
-        ItemType.Bow,
-        ItemType.Wand,
-        ItemType.Staff,
+        ItemType.Axe,
         ItemType.Dagger,
         ItemType.Hammer,
         ItemType.Shovel,
-        ItemType.Axe,
+        ItemType.Bow,
+        ItemType.Wand,
+        ItemType.Staff,
         ItemType.Scythe,
         ItemType.Pickaxe,
         ItemType.Tool,

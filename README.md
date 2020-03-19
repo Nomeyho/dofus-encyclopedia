@@ -11,3 +11,6 @@ do
 done
 
 mkdir svg && mv *.svg ./svg
+
+# TODO
+- Etheral flag

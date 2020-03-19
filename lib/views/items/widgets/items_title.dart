@@ -14,33 +14,29 @@ class ItemsTitle extends StatelessWidget {
 
     return SliverAppBar(
       backgroundColor: AppTheme.background,
-      expandedHeight: 100,
+      expandedHeight: 120,
       flexibleSpace: FlexibleSpaceBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        title: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
             Text(
               '${itemType.name}',
               style: TextStyle(
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.w700,
-                fontSize: 24,
+                fontSize: 16,
                 color: AppTheme.high_emphasis,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 6),
-              child: FadeText(
-                text: ' ($count)',
-                style: TextStyle(
-                  fontFamily: 'Lato',
-                  fontWeight: FontWeight.w400,
-                  fontSize: 12,
-                  color: AppTheme.primary_700,
-                ),
-                duration: Duration(milliseconds: 500),
+            FadeText(
+              text: ' ($count)',
+              style: TextStyle(
+                fontFamily: 'Lato',
+                fontWeight: FontWeight.w400,
+                fontSize: 10,
+                color: AppTheme.primary_700,
               ),
+              duration: Duration(milliseconds: 500),
             )
           ],
         ),
