@@ -8,8 +8,8 @@ class ItemService {
   final ItemRepository itemRepository;
   final SetRepository setRepository;
 
-  Map<String, ItemSet> _sets = {};
-  Map<String, Item> _items = {};
+  Map<int, ItemSet> _sets = {};
+  Map<int, Item> _items = {};
   Map<ItemType, List<Item>> _types = {};
   Map<ItemType, int> _count = {};
 
@@ -35,7 +35,7 @@ class ItemService {
       _count[item.type] = _count[item.type] + 1;
       _types[item.type].add(item);
 
-      if(item.setId != null && item.setId != '-1') // TODO fix data
+      if(item.setId != null && item.setId != -1) // TODO fix data
       item.set = _sets[item.setId];
     }
 

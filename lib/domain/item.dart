@@ -4,13 +4,13 @@ import 'package:d2_encyclopedia/domain/item_set.dart';
 import 'package:d2_encyclopedia/domain/item_type.dart';
 
 class Item {
-  final String id;
+  final int id;
   final Text name;
   final Text description;
   final ItemType type;
   final int level;
-  final String iconId;
-  final String setId;
+  final int iconId;
+  final int setId;
   final Bonuses bonuses;
 
   // weapon only
@@ -20,6 +20,7 @@ class Item {
   final int criticalHitBonus;
   final int criticalHitProbability;
   final int utilizationPerTurn;
+  final bool etheral;
 
   // computed fields
   ItemSet set;
@@ -27,7 +28,6 @@ class Item {
   Item.fromJson(final Map<String, dynamic> json)
       : id = json['id'],
         name = Text.fromJson(json['name']),
-        // TODO fix the data to always include a desc.
         description = json['description'] == null
             ? Text.empty()
             : Text.fromJson(json['description']),
@@ -41,7 +41,8 @@ class Item {
         apCost = json['apCost'],
         criticalHitBonus = json['criticalHitBonus'],
         criticalHitProbability = json['criticalHitProbability'],
-        utilizationPerTurn = json['utilizationPerTurn'];
+        utilizationPerTurn = json['utilizationPerTurn'],
+        etheral = json['etheral'];
 
   @override
   String toString() {

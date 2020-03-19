@@ -32,11 +32,20 @@ class ItemCard extends StatelessWidget {
     );
   }
 
+  String _getSubtitle() {
+    if (item.etheral == true)
+      return 'Etheral';
+    else if (item.set != null)
+      return '${item.set.name.en}';
+    else
+      return '';
+  }
+
   Widget _buildSubtitle() {
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
       child: Text(
-        item.set == null ? '' : '${item.set.name.en}', // TODO
+        _getSubtitle(),
         style: const TextStyle(
           fontFamily: 'Lato',
           fontSize: 14,

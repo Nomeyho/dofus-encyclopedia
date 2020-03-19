@@ -2,7 +2,7 @@ import 'package:d2_encyclopedia/domain/bonuses.dart';
 import 'package:d2_encyclopedia/domain/text.dart';
 
 class ItemSet {
-  final String id;
+  final int id;
   final Text name;
   final int level;
   final List<Bonuses> bonuses;

@@ -37,7 +37,7 @@ extension ItemTypeExtension on ItemType {
 
 ItemType getItemTypeFromString(String string) {
   return ItemType.values
-      .firstWhere((type) => type.name == string, orElse: () {
+      .firstWhere((type) => type.name.toLowerCase() == string, orElse: () {
   print(string); return null;
   });
 }
