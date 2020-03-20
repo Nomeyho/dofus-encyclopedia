@@ -1,6 +1,6 @@
-import 'package:d2_encyclopedia/app_theme.dart';
 import 'package:d2_encyclopedia/router.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 
 import 'generated/i18n.dart';
@@ -11,6 +11,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     FlutterStatusbarcolor.setStatusBarWhiteForeground(true);
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
     return MaterialApp(
       title: 'Dofus Item Encyclopedia',
