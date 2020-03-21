@@ -18,25 +18,26 @@ class ItemBonus extends StatelessWidget {
   }) : super(key: key);
 
   Widget _buildIcon() {
-    if(icon == null) {
-      return Padding(padding: EdgeInsets.all(10));
-    } else {
-      return Image.asset(icon, height: 20);
-    }
+    return Padding(
+      padding: const EdgeInsets.only(right: 4),
+      child: Image.asset(icon, height: 20),
+    );
   }
 
   List<TextSpan> _buildRangeText() {
-    if (min == max || max == null) {
+    if (min == null && max == null) {
+      return [];
+    } else if (min == max || max == null) {
       return [
         TextSpan(
-          text: ' $min ',
+          text: '$min',
           style: const TextStyle(fontWeight: FontWeight.w600),
         ),
       ];
     } else {
       return [
         TextSpan(
-          text: ' $min ',
+          text: '$min ',
           style: const TextStyle(fontWeight: FontWeight.w600),
         ),
         TextSpan(text: 'to'),
@@ -50,26 +51,28 @@ class ItemBonus extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        _buildIcon(),
-        Padding(padding: const EdgeInsets.only(right: 4)),
-        RichText(
-          text: TextSpan(
-            style: const TextStyle(
-              fontFamily: 'Lato',
-              fontWeight: FontWeight.w400,
-              fontSize: 16,
-              color: AppTheme.medium_emphasis,
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 1),
+      child: Row(
+        children: <Widget>[
+          _buildIcon(),
+          RichText(
+            text: TextSpan(
+              style: const TextStyle(
+                fontFamily: 'Lato',
+                fontWeight: FontWeight.w400,
+                fontSize: 16,
+                color: AppTheme.medium_emphasis,
+              ),
+              children: [
+                if (prefix != null) TextSpan(text: prefix),
+                ..._buildRangeText(),
+                if (suffix != null) TextSpan(text: suffix),
+              ],
             ),
-            children: [
-              TextSpan(text: prefix),
-              ..._buildRangeText(),
-              TextSpan(text: suffix),
-            ],
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

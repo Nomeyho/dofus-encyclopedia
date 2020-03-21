@@ -11,34 +11,36 @@ import 'helpers/item_section_header.dart';
 
 class ItemCharacteristics extends StatelessWidget {
   Widget _buildCharacteristic(CharacteristicBonus bonus) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 2),
-      child: ItemBonus(
-        icon: 'assets/img/characteristics/${bonus.characteristic.name}.png',
-        prefix: ' ${bonus.operator}',
-        min: bonus.min,
-        max: bonus.max,
-        suffix: ' ${bonus.characteristic.name}',
-      ),
+    return ItemBonus(
+      icon: 'assets/img/characteristics/${bonus.characteristic.name}.png',
+      prefix: '${bonus.operator} ',
+      min: bonus.min,
+      max: bonus.max,
+      suffix: ' ${bonus.characteristic.name}',
     );
   }
 
+  Widget _buildSpace() {
+    return Padding(padding: EdgeInsets.all(6));
+  }
+
   Widget _buildOther(OtherBonus bonus) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 2),
-      child: Row(
-        children: <Widget>[
-          Padding(padding: EdgeInsets.only(right: 24)),
-          Text(
-            '${bonus.description.en}',
-            style: TextStyle(
-              fontFamily: 'Lato',
-              fontWeight: FontWeight.w400,
-              fontSize: 16,
-              color: AppTheme.medium_emphasis,
-            ),
-          ),
-        ],
+    return ItemBonus(
+      icon: 'assets/img/characteristics/Other.png',
+      prefix: '${bonus.description.en}',
+      min: null,
+      max: null,
+      suffix: null,
+    );
+
+    return Text( // TODO
+      '${bonus.description.en}',
+      style: TextStyle(
+        fontFamily: 'Lato',
+        fontWeight: FontWeight.w400,
+        fontSize: 16,
+        fontStyle: FontStyle.italic,
+        color: AppTheme.medium_emphasis,
       ),
     );
   }
@@ -54,7 +56,7 @@ class ItemCharacteristics extends StatelessWidget {
       children: [
         ItemSectionHeader(title: 'Characteristics'),
         ...bonuses.map(_buildCharacteristic).toList(growable: false),
-        Padding(padding: EdgeInsets.all(6)),
+        _buildSpace(),
         ...others.map(_buildOther).toList(growable: false),
       ],
     );

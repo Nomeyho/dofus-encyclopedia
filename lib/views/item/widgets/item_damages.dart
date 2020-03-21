@@ -1,5 +1,4 @@
 import 'package:d2_encyclopedia/app_state.dart';
-import 'package:d2_encyclopedia/app_theme.dart';
 import 'package:d2_encyclopedia/domain/category.dart';
 import 'package:d2_encyclopedia/domain/damage_bonus.dart';
 import 'package:d2_encyclopedia/domain/damage_element.dart';
@@ -13,60 +12,42 @@ import 'helpers/item_section_header.dart';
 
 class ItemDamages extends StatelessWidget {
   Widget _buildEffect(DamageBonus bonus) {
+    final element = bonus.element.name;
     return ItemBonus(
-      icon: 'assets/img/damages/${bonus.element.name}.png',
-      prefix: '',
+      icon: 'assets/img/damages/$element.png',
       min: bonus.min,
       max: bonus.max,
-      suffix: bonus.steal ? ' damage (steal)' : ' damage',
+      suffix: (bonus.steal ? ' steal ' : ' damage ') + element.toLowerCase(),
     );
   }
 
+  Widget _buildSpace() {
+    return Padding(padding: EdgeInsets.all(6));
+  }
+
   Widget _buildAPCost(Item item) {
-    return Row(
-      children: <Widget>[
-        Text(
-          '${item.apCost} AP (${item.utilizationPerTurn} use per turn)',
-          style: const TextStyle(
-            fontFamily: 'Lato',
-            fontWeight: FontWeight.w400,
-            fontSize: 16,
-            color: AppTheme.medium_emphasis,
-          ),
-        ),
-      ],
+    return ItemBonus(
+      icon: 'assets/img/characteristics/AP.png',
+      min: item.apCost,
+      suffix: ' AP (${item.utilizationPerTurn} use per turn)',
     );
   }
 
   Widget _buildRange(Item item) {
-    return Row(
-      children: <Widget>[
-        Text(
-          '${item.minRange} - ${item.range} range', // TODO case null
-          style: const TextStyle(
-            fontFamily: 'Lato',
-            fontWeight: FontWeight.w400,
-            fontSize: 16,
-            color: AppTheme.medium_emphasis,
-          ),
-        ),
-      ],
+    return ItemBonus(
+      icon: 'assets/img/characteristics/Range.png',
+      min: item.minRange,
+      max: item.range,
+      suffix: ' range',
     );
   }
 
   Widget _buildCriticalHit(Item item) {
-    return Row(
-      children: <Widget>[
-        Text(
-          '1/${item.criticalHitProbability} critical hit (+${item.criticalHitBonus})',
-          style: const TextStyle(
-            fontFamily: 'Lato',
-            fontWeight: FontWeight.w400,
-            fontSize: 16,
-            color: AppTheme.medium_emphasis,
-          ),
-        ),
-      ],
+    return ItemBonus(
+      icon: 'assets/img/characteristics/CriticalHit.png',
+      prefix: '1/',
+      min: item.criticalHitProbability,
+      suffix: ' critical hit (+${item.criticalHitBonus})',
     );
   }
 
@@ -89,6 +70,7 @@ class ItemDamages extends StatelessWidget {
       children: [
         ItemSectionHeader(title: 'Damages'),
         ...bonuses.map(_buildEffect).toList(growable: false),
+        _buildSpace(),
         _buildAPCost(item),
         _buildRange(item),
         _buildCriticalHit(item),

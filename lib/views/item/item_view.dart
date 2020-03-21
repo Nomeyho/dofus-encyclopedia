@@ -16,7 +16,7 @@ class ItemView extends StatelessWidget {
           ItemTitle(),
           ItemImage(),
           SliverPadding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.only(left: 16, right: 16, bottom: 32),
             sliver: SliverList(
               delegate: SliverChildListDelegate.fixed([
                 ItemDescription(),
