@@ -44,7 +44,7 @@ class Bonus extends StatelessWidget {
           text: '$min',
           style: const TextStyle(fontWeight: FontWeight.w600),
         ),
-        TextSpan(text: separator == null ? ' to ' : separator),
+        TextSpan(text: separator),
         TextSpan(
           text: '$max',
           style: const TextStyle(fontWeight: FontWeight.w600),

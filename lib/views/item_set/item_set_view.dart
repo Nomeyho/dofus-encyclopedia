@@ -1,8 +1,7 @@
-import 'package:d2_encyclopedia/app_state.dart';
 import 'package:d2_encyclopedia/app_theme.dart';
+import 'package:d2_encyclopedia/generated/i18n.dart';
 import 'package:d2_encyclopedia/widgets/section_header.dart';
 import 'package:flutter/material.dart' hide Title;
-import 'package:provider/provider.dart';
 
 import 'widgets/set_bonus_selector.dart';
 import 'widgets/set_bonuses.dart';
@@ -22,9 +21,12 @@ class ItemSetView extends StatelessWidget {
             padding: const EdgeInsets.only(left: 16, right: 16),
             sliver: SliverList(
               delegate: SliverChildListDelegate.fixed([
-                SectionHeader(title: 'Bonuses', right: SetBonusSelector()),
+                SectionHeader(
+                  title: S.of(context).set_bonuses_title,
+                  right: SetBonusSelector(),
+                ),
                 SetBonuses(),
-                SectionHeader(title: 'Items'),
+                SectionHeader(title: S.of(context).set_items_title),
               ]),
             ),
           ),

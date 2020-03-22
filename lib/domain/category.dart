@@ -1,4 +1,6 @@
 import 'package:d2_encyclopedia/domain/item_type.dart';
+import 'package:d2_encyclopedia/generated/i18n.dart';
+import 'package:flutter/widgets.dart';
 
 enum Category {
   Equipment,
@@ -87,6 +89,19 @@ Category resolveCategory(ItemType type) {
     case ItemType.Rhineetle:
       return Category.Pets;
     default:
-      throw Exception('Unexpected item type $type}');
+      throw Exception('Unexpected item type $type');
+  }
+}
+
+String resolveTranslation(BuildContext context, Category category) {
+  switch (category) {
+    case Category.Equipment:
+      return S.of(context).category_equipment;
+    case Category.Weapons:
+      return S.of(context).category_weapons;
+    case Category.Pets:
+      return S.of(context).category_pets;
+    default:
+      throw Exception('Unexpected category $category');
   }
 }

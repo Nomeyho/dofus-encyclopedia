@@ -21,7 +21,58 @@ class S implements WidgetsLocalizations {
   @override
   TextDirection get textDirection => TextDirection.ltr;
 
-  String get title => "Dofus Item Encyclopedia";
+  String get bonus_AP => "AP";
+  String get bonus_critical_hit => "critical hit";
+  String get bonus_damage => "damage";
+  String get bonus_none => "None";
+  String get bonus_of => "of";
+  String get bonus_range => "range";
+  String get bonus_steal => "steal";
+  String get bonus_use_per_turn => "use(s) per turn";
+  String get category_equipment => "Equipment";
+  String get category_loading => "Loading data...";
+  String get category_pets => "Pets";
+  String get category_title => "Categories";
+  String get category_weapons => "Weapons";
+  String get item_characteristics_title => "Characteristics";
+  String get item_damages_title => "Damages";
+  String get item_description_title => "Description";
+  String get item_items => "items";
+  String get item_lvl => "lvl.";
+  String get item_set_title => "Set";
+  String get item_type_amulet => "Amulet";
+  String get item_type_axe => "Axe";
+  String get item_type_backpack => "Backpack";
+  String get item_type_belt => "Belt";
+  String get item_type_boots => "Boots";
+  String get item_type_bow => "Bow";
+  String get item_type_cloak => "Cloak";
+  String get item_type_dagger => "Dagger";
+  String get item_type_dofus => "Dofus";
+  String get item_type_dragoturkey => "Dragoturkey";
+  String get item_type_hammer => "Hammer";
+  String get item_type_hat => "Hat";
+  String get item_type_pet => "Pet";
+  String get item_type_petsmount => "Petsmount";
+  String get item_type_pickaxe => "Pickaxe";
+  String get item_type_rhineetle => "Rhineetle";
+  String get item_type_ring => "Ring";
+  String get item_type_scythe => "Scythe";
+  String get item_type_seemyool => "Seemyool";
+  String get item_type_shield => "Shield";
+  String get item_type_shovel => "Shovel";
+  String get item_type_staff => "Staff";
+  String get item_type_sword => "Sword";
+  String get item_type_tool => "Tool";
+  String get item_type_trophy => "Trophy";
+  String get item_type_wand => "Wand";
+  String get items_etheral => "Etheral";
+  String get items_lvl => "lvl. ";
+  String get items_search => "Search";
+  String get set_bonuses_title => "Bonuses";
+  String get set_items => "items";
+  String get set_items_title => "Items";
+  String get set_lvl => "lvl.";
 }
 
 class $en extends S {
@@ -35,7 +86,109 @@ class $fr extends S {
   TextDirection get textDirection => TextDirection.ltr;
 
   @override
-  String get title => "Dofus Item Encyclopedia";
+  String get items_etheral => "Ethérée";
+  @override
+  String get item_items => "items";
+  @override
+  String get item_type_pet => "Familier";
+  @override
+  String get set_lvl => "lvl.";
+  @override
+  String get category_equipment => "Equipment";
+  @override
+  String get item_type_hat => "Chapeau";
+  @override
+  String get bonus_of => "à";
+  @override
+  String get item_type_staff => "Bâton";
+  @override
+  String get item_characteristics_title => "Characteristiques";
+  @override
+  String get set_items => "items";
+  @override
+  String get item_type_bow => "Arc";
+  @override
+  String get item_set_title => "Panoplie";
+  @override
+  String get items_search => "Recherche";
+  @override
+  String get item_type_shovel => "Pelle";
+  @override
+  String get bonus_AP => "PA";
+  @override
+  String get bonus_range => "portée";
+  @override
+  String get item_type_dagger => "Dague";
+  @override
+  String get item_type_dragoturkey => "Dragodinde";
+  @override
+  String get item_type_sword => "Epée";
+  @override
+  String get bonus_none => "Aucun";
+  @override
+  String get item_type_hammer => "Marteau";
+  @override
+  String get item_type_rhineetle => "Volkorne";
+  @override
+  String get item_type_wand => "Baguette";
+  @override
+  String get item_type_belt => "Ceinture";
+  @override
+  String get item_type_seemyool => "Muldo";
+  @override
+  String get item_lvl => "lvl.";
+  @override
+  String get set_bonuses_title => "Bonus";
+  @override
+  String get bonus_damage => "dommage";
+  @override
+  String get item_type_pickaxe => "Pioche";
+  @override
+  String get item_type_shield => "Bouclier";
+  @override
+  String get item_type_scythe => "Faux";
+  @override
+  String get item_type_tool => "Outil";
+  @override
+  String get item_damages_title => "Dommages";
+  @override
+  String get set_items_title => "Items";
+  @override
+  String get items_lvl => "lvl. ";
+  @override
+  String get item_type_cloak => "Cape";
+  @override
+  String get item_type_trophy => "Trophée";
+  @override
+  String get item_description_title => "Description";
+  @override
+  String get item_type_axe => "Hache";
+  @override
+  String get bonus_use_per_turn => "utilisation(s) par tour";
+  @override
+  String get category_pets => "Familiers";
+  @override
+  String get bonus_steal => "vol";
+  @override
+  String get item_type_amulet => "Amulette";
+  @override
+  String get item_type_ring => "Anneau";
+  @override
+  String get category_weapons => "Armes";
+  @override
+  String get category_title => "Catégories";
+  @override
+  String get category_loading => "Chargement des données...";
+  @override
+  String get item_type_backpack => "Sac à dos";
+  @override
+  String get item_type_boots => "Bottes";
+  @override
+  String get bonus_critical_hit => "coup critique";
+  @override
+  String get item_type_petsmount => "Montilier";
+  @override
+  String get item_type_dofus => "Dofus";
 }
 
 class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {

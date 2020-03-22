@@ -14,10 +14,10 @@ class BonusOthers extends StatelessWidget {
     return Padding(padding: EdgeInsets.all(6));
   }
 
-  Widget _buildOther(OtherBonus bonus) {
+  Widget _buildOther(BuildContext context, OtherBonus bonus) {
     return Bonus(
       icon: 'assets/img/characteristics/Other.png',
-      prefix: '${bonus.description.en}',
+      prefix: bonus.description.translate(context),
       min: null,
       max: null,
       suffix: null,
@@ -30,7 +30,9 @@ class BonusOthers extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         if (others.isNotEmpty) _buildSpace(),
-        ...others.map(_buildOther).toList(growable: false),
+        ...others
+            .map((bonnus) => _buildOther(context, bonnus))
+            .toList(growable: false),
       ],
     );
   }

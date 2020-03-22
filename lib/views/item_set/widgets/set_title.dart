@@ -1,5 +1,6 @@
 import 'package:d2_encyclopedia/app_state.dart';
 import 'package:d2_encyclopedia/app_theme.dart';
+import 'package:d2_encyclopedia/generated/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -18,7 +19,7 @@ class SetTitle extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
             Text(
-              '${set.name.en} ',
+              '${set.name.translate(context)} ',
               style: TextStyle(
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.w700,
@@ -27,7 +28,7 @@ class SetTitle extends StatelessWidget {
               ),
             ),
             Text(
-              ' lvl. ${set.level}',
+              ' ${S.of(context).set_lvl}. ${set.level}',
               style: TextStyle(
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.w400,

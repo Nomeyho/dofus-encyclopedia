@@ -10,7 +10,7 @@ class ItemDescription extends StatelessWidget {
     final item = state.selectedItem;
 
     return Text(
-      '${item.description.en}',
+      item.description.translate(context),
       textAlign: TextAlign.justify,
       style: TextStyle(
         fontFamily: 'Lato',

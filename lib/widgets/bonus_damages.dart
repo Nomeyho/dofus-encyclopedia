@@ -1,6 +1,7 @@
 import 'package:d2_encyclopedia/domain/damage_bonus.dart';
 import 'package:d2_encyclopedia/domain/damage_element.dart';
 import 'package:d2_encyclopedia/domain/item.dart';
+import 'package:d2_encyclopedia/generated/i18n.dart';
 import 'package:d2_encyclopedia/widgets/bonus.dart';
 import 'package:flutter/material.dart';
 
@@ -12,13 +13,16 @@ class BonusDamages extends StatelessWidget {
     @required this.item,
   }) : super(key: key);
 
-  Widget _buildEffect(DamageBonus bonus) {
+  Widget _buildEffect(BuildContext context, DamageBonus bonus) {
     final element = bonus.element.name;
     return Bonus(
       icon: 'assets/img/damages/$element.png',
       min: bonus.min,
       max: bonus.max,
-      suffix: (bonus.steal ? ' steal ' : ' damage ') + element.toLowerCase(),
+      suffix: (bonus.steal
+              ? ' ${S.of(context).bonus_steal} '
+              : ' ${S.of(context).bonus_damage} ') +
+          element.toLowerCase(),
     );
   }
 
@@ -26,28 +30,29 @@ class BonusDamages extends StatelessWidget {
     return Padding(padding: EdgeInsets.all(6));
   }
 
-  Widget _buildAPCost(Item item) {
+  Widget _buildAPCost(BuildContext context, Item item) {
     return Bonus(
       icon: 'assets/img/characteristics/AP.png',
       min: item.apCost,
-      suffix: ' AP (${item.utilizationPerTurn} use per turn)',
+      suffix:
+          ' ${S.of(context).bonus_AP} (${item.utilizationPerTurn} ${S.of(context).bonus_use_per_turn})',
     );
   }
 
-  Widget _buildRange(Item item) {
+  Widget _buildRange(BuildContext context, Item item) {
     return Bonus(
       icon: 'assets/img/characteristics/Range.png',
       min: item.minRange,
       max: item.range,
-      suffix: ' range',
+      suffix: ' ${S.of(context).bonus_range}',
     );
   }
 
-  Widget _buildCriticalHit(Item item) {
+  Widget _buildCriticalHit(BuildContext context, Item item) {
     if (item.criticalHitProbability == 0) {
       return Bonus(
         icon: 'assets/img/characteristics/CriticalHit.png',
-        suffix: 'None',
+        suffix: S.of(context).bonus_none,
       );
     }
 
@@ -56,7 +61,8 @@ class BonusDamages extends StatelessWidget {
       min: 1,
       max: item.criticalHitProbability,
       separator: '/',
-      suffix: ' critical hit (+${item.criticalHitBonus})',
+      suffix:
+          ' ${S.of(context).bonus_critical_hit} (+${item.criticalHitBonus})',
     );
   }
 
@@ -66,11 +72,11 @@ class BonusDamages extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        ...bonuses.map(_buildEffect).toList(growable: false),
+        ...bonuses.map((b) => _buildEffect(context, b)).toList(growable: false),
         _buildSpace(),
-        _buildAPCost(item),
-        _buildRange(item),
-        _buildCriticalHit(item),
+        _buildAPCost(context, item),
+        _buildRange(context, item),
+        _buildCriticalHit(context, item),
       ],
     );
   }

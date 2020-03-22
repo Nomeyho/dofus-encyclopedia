@@ -13,7 +13,6 @@ class CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
-    final type = itemType.name; // TODO translate
 
     return Card(
       elevation: 0,
@@ -32,16 +31,16 @@ class CategoryCard extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Expanded(
-                child: Image.asset('assets/img/categories/$type.png'),
+                child: Image.asset('assets/img/categories/${itemType.name}.png'),
               ),
               Padding(padding: EdgeInsets.all(2)),
               Text(
-                '$type',
+                resolveTranslation(context, itemType),
                 style: TextStyle(
                   fontFamily: 'Lato',
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
-                  color: AppTheme.high_emphasis
+                  color: AppTheme.high_emphasis,
                 ),
               ),
               Padding(padding: EdgeInsets.all(2)),

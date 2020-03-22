@@ -1,12 +1,12 @@
-import 'package:d2_encyclopedia/domain/Text.dart';
+import 'package:d2_encyclopedia/domain/text_model.dart';
 import 'package:d2_encyclopedia/domain/bonuses.dart';
 import 'package:d2_encyclopedia/domain/item_set.dart';
 import 'package:d2_encyclopedia/domain/item_type.dart';
 
 class Item {
   final int id;
-  final Text name;
-  final Text description;
+  final TextModel name;
+  final TextModel description;
   final ItemType type;
   final int level;
   final int iconId;
@@ -27,10 +27,10 @@ class Item {
 
   Item.fromJson(final Map<String, dynamic> json)
       : id = json['id'],
-        name = Text.fromJson(json['name']),
+        name = TextModel.fromJson(json['name']),
         description = json['description'] == null
-            ? Text.empty()
-            : Text.fromJson(json['description']),
+            ? TextModel.empty()
+            : TextModel.fromJson(json['description']),
         type = getItemTypeFromString(json['type']),
         level = json['level'],
         iconId = json['iconId'],

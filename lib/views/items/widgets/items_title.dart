@@ -20,7 +20,7 @@ class ItemsTitle extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
             Text(
-              '${itemType.name}',
+              resolveTranslation(context, itemType),
               style: TextStyle(
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.w700,

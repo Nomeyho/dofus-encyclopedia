@@ -1,14 +1,15 @@
 import 'package:d2_encyclopedia/app_state.dart';
 import 'package:d2_encyclopedia/app_theme.dart';
 import 'package:d2_encyclopedia/domain/item_set.dart';
+import 'package:d2_encyclopedia/generated/i18n.dart';
 import 'package:d2_encyclopedia/router.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class ItemSetCard extends StatelessWidget {
-  Widget _buildTitle(ItemSet set) {
+  Widget _buildTitle(BuildContext context, ItemSet set) {
     return Text(
-      set.name.en,
+      set.name.translate(context),
       style: const TextStyle(
         fontFamily: 'Lato',
         fontSize: 16,
@@ -18,11 +19,11 @@ class ItemSetCard extends StatelessWidget {
     );
   }
 
-  Widget _buildSubtitle(ItemSet set) {
+  Widget _buildSubtitle(BuildContext context, ItemSet set) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
       child: Text(
-        '${set.items.length} items',
+        '${set.items.length} ${S.of(context).item_items}',
         style: const TextStyle(
           fontFamily: 'Lato',
           fontSize: 14,
@@ -58,8 +59,8 @@ class ItemSetCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    _buildTitle(set),
-                    _buildSubtitle(set),
+                    _buildTitle(context, set),
+                    _buildSubtitle(context, set),
                   ],
                 ),
               ),

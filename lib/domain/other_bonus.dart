@@ -1,10 +1,10 @@
-import 'package:d2_encyclopedia/domain/Text.dart';
+import 'package:d2_encyclopedia/domain/text_model.dart';
 
 class OtherBonus {
-  final Text description;
+  final TextModel description;
 
   OtherBonus.fromJson(final Map<String, dynamic> json)
-      : description = Text.fromJson(json['description']);
+      : description = TextModel.fromJson(json['description']);
 
   @override
   String toString() {

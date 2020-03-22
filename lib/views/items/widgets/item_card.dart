@@ -1,6 +1,7 @@
 import 'package:d2_encyclopedia/app_state.dart';
 import 'package:d2_encyclopedia/app_theme.dart';
 import 'package:d2_encyclopedia/domain/item.dart';
+import 'package:d2_encyclopedia/generated/i18n.dart';
 import 'package:d2_encyclopedia/router.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -20,9 +21,9 @@ class ItemCard extends StatelessWidget {
     );
   }
 
-  Widget _buildTitle() {
+  Widget _buildTitle(BuildContext context) {
     return Text(
-      '${item.name.en}', // TODO
+      item.name.translate(context),
       style: const TextStyle(
         fontFamily: 'Lato',
         fontSize: 16,
@@ -32,20 +33,20 @@ class ItemCard extends StatelessWidget {
     );
   }
 
-  String _getSubtitle() {
+  String _getSubtitle(BuildContext context) {
     if (item.etheral == true)
-      return 'Etheral';
+      return S.of(context).items_etheral;
     else if (item.set != null)
-      return '${item.set.name.en}';
+      return item.set.name.translate(context);
     else
       return '';
   }
 
-  Widget _buildSubtitle() {
+  Widget _buildSubtitle(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
       child: Text(
-        _getSubtitle(),
+        _getSubtitle(context),
         style: const TextStyle(
           fontFamily: 'Lato',
           fontSize: 14,
@@ -56,10 +57,10 @@ class ItemCard extends StatelessWidget {
     );
   }
 
-  Widget _buildTrailing() {
+  Widget _buildTrailing(BuildContext context) {
     return Container(
       child: Text(
-        'lvl. ${item.level}',
+        '${S.of(context).items_lvl} ${item.level}',
         style: const TextStyle(
           fontFamily: 'Lato',
           fontSize: 14,
@@ -96,12 +97,12 @@ class ItemCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    _buildTitle(),
-                    _buildSubtitle(),
+                    _buildTitle(context),
+                    _buildSubtitle(context),
                   ],
                 ),
               ),
-              _buildTrailing(),
+              _buildTrailing(context),
             ],
           ),
         ),

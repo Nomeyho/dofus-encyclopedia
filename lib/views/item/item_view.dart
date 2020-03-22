@@ -3,6 +3,7 @@ import 'package:d2_encyclopedia/app_theme.dart';
 import 'package:d2_encyclopedia/domain/category.dart';
 import 'package:d2_encyclopedia/domain/item.dart';
 import 'package:d2_encyclopedia/domain/item_type.dart';
+import 'package:d2_encyclopedia/generated/i18n.dart';
 import 'package:d2_encyclopedia/widgets/bonus_characteristics.dart';
 import 'package:d2_encyclopedia/widgets/bonus_damages.dart';
 import 'package:d2_encyclopedia/widgets/bonus_others.dart';
@@ -41,19 +42,17 @@ class ItemView extends StatelessWidget {
             padding: const EdgeInsets.only(left: 16, right: 16, bottom: 32),
             sliver: SliverList(
               delegate: SliverChildListDelegate.fixed([
-                SectionHeader(title: 'Description'),
+                SectionHeader(title: S.of(context).item_description_title),
                 ItemDescription(),
                 if (_showDamages(item.type)) ...[
-                  SectionHeader(title: 'Damages'),
-                  BonusDamages(
-                    item: item,
-                  ),
+                  SectionHeader(title: S.of(context).item_damages_title),
+                  BonusDamages(item: item),
                 ],
-                SectionHeader(title: 'Characteristics'),
+                SectionHeader(title: S.of(context).item_characteristics_title),
                 BonusCharacteristics(characteristics: characteristics),
                 BonusOthers(others: others),
                 if (_showSet(item)) ...[
-                  SectionHeader(title: 'Set'),
+                  SectionHeader(title: S.of(context).item_set_title),
                   ItemSetCard(),
                 ]
               ]),

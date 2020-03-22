@@ -1,5 +1,6 @@
 import 'package:d2_encyclopedia/app_state.dart';
 import 'package:d2_encyclopedia/app_theme.dart';
+import 'package:d2_encyclopedia/generated/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -16,10 +17,9 @@ class ItemTitle extends StatelessWidget {
       flexibleSpace: FlexibleSpaceBar(
         title: Column(
           mainAxisAlignment: MainAxisAlignment.end,
-          //crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
             Text(
-              '${item.name.en} ',
+              '${item.name.translate(context)} ',
               style: TextStyle(
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.w700,
@@ -28,7 +28,7 @@ class ItemTitle extends StatelessWidget {
               ),
             ),
             Text(
-              ' lvl. ${item.level}',
+              ' ${S.of(context).item_lvl}. ${item.level}',
               style: TextStyle(
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.w400,

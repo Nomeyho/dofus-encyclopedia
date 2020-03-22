@@ -5,8 +5,6 @@ import 'package:provider/provider.dart';
 import 'item_card.dart';
 
 class ItemList extends StatelessWidget {
-  // TODO animate the list
-
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
@@ -17,9 +15,7 @@ class ItemList extends StatelessWidget {
       sliver: Container(
         child: SliverList(
           delegate: SliverChildBuilderDelegate(
-            (BuildContext context, int index) {
-              return ItemCard(item: items[index]);
-            },
+            (_, index) => ItemCard(item: items[index]),
             childCount: items.length,
           ),
         ),

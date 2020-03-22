@@ -9,7 +9,7 @@ class CategorySelector extends StatelessWidget {
   Widget buildChip(BuildContext context, Category category) {
     final state = Provider.of<AppState>(context);
     final selected = state.selectedCategory == category;
-    final label = category.name; // TODO translate
+    final label = resolveTranslation(context, category);
 
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
