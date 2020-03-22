@@ -3,11 +3,11 @@ import 'package:d2_encyclopedia/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class ItemTitle extends StatelessWidget {
+class SetTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
-    final item = state.selectedItem;
+    final set = state.selectedItem.set;
 
     return SliverAppBar(
       forceElevated: true,
@@ -16,10 +16,9 @@ class ItemTitle extends StatelessWidget {
       flexibleSpace: FlexibleSpaceBar(
         title: Column(
           mainAxisAlignment: MainAxisAlignment.end,
-          //crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
             Text(
-              '${item.name.en} ',
+              '${set.name.en} ',
               style: TextStyle(
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.w700,
@@ -28,7 +27,7 @@ class ItemTitle extends StatelessWidget {
               ),
             ),
             Text(
-              ' lvl. ${item.level}',
+              ' lvl. ${set.level}',
               style: TextStyle(
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.w400,

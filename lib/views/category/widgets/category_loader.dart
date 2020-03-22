@@ -10,7 +10,7 @@ class CategoryLoader extends StatelessWidget {
         children: <Widget>[
           const CircularProgressIndicator(
             valueColor:
-                const AlwaysStoppedAnimation<Color>(AppTheme.primary_700),
+                const AlwaysStoppedAnimation<Color>(AppTheme.primary),
           ),
           const Padding(padding: EdgeInsets.all(12)),
           Text(

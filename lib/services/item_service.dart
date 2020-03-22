@@ -35,8 +35,11 @@ class ItemService {
       _count[item.type] = _count[item.type] + 1;
       _types[item.type].add(item);
 
-      if(item.setId != null && item.setId != -1) // TODO fix data
-      item.set = _sets[item.setId];
+      if(item.setId != null && item.setId > 0) {
+        final set = _sets[item.setId];
+        item.set = set;
+        set.items.add(item);
+      }
     }
 
     for (ItemType itemType in ItemType.values) {

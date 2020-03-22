@@ -1,6 +1,6 @@
 import 'package:d2_encyclopedia/app_state.dart';
 import 'package:d2_encyclopedia/app_theme.dart';
-import 'package:d2_encyclopedia/widgets/SliverHeaderDelegate.dart';
+import 'package:d2_encyclopedia/widgets/sliver_header_delegate.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -26,7 +26,7 @@ class ItemsHeader extends StatelessWidget {
               state.name = value;
             },
             textInputAction: TextInputAction.search,
-            cursorColor: AppTheme.primary_700,
+            cursorColor: AppTheme.primary,
             decoration: InputDecoration(
               labelText: 'Search',
               labelStyle: TextStyle(

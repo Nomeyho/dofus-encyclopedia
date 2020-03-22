@@ -1,7 +1,7 @@
 import 'package:d2_encyclopedia/app_state.dart';
 import 'package:d2_encyclopedia/app_theme.dart';
 import 'package:d2_encyclopedia/domain/item_type.dart';
-import 'package:d2_encyclopedia/widgets/FadeText.dart';
+import 'package:d2_encyclopedia/widgets/fade_text.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -34,7 +34,7 @@ class ItemsTitle extends StatelessWidget {
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.w400,
                 fontSize: 10,
-                color: AppTheme.primary_700,
+                color: AppTheme.primary,
               ),
               duration: Duration(milliseconds: 500),
             )

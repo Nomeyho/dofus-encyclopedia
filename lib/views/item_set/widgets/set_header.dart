@@ -1,15 +1,10 @@
-import 'package:d2_encyclopedia/app_state.dart';
 import 'package:d2_encyclopedia/app_theme.dart';
 import 'package:d2_encyclopedia/widgets/sliver_header_delegate.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
-class ItemImage extends StatelessWidget {
+class SetHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final state = Provider.of<AppState>(context);
-    final item = state.selectedItem;
-
     return SliverPersistentHeader(
       delegate: SliverHeaderDelegate(
         child: Container(
@@ -21,13 +16,10 @@ class ItemImage extends StatelessWidget {
               ),
             ),
           ),
-          child: Padding(
-            padding: const EdgeInsets.only(bottom: 12),
-            child: Image.asset('assets/img/items/${item.iconId}.png'),
-          ),
+          child: Padding(padding: const EdgeInsets.only(bottom: 12)),
         ),
-        minHeight: 80,
-        maxHeight: 140,
+        minHeight: 1,
+        maxHeight: 1,
         background: AppTheme.background,
       ),
       pinned: true,

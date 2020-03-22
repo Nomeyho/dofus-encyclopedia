@@ -12,6 +12,7 @@ class AppState with ChangeNotifier {
   bool _loading;
   Category _selectedCategory = Category.Equipment;
   Item _selectedItem;
+  int _selectedBonusIndex = 0;
   ItemType _type;
   String _name = '';
   int _minLevel = 0;
@@ -50,6 +51,14 @@ class AppState with ChangeNotifier {
 
   set selectedItem(Item value) {
     _selectedItem = value;
+    _selectedBonusIndex = value.set.bonuses.length - 1;
+    notifyListeners();
+  }
+
+  int get selectedBonusIndex => _selectedBonusIndex;
+
+  set selectedBonusIndex(int value) {
+    _selectedBonusIndex = value;
     notifyListeners();
   }
 

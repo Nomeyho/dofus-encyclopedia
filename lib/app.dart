@@ -24,6 +24,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         splashColor: Colors.transparent,
+        buttonTheme: ButtonThemeData(minWidth: 10),
       ),
     );
   }
