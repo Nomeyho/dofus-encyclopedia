@@ -7,7 +7,7 @@ import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 import 'generated/i18n.dart';
 
 class App extends StatelessWidget {
-  static const en = Locale('fr', '');
+  static const en = Locale('en', '');
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,10 @@ class App extends StatelessWidget {
         S.delegate,
       ],
       supportedLocales: S.delegate.supportedLocales,
-      localeResolutionCallback: S.delegate.resolution(fallback: en),
+      localeResolutionCallback: S.delegate.resolution(
+        fallback: en,
+        withCountry: false,
+      ),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,

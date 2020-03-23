@@ -51,7 +51,11 @@ class AppState with ChangeNotifier {
 
   set selectedItem(Item value) {
     _selectedItem = value;
-    _selectedBonusIndex = value.set.bonuses.length - 1;
+
+    if (value.set != null) {
+      _selectedBonusIndex = value.set.bonuses.length - 1;
+    }
+
     notifyListeners();
   }
 
