@@ -34,6 +34,57 @@ class S implements WidgetsLocalizations {
   String get category_pets => "Pets";
   String get category_title => "Categories";
   String get category_weapons => "Weapons";
+  String get characteristic_agility => "agility";
+  String get characteristic_air_damage => "air damage";
+  String get characteristic_air_resistance => "air resistance";
+  String get characteristic_ap => "AP";
+  String get characteristic_attack_pa => "attack_pa";
+  String get characteristic_attack_pm => "attack_pm";
+  String get characteristic_chance => "chance";
+  String get characteristic_critical_damage => "critical damage";
+  String get characteristic_critical_hit => "critical hit";
+  String get characteristic_critical_resistance => "critical resistance";
+  String get characteristic_damage => "damage";
+  String get characteristic_dodge => "dodge";
+  String get characteristic_dodge_pa => "dodge_pa";
+  String get characteristic_dodge_pm => "dodge_pm";
+  String get characteristic_earth_damage => "earth damage";
+  String get characteristic_earth_resistance => "earth resistance";
+  String get characteristic_fire_damage => "fire damage";
+  String get characteristic_fire_resistance => "fire resistance";
+  String get characteristic_fixed_air_resistance => "fixed air resistance";
+  String get characteristic_fixed_earth_resistance => "fixed earth resistance";
+  String get characteristic_fixed_fire_resistance => "fixed fire resistance";
+  String get characteristic_fixed_neutral_resistance => "fixed_neutral resistance";
+  String get characteristic_fixed_water_resistance => "fixed water resistance";
+  String get characteristic_heal => "heal";
+  String get characteristic_initiative => "initiative";
+  String get characteristic_intelligence => "intelligence";
+  String get characteristic_lock => "lock";
+  String get characteristic_melee_damage => "melee damage";
+  String get characteristic_melee_resistance => "melee resistance";
+  String get characteristic_mp => "MP";
+  String get characteristic_neutral_damage => "neutral damage";
+  String get characteristic_neutral_resistance => "neutral resistance";
+  String get characteristic_pods => "pods";
+  String get characteristic_power => "power";
+  String get characteristic_prospection => "prospection";
+  String get characteristic_pushback_damage => "pushback damage";
+  String get characteristic_pushback_resistance => "pushback resistance";
+  String get characteristic_range => "range";
+  String get characteristic_range_damage => "range damage";
+  String get characteristic_range_resistance => "range resistance";
+  String get characteristic_return_damage => "return damage";
+  String get characteristic_spell_damage => "spell damage";
+  String get characteristic_strength => "strength";
+  String get characteristic_summons => "summons";
+  String get characteristic_trap_Power_damage => "trap power damage";
+  String get characteristic_trap_damage => "trap damage";
+  String get characteristic_vitality => "vitality";
+  String get characteristic_water_damage => "water damage";
+  String get characteristic_water_resistance => "water resistance";
+  String get characteristic_weapon_damage => "weapon damage";
+  String get characteristic_wisdom => "wisdom";
   String get item_characteristics_title => "Characteristics";
   String get item_damages_title => "Damages";
   String get item_description_title => "Description";
@@ -86,29 +137,31 @@ class $fr extends S {
   TextDirection get textDirection => TextDirection.ltr;
 
   @override
-  String get items_etheral => "Ethérée";
+  String get characteristic_summons => "invocation";
   @override
-  String get item_items => "items";
+  String get characteristic_strength => "force";
   @override
-  String get item_type_pet => "Familier";
-  @override
-  String get set_lvl => "lvl.";
-  @override
-  String get category_equipment => "Equipment";
+  String get characteristic_lock => "tacle";
   @override
   String get item_type_hat => "Chapeau";
   @override
-  String get bonus_of => "à";
-  @override
   String get item_type_staff => "Bâton";
   @override
-  String get item_characteristics_title => "Characteristiques";
+  String get characteristic_vitality => "vitalité";
   @override
-  String get set_items => "items";
+  String get characteristic_dodge => "fuite";
+  @override
+  String get characteristic_agility => "agilité";
+  @override
+  String get characteristic_melee_resistance => "résistance mêlée";
+  @override
+  String get characteristic_wisdom => "sagesse";
+  @override
+  String get characteristic_critical_damage => "dommage critique";
   @override
   String get item_type_bow => "Arc";
   @override
-  String get item_set_title => "Panoplie";
+  String get characteristic_fixed_earth_resistance => "résistance terre fixe";
   @override
   String get items_search => "Recherche";
   @override
@@ -116,11 +169,11 @@ class $fr extends S {
   @override
   String get bonus_AP => "PA";
   @override
-  String get bonus_range => "portée";
+  String get characteristic_neutral_damage => "dommage neutre";
+  @override
+  String get characteristic_mp => "PM";
   @override
   String get item_type_dagger => "Dague";
-  @override
-  String get item_type_dragoturkey => "Dragodinde";
   @override
   String get item_type_sword => "Epée";
   @override
@@ -130,17 +183,123 @@ class $fr extends S {
   @override
   String get item_type_rhineetle => "Volkorne";
   @override
-  String get item_type_wand => "Baguette";
+  String get characteristic_fixed_neutral_resistance => "résistance neutre fixe";
   @override
   String get item_type_belt => "Ceinture";
   @override
   String get item_type_seemyool => "Muldo";
   @override
+  String get characteristic_fire_resistance => "résistance feu";
+  @override
+  String get bonus_damage => "dommage";
+  @override
+  String get characteristic_heal => "soin";
+  @override
+  String get item_type_tool => "Outil";
+  @override
+  String get item_damages_title => "Dommages";
+  @override
+  String get items_lvl => "lvl. ";
+  @override
+  String get item_type_cloak => "Cape";
+  @override
+  String get characteristic_trap_damage => "dommage aux pièges";
+  @override
+  String get bonus_use_per_turn => "utilisation(s) par tour";
+  @override
+  String get characteristic_attack_pm => "retrait PM";
+  @override
+  String get characteristic_pushback_damage => "résistance aux dommages de poussée";
+  @override
+  String get category_weapons => "Armes";
+  @override
+  String get characteristic_attack_pa => "retrait PA";
+  @override
+  String get characteristic_earth_damage => "dommage terre";
+  @override
+  String get item_type_boots => "Bottes";
+  @override
+  String get characteristic_prospection => "prospection";
+  @override
+  String get bonus_critical_hit => "coup critique";
+  @override
+  String get characteristic_dodge_pm => "esquive PM";
+  @override
+  String get characteristic_range => "portée";
+  @override
+  String get characteristic_earth_resistance => "résistance terre";
+  @override
+  String get items_etheral => "Ethérée";
+  @override
+  String get characteristic_water_damage => "dommage eau";
+  @override
+  String get characteristic_fixed_fire_resistance => "résistance feu fixe";
+  @override
+  String get characteristic_initiative => "initiative";
+  @override
+  String get item_items => "items";
+  @override
+  String get characteristic_dodge_pa => "esquive PA";
+  @override
+  String get characteristic_fixed_air_resistance => "résistance air fixe";
+  @override
+  String get characteristic_damage => "dommage";
+  @override
+  String get item_type_pet => "Familier";
+  @override
+  String get set_lvl => "lvl.";
+  @override
+  String get characteristic_critical_resistance => "résistance critique";
+  @override
+  String get characteristic_pods => "pods";
+  @override
+  String get category_equipment => "Equipment";
+  @override
+  String get characteristic_spell_damage => "dommage aux sorts";
+  @override
+  String get bonus_of => "à";
+  @override
+  String get characteristic_critical_hit => "coup critique";
+  @override
+  String get item_characteristics_title => "Characteristiques";
+  @override
+  String get characteristic_chance => "chance";
+  @override
+  String get characteristic_air_resistance => "résistance air";
+  @override
+  String get set_items => "items";
+  @override
+  String get characteristic_ap => "PA";
+  @override
+  String get characteristic_melee_damage => "dommage mêlée";
+  @override
+  String get characteristic_trap_Power_damage => "puissance de dommage aux pièges";
+  @override
+  String get item_set_title => "Panoplie";
+  @override
+  String get bonus_range => "portée";
+  @override
+  String get characteristic_power => "puissance";
+  @override
+  String get item_type_dragoturkey => "Dragodinde";
+  @override
+  String get characteristic_neutral_resistance => "résistance neutre";
+  @override
+  String get item_type_wand => "Baguette";
+  @override
+  String get characteristic_intelligence => "intelligence";
+  @override
+  String get characteristic_air_damage => "dommage air";
+  @override
   String get item_lvl => "lvl.";
   @override
   String get set_bonuses_title => "Bonus";
   @override
-  String get bonus_damage => "dommage";
+  String get characteristic_fixed_water_resistance => "résistance eau fixe";
+  @override
+  String get characteristic_water_resistance => "résistance eau";
+  @override
+  String get characteristic_range_damage => "dommage à distance";
   @override
   String get item_type_pickaxe => "Pioche";
   @override
@@ -148,23 +307,17 @@ class $fr extends S {
   @override
   String get item_type_scythe => "Faux";
   @override
-  String get item_type_tool => "Outil";
-  @override
-  String get item_damages_title => "Dommages";
-  @override
   String get set_items_title => "Items";
   @override
-  String get items_lvl => "lvl. ";
-  @override
-  String get item_type_cloak => "Cape";
+  String get characteristic_weapon_damage => "dommage aux armes";
   @override
   String get item_type_trophy => "Trophée";
+  @override
+  String get characteristic_range_resistance => "résistance à distance";
   @override
   String get item_description_title => "Description";
   @override
   String get item_type_axe => "Hache";
-  @override
-  String get bonus_use_per_turn => "utilisation(s) par tour";
   @override
   String get category_pets => "Familiers";
   @override
@@ -174,21 +327,21 @@ class $fr extends S {
   @override
   String get item_type_ring => "Anneau";
   @override
-  String get category_weapons => "Armes";
-  @override
   String get category_title => "Catégories";
+  @override
+  String get characteristic_pushback_resistance => "résistance poussée";
   @override
   String get category_loading => "Chargement des données...";
   @override
   String get item_type_backpack => "Sac à dos";
   @override
-  String get item_type_boots => "Bottes";
-  @override
-  String get bonus_critical_hit => "coup critique";
-  @override
   String get item_type_petsmount => "Montilier";
   @override
+  String get characteristic_return_damage => "dommage de retour";
+  @override
   String get item_type_dofus => "Dofus";
+  @override
+  String get characteristic_fire_damage => "dommage feu";
 }
 
 class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
