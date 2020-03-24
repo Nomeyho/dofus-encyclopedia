@@ -24,6 +24,7 @@ class S implements WidgetsLocalizations {
   String get bonus_AP => "AP";
   String get bonus_critical_hit => "critical hit";
   String get bonus_damage => "damage";
+  String get bonus_empty => "No bonus";
   String get bonus_none => "None";
   String get bonus_of => "of";
   String get bonus_range => "range";
@@ -38,16 +39,16 @@ class S implements WidgetsLocalizations {
   String get characteristic_air_damage => "air damage";
   String get characteristic_air_resistance => "air resistance";
   String get characteristic_ap => "AP";
-  String get characteristic_attack_pa => "attack_pa";
-  String get characteristic_attack_pm => "attack_pm";
+  String get characteristic_attack_pa => "attack PA";
+  String get characteristic_attack_pm => "attack MP";
   String get characteristic_chance => "chance";
   String get characteristic_critical_damage => "critical damage";
   String get characteristic_critical_hit => "critical hit";
   String get characteristic_critical_resistance => "critical resistance";
   String get characteristic_damage => "damage";
   String get characteristic_dodge => "dodge";
-  String get characteristic_dodge_pa => "dodge_pa";
-  String get characteristic_dodge_pm => "dodge_pm";
+  String get characteristic_dodge_pa => "dodge PA";
+  String get characteristic_dodge_pm => "dodge PM";
   String get characteristic_earth_damage => "earth damage";
   String get characteristic_earth_resistance => "earth resistance";
   String get characteristic_fire_damage => "fire damage";
@@ -166,6 +167,8 @@ class $fr extends S {
   String get items_search => "Recherche";
   @override
   String get item_type_shovel => "Pelle";
+  @override
+  String get bonus_empty => "Pas de bonus";
   @override
   String get bonus_AP => "PA";
   @override

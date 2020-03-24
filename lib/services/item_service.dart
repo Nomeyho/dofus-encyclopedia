@@ -3,6 +3,7 @@ import 'package:d2_encyclopedia/domain/item_set.dart';
 import 'package:d2_encyclopedia/domain/item_type.dart';
 import 'package:d2_encyclopedia/repositories/item_repository.dart';
 import 'package:d2_encyclopedia/repositories/set_repository.dart';
+import 'package:d2_encyclopedia/utils/string_utils.dart';
 
 class ItemService {
   final ItemRepository itemRepository;
@@ -35,7 +36,7 @@ class ItemService {
       _count[item.type] = _count[item.type] + 1;
       _types[item.type].add(item);
 
-      if(item.setId != null && item.setId > 0) {
+      if (item.setId != null && item.setId > 0) {
         final set = _sets[item.setId];
         item.set = set;
         set.items.add(item);
@@ -47,13 +48,15 @@ class ItemService {
     }
   }
 
-  List<Item> find(ItemType type, String name, int minLevel, int maxLevel) {
+  List<Item> find(
+      String lang, ItemType type, String name, int minLevel, int maxLevel) {
+    final pattern = name.normalize();
     return _types[type]
         .where((item) => item.level >= minLevel && item.level <= maxLevel)
-        .where((item) => item.name.match(name))
+        .where((item) => item.name.match(lang, pattern))
         .toList(growable: false);
   }
-  
+
   Item get(String id) {
     return _items[id];
   }

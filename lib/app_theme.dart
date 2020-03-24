@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 class AppTheme {
-  static const primary = Color(0xFFBB86FC);
+  static const primary = Color(0xFFC07529);
   static const error = Color(0xFFF85C4D);
   static const background = Color(0xFF121212);
   static const surface = Color(0xFF1D1D1D);

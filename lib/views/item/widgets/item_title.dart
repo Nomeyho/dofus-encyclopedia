@@ -14,21 +14,26 @@ class ItemTitle extends StatelessWidget {
       forceElevated: true,
       backgroundColor: AppTheme.background,
       expandedHeight: 100,
+      stretch: true,
       flexibleSpace: FlexibleSpaceBar(
+        centerTitle: true,
         title: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
             Text(
-              '${item.name.translate(context)} ',
+              item.name.translate(context),
+              overflow: TextOverflow.clip,
+              softWrap: true,
+              maxLines: 2,
               style: TextStyle(
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.w700,
-                fontSize: 16,
+                fontSize: 12,
                 color: AppTheme.high_emphasis,
               ),
             ),
             Text(
-              ' ${S.of(context).item_lvl}. ${item.level}',
+              '${S.of(context).item_lvl} ${item.level}',
               style: TextStyle(
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.w400,

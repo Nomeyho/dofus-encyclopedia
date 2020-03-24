@@ -27,6 +27,14 @@ class CategorySelector extends StatelessWidget {
         onSelected: (_) {
           state.selectedCategory = category;
         },
+        // fix chip border issue
+        shape: const StadiumBorder(
+          side: const BorderSide(
+            color: AppTheme.surface,
+            width: 0,
+            style: BorderStyle.solid,
+          ),
+        ),
         selected: selected,
         selectedColor: AppTheme.primary,
         backgroundColor: AppTheme.surface,

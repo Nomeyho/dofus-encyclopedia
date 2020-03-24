@@ -49,6 +49,7 @@
   "items_lvl": "lvl. ",
 
   "bonus_of": "à",
+  "bonus_empty": "Pas de bonus",
   "bonus_steal": "vol",
   "bonus_damage": "dommage",
   "bonus_AP": "PA",

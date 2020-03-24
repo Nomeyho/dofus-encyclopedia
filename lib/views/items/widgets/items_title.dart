@@ -1,7 +1,7 @@
 import 'package:d2_encyclopedia/app_state.dart';
 import 'package:d2_encyclopedia/app_theme.dart';
 import 'package:d2_encyclopedia/domain/item_type.dart';
-import 'package:d2_encyclopedia/widgets/fade_text.dart';
+import 'package:d2_encyclopedia/widgets/fade_in.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -14,8 +14,9 @@ class ItemsTitle extends StatelessWidget {
 
     return SliverAppBar(
       backgroundColor: AppTheme.background,
-      expandedHeight: 120,
+      centerTitle: true,
       flexibleSpace: FlexibleSpaceBar(
+        centerTitle: true,
         title: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
@@ -28,15 +29,17 @@ class ItemsTitle extends StatelessWidget {
                 color: AppTheme.high_emphasis,
               ),
             ),
-            FadeText(
-              text: ' ($count)',
-              style: TextStyle(
-                fontFamily: 'Lato',
-                fontWeight: FontWeight.w400,
-                fontSize: 10,
-                color: AppTheme.primary,
+            FadeIn(
+              child: Text(
+                '($count)',
+                style: TextStyle(
+                  fontFamily: 'Lato',
+                  fontWeight: FontWeight.w400,
+                  fontSize: 10,
+                  color: AppTheme.primary,
+                ),
               ),
-              duration: Duration(milliseconds: 500),
+              duration: Duration(milliseconds: 200),
             )
           ],
         ),

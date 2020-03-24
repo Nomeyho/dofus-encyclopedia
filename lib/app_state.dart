@@ -9,6 +9,7 @@ class AppState with ChangeNotifier {
 
   AppState(this.itemService);
 
+  Locale locale;
   bool _loading;
   Category _selectedCategory = Category.Equipment;
   Item _selectedItem;
@@ -33,7 +34,13 @@ class AppState with ChangeNotifier {
   }
 
   List<Item> get items {
-    return itemService.find(type, name, minLevel, maxLevel);
+    return itemService.find(
+      locale.languageCode,
+      type,
+      name,
+      minLevel,
+      maxLevel,
+    );
   }
 
   int count(ItemType itemType) => itemService.count(itemType);

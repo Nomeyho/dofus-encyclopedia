@@ -15,6 +15,7 @@ class SetTitle extends StatelessWidget {
       backgroundColor: AppTheme.background,
       expandedHeight: 100,
       flexibleSpace: FlexibleSpaceBar(
+        centerTitle: true,
         title: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
@@ -28,7 +29,7 @@ class SetTitle extends StatelessWidget {
               ),
             ),
             Text(
-              ' ${S.of(context).set_lvl}. ${set.level}',
+              ' ${S.of(context).set_lvl} ${set.level}',
               style: TextStyle(
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.w400,

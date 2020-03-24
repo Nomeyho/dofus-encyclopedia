@@ -3,6 +3,7 @@ import 'package:d2_encyclopedia/app_theme.dart';
 import 'package:d2_encyclopedia/domain/item.dart';
 import 'package:d2_encyclopedia/generated/i18n.dart';
 import 'package:d2_encyclopedia/router.dart';
+import 'package:d2_encyclopedia/widgets/fade_in.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -22,6 +23,7 @@ class ItemCard extends StatelessWidget {
   }
 
   Widget _buildTitle(BuildContext context) {
+    // TODO: could highlight the part that matched the search
     return Text(
       item.name.translate(context),
       style: const TextStyle(
@@ -75,35 +77,38 @@ class ItemCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context, listen: false);
 
-    return Card(
-      elevation: 0,
-      clipBehavior: Clip.hardEdge,
-      color: AppTheme.surface,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12.0),
-      ),
-      child: InkWell(
-        onTap: () {
-          state.selectedItem = item;
-          Navigator.of(context).pushNamed(Router.item);
-        },
-        child: Padding(
-          padding: const EdgeInsets.all(12.0),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              _buildIcon(),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    _buildTitle(context),
-                    _buildSubtitle(context),
-                  ],
+    return FadeIn(
+      duration: Duration(milliseconds: 700),
+      child: Card(
+        elevation: 0,
+        clipBehavior: Clip.hardEdge,
+        color: AppTheme.surface,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12.0),
+        ),
+        child: InkWell(
+          onTap: () {
+            state.selectedItem = item;
+            Navigator.of(context).pushNamed(Router.item);
+          },
+          child: Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                _buildIcon(),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      _buildTitle(context),
+                      _buildSubtitle(context),
+                    ],
+                  ),
                 ),
-              ),
-              _buildTrailing(context),
-            ],
+                _buildTrailing(context),
+              ],
+            ),
           ),
         ),
       ),

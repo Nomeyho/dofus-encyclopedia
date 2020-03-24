@@ -8,7 +8,9 @@ class CategoryTitle extends StatelessWidget {
     return SliverAppBar(
       backgroundColor: AppTheme.surface,
       expandedHeight: 100,
+      centerTitle: true,
       flexibleSpace: FlexibleSpaceBar(
+        centerTitle: true,
         title: Text(
           S.of(context).category_title,
           style: TextStyle(

@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class FadeText extends StatefulWidget {
-  FadeText({this.text, this.style, this.duration});
+class FadeIn extends StatefulWidget {
+  FadeIn({this.child, this.duration});
 
-  final String text;
-  final TextStyle style;
+  final Widget child;
   final Duration duration;
 
   @override
-  _FadeTextState createState() => _FadeTextState();
+  _FadeInState createState() => _FadeInState();
 }
 
-class _FadeTextState extends State<FadeText>
-    with SingleTickerProviderStateMixin {
+class _FadeInState extends State<FadeIn> with SingleTickerProviderStateMixin {
   AnimationController _controller;
 
   @override
@@ -24,7 +22,7 @@ class _FadeTextState extends State<FadeText>
   }
 
   @override
-  void didUpdateWidget(FadeText oldWidget) {
+  void didUpdateWidget(FadeIn oldWidget) {
     if (_controller.isCompleted) {
       _controller.reset();
       _controller.forward();
@@ -42,7 +40,7 @@ class _FadeTextState extends State<FadeText>
   Widget build(BuildContext context) {
     return FadeTransition(
       opacity: _controller,
-      child: Text(widget.text, style: widget.style),
+      child: widget.child,
     );
   }
 }
