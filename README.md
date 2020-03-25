@@ -16,6 +16,7 @@ flutter pub run flutter_launcher_icons:main
 - characteristics display order
 - const review
 - Empty description
+- Codemagic CI/CD
 
 ## Data fix
 - ID = 0 for pets
