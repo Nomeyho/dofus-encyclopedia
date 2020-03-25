@@ -18,7 +18,7 @@ class App extends StatelessWidget {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
     return MaterialApp(
-        title: 'Dofus Item Encyclopedia',
+        title: 'D2Encyclopedia',
         initialRoute: Router.categories,
         onGenerateRoute: Router.generateRoute,
         localizationsDelegates: [

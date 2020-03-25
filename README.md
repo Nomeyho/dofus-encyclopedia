@@ -8,15 +8,12 @@ flutter pub run flutter_launcher_icons:main
 ```
 
 ## Todo
-- intl plural
-- splash screen
-- app display name
 - readme
 - screen size UI
 - characteristics display order
-- const review
-- Empty description
 - Codemagic CI/CD
+- Missing characteristic icon (test on shields)
+- Item list header doesn't zoom
 
 ## Data fix
 - ID = 0 for pets
@@ -26,3 +23,4 @@ flutter pub run flutter_launcher_icons:main
 ## Roadmap
 - Item & set conditions
 - Recipe
+- Intl plural

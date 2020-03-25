@@ -33,6 +33,7 @@
   "item_type_rhineetle": "Volkorne",
 
   "item_description_title": "Description",
+  "item_description_empty": "Aucune description",
   "item_damages_title": "Dommages",
   "item_characteristics_title": "Characteristiques",
   "item_set_title": "Panoplie",

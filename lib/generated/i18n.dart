@@ -88,6 +88,7 @@ class S implements WidgetsLocalizations {
   String get characteristic_wisdom => "wisdom";
   String get item_characteristics_title => "Characteristics";
   String get item_damages_title => "Damages";
+  String get item_description_empty => "No description";
   String get item_description_title => "Description";
   String get item_items => "items";
   String get item_lvl => "lvl.";
@@ -325,6 +326,8 @@ class $fr extends S {
   String get category_pets => "Familiers";
   @override
   String get bonus_steal => "vol";
+  @override
+  String get item_description_empty => "Aucune description";
   @override
   String get item_type_amulet => "Amulette";
   @override

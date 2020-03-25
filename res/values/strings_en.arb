@@ -33,6 +33,7 @@
   "item_type_rhineetle": "Rhineetle",
 
   "item_description_title": "Description",
+  "item_description_empty": "No description",
   "item_damages_title": "Damages",
   "item_characteristics_title": "Characteristics",
   "item_set_title": "Set",

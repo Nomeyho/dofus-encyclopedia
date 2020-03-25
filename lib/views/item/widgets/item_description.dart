@@ -1,5 +1,6 @@
 import 'package:d2_encyclopedia/app_state.dart';
 import 'package:d2_encyclopedia/app_theme.dart';
+import 'package:d2_encyclopedia/generated/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -8,9 +9,10 @@ class ItemDescription extends StatelessWidget {
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
     final item = state.selectedItem;
+    final description = item.description.translate(context);
 
     return Text(
-      item.description.translate(context),
+      description.isEmpty ? S.of(context).item_description_empty : description,
       textAlign: TextAlign.justify,
       style: TextStyle(
         fontFamily: 'Lato',
