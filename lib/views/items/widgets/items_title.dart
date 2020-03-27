@@ -15,6 +15,7 @@ class ItemsTitle extends StatelessWidget {
     return SliverAppBar(
       backgroundColor: AppTheme.background,
       centerTitle: true,
+      expandedHeight: 100,
       flexibleSpace: FlexibleSpaceBar(
         centerTitle: true,
         title: Column(
