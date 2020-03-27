@@ -1,6 +1,6 @@
-import 'package:d2_encyclopedia/domain/bonuses.dart';
-import 'package:d2_encyclopedia/domain/item.dart';
-import 'package:d2_encyclopedia/domain/text_model.dart';
+import 'package:dofus_items/domain/bonuses.dart';
+import 'package:dofus_items/domain/item.dart';
+import 'package:dofus_items/domain/text_model.dart';
 
 class ItemSet {
   final int id;

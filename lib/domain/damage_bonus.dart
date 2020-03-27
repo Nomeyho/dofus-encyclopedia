@@ -1,4 +1,4 @@
-import 'package:d2_encyclopedia/domain/damage_element.dart';
+import 'package:dofus_items/domain/damage_element.dart';
 
 class DamageBonus {
   final DamageElement element;

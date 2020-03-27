@@ -1,7 +1,7 @@
-import 'package:d2_encyclopedia/views/category/category_view.dart';
-import 'package:d2_encyclopedia/views/item/item_view.dart';
-import 'package:d2_encyclopedia/views/item_set/item_set_view.dart';
-import 'package:d2_encyclopedia/views/items/items_view.dart';
+import 'package:dofus_items/views/category/category_view.dart';
+import 'package:dofus_items/views/item/item_view.dart';
+import 'package:dofus_items/views/item_set/item_set_view.dart';
+import 'package:dofus_items/views/items/items_view.dart';
 import 'package:flutter/material.dart';
 
 class Router {

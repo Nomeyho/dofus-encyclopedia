@@ -1,6 +1,6 @@
-import 'package:d2_encyclopedia/domain/characteristic_bonus.dart';
-import 'package:d2_encyclopedia/domain/damage_bonus.dart';
-import 'package:d2_encyclopedia/domain/other_bonus.dart';
+import 'package:dofus_items/domain/characteristic_bonus.dart';
+import 'package:dofus_items/domain/damage_bonus.dart';
+import 'package:dofus_items/domain/other_bonus.dart';
 
 class Bonuses {
   final List<CharacteristicBonus> characteristicBonuses;

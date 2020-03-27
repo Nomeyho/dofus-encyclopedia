@@ -1,9 +1,9 @@
-import 'package:d2_encyclopedia/domain/item.dart';
-import 'package:d2_encyclopedia/domain/item_set.dart';
-import 'package:d2_encyclopedia/domain/item_type.dart';
-import 'package:d2_encyclopedia/repositories/item_repository.dart';
-import 'package:d2_encyclopedia/repositories/set_repository.dart';
-import 'package:d2_encyclopedia/utils/string_utils.dart';
+import 'package:dofus_items/domain/item.dart';
+import 'package:dofus_items/domain/item_set.dart';
+import 'package:dofus_items/domain/item_type.dart';
+import 'package:dofus_items/repositories/item_repository.dart';
+import 'package:dofus_items/repositories/set_repository.dart';
+import 'package:dofus_items/utils/string_utils.dart';
 
 class ItemService {
   final ItemRepository itemRepository;

@@ -1,6 +1,6 @@
-import 'package:d2_encyclopedia/app_theme.dart';
-import 'package:d2_encyclopedia/generated/i18n.dart';
-import 'package:d2_encyclopedia/widgets/section_header.dart';
+import 'package:dofus_items/app_theme.dart';
+import 'package:dofus_items/generated/i18n.dart';
+import 'package:dofus_items/widgets/section_header.dart';
 import 'package:flutter/material.dart' hide Title;
 
 import 'widgets/set_bonus_selector.dart';

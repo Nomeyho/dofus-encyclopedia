@@ -1,4 +1,4 @@
-package io.github.nomeyho.d2_encyclopedia
+package io.github.nomeyho.dofus.items
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

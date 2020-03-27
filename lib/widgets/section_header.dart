@@ -1,4 +1,4 @@
-import 'package:d2_encyclopedia/app_theme.dart';
+import 'package:dofus_items/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class SectionHeader extends StatelessWidget {

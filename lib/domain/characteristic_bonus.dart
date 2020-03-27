@@ -1,4 +1,4 @@
-import 'package:d2_encyclopedia/domain/characteristic.dart';
+import 'package:dofus_items/domain/characteristic.dart';
 
 class CharacteristicBonus {
   final Characteristic characteristic;

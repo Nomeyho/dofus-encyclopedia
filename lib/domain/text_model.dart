@@ -1,4 +1,4 @@
-import 'package:d2_encyclopedia/utils/string_utils.dart';
+import 'package:dofus_items/utils/string_utils.dart';
 import 'package:flutter/widgets.dart';
 
 class TextModel {

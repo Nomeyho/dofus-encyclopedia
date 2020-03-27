@@ -1,5 +1,5 @@
-import 'package:d2_encyclopedia/domain/other_bonus.dart';
-import 'package:d2_encyclopedia/widgets/bonus.dart';
+import 'package:dofus_items/domain/other_bonus.dart';
+import 'package:dofus_items/widgets/bonus.dart';
 import 'package:flutter/material.dart';
 
 class BonusOthers extends StatelessWidget {

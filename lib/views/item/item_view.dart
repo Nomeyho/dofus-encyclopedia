@@ -1,13 +1,13 @@
-import 'package:d2_encyclopedia/app_state.dart';
-import 'package:d2_encyclopedia/app_theme.dart';
-import 'package:d2_encyclopedia/domain/category.dart';
-import 'package:d2_encyclopedia/domain/item.dart';
-import 'package:d2_encyclopedia/domain/item_type.dart';
-import 'package:d2_encyclopedia/generated/i18n.dart';
-import 'package:d2_encyclopedia/widgets/bonus_characteristics.dart';
-import 'package:d2_encyclopedia/widgets/bonus_damages.dart';
-import 'package:d2_encyclopedia/widgets/bonus_others.dart';
-import 'package:d2_encyclopedia/widgets/section_header.dart';
+import 'package:dofus_items/app_state.dart';
+import 'package:dofus_items/app_theme.dart';
+import 'package:dofus_items/domain/category.dart';
+import 'package:dofus_items/domain/item.dart';
+import 'package:dofus_items/domain/item_type.dart';
+import 'package:dofus_items/generated/i18n.dart';
+import 'package:dofus_items/widgets/bonus_characteristics.dart';
+import 'package:dofus_items/widgets/bonus_damages.dart';
+import 'package:dofus_items/widgets/bonus_others.dart';
+import 'package:dofus_items/widgets/section_header.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

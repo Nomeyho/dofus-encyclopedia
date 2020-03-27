@@ -1,4 +1,4 @@
-import 'package:d2_encyclopedia/app.dart';
+import 'package:dofus_items/app.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

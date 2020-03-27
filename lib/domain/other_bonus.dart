@@ -1,4 +1,4 @@
-import 'package:d2_encyclopedia/domain/text_model.dart';
+import 'package:dofus_items/domain/text_model.dart';
 
 class OtherBonus {
   final TextModel description;

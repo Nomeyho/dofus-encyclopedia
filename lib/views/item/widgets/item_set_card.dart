@@ -1,8 +1,8 @@
-import 'package:d2_encyclopedia/app_state.dart';
-import 'package:d2_encyclopedia/app_theme.dart';
-import 'package:d2_encyclopedia/domain/item_set.dart';
-import 'package:d2_encyclopedia/generated/i18n.dart';
-import 'package:d2_encyclopedia/router.dart';
+import 'package:dofus_items/app_state.dart';
+import 'package:dofus_items/app_theme.dart';
+import 'package:dofus_items/domain/item_set.dart';
+import 'package:dofus_items/generated/i18n.dart';
+import 'package:dofus_items/router.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

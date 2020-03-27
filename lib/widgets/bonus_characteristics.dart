@@ -1,8 +1,8 @@
-import 'package:d2_encyclopedia/app_theme.dart';
-import 'package:d2_encyclopedia/domain/characteristic.dart';
-import 'package:d2_encyclopedia/domain/characteristic_bonus.dart';
-import 'package:d2_encyclopedia/generated/i18n.dart';
-import 'package:d2_encyclopedia/widgets/bonus.dart';
+import 'package:dofus_items/app_theme.dart';
+import 'package:dofus_items/domain/characteristic.dart';
+import 'package:dofus_items/domain/characteristic_bonus.dart';
+import 'package:dofus_items/generated/i18n.dart';
+import 'package:dofus_items/widgets/bonus.dart';
 import 'package:flutter/material.dart';
 
 class BonusCharacteristics extends StatelessWidget {

@@ -1,7 +1,7 @@
-import 'package:d2_encyclopedia/domain/category.dart';
-import 'package:d2_encyclopedia/domain/item.dart';
-import 'package:d2_encyclopedia/domain/item_type.dart';
-import 'package:d2_encyclopedia/services/item_service.dart';
+import 'package:dofus_items/domain/category.dart';
+import 'package:dofus_items/domain/item.dart';
+import 'package:dofus_items/domain/item_type.dart';
+import 'package:dofus_items/services/item_service.dart';
 import 'package:flutter/widgets.dart';
 
 class AppState with ChangeNotifier {

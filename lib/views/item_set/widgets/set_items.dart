@@ -1,8 +1,8 @@
-import 'package:d2_encyclopedia/app_state.dart';
-import 'package:d2_encyclopedia/app_theme.dart';
-import 'package:d2_encyclopedia/domain/item.dart';
-import 'package:d2_encyclopedia/router.dart';
-import 'package:d2_encyclopedia/widgets/fade_in.dart';
+import 'package:dofus_items/app_state.dart';
+import 'package:dofus_items/app_theme.dart';
+import 'package:dofus_items/domain/item.dart';
+import 'package:dofus_items/router.dart';
+import 'package:dofus_items/widgets/fade_in.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

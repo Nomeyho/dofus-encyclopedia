@@ -1,5 +1,5 @@
-import 'package:d2_encyclopedia/domain/item_type.dart';
-import 'package:d2_encyclopedia/generated/i18n.dart';
+import 'package:dofus_items/domain/item_type.dart';
+import 'package:dofus_items/generated/i18n.dart';
 import 'package:flutter/widgets.dart';
 
 enum Category {

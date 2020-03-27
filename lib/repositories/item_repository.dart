@@ -1,6 +1,6 @@
 import 'dart:convert' show jsonDecode;
 
-import 'package:d2_encyclopedia/domain/item.dart';
+import 'package:dofus_items/domain/item.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
