@@ -19,7 +19,7 @@ class BonusDamages extends StatelessWidget {
       icon: 'assets/img/damages/$element.png',
       min: bonus.min,
       max: bonus.max,
-      separator: ' ${S.of(context).bonus_of} ',
+      separator: ' ${S.of(context).bonus_to} ',
       suffix: (bonus.steal
               ? ' ${S.of(context).bonus_steal} '
               : ' ${S.of(context).bonus_damage} ') +

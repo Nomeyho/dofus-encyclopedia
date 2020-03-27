@@ -19,7 +19,7 @@ class BonusCharacteristics extends StatelessWidget {
       prefix: '${bonus.operator} ',
       min: bonus.min,
       max: bonus.max,
-      separator: ' ${S.of(context).bonus_of} ',
+      separator: ' ${S.of(context).bonus_to} ',
       suffix: ' ${resolveTranslation(context, bonus.characteristic)}',
       color: bonus.operator == '-' ? AppTheme.error : AppTheme.medium_emphasis,
     );

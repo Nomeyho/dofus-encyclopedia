@@ -8,19 +8,22 @@ flutter pub run flutter_launcher_icons:main
 ```
 
 ## Todo
-- readme
 - screen size UI
-- characteristics display order
-- Codemagic CI/CD
-- Missing characteristic icon (test on shields)
+
+
 - Item list header doesn't zoom
+
+- Codemagic CI/CD
+- readme
 
 ## Data fix
 - ID = 0 for pets
 - MP/AP mess
 - other bonus placeholders
+- characteristics display order
 
 ## Roadmap
+- Use embedded database (sqlite?)
 - Item & set conditions
 - Recipe
 - Intl plural

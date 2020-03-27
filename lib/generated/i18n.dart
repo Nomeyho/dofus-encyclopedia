@@ -26,9 +26,9 @@ class S implements WidgetsLocalizations {
   String get bonus_damage => "damage";
   String get bonus_empty => "No bonus";
   String get bonus_none => "None";
-  String get bonus_of => "of";
   String get bonus_range => "range";
   String get bonus_steal => "steal";
+  String get bonus_to => "to";
   String get bonus_use_per_turn => "use(s) per turn";
   String get category_equipment => "Equipment";
   String get category_loading => "Loading data...";
@@ -261,8 +261,6 @@ class $fr extends S {
   @override
   String get characteristic_spell_damage => "dommage aux sorts";
   @override
-  String get bonus_of => "à";
-  @override
   String get characteristic_critical_hit => "coup critique";
   @override
   String get item_characteristics_title => "Characteristiques";
@@ -342,6 +340,8 @@ class $fr extends S {
   String get item_type_backpack => "Sac à dos";
   @override
   String get item_type_petsmount => "Montilier";
+  @override
+  String get bonus_to => "à";
   @override
   String get characteristic_return_damage => "dommage de retour";
   @override
