@@ -6,7 +6,7 @@ class CategoryTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      backgroundColor: AppTheme.surface,
+      backgroundColor: AppTheme.background,
       expandedHeight: 100,
       centerTitle: true,
       flexibleSpace: FlexibleSpaceBar(

@@ -1,47 +1,47 @@
 import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
+import 'package:dofus_items/config.dart';
 import 'package:dofus_items/router.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:dofus_items/widgets/banner.dart';
+import 'package:flutter/material.dart' hide Banner;
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 import 'package:provider/provider.dart';
 
 import 'generated/i18n.dart';
 
 class App extends StatelessWidget {
-  static const en = Locale('en', '');
-
   @override
   Widget build(BuildContext context) {
-    FlutterStatusbarcolor.setStatusBarWhiteForeground(true);
-    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+    return Column(
+      children: <Widget>[
+        Expanded(
+          child: MaterialApp(
+            title: 'Dofus Items',
+            initialRoute: Router.categories,
+            onGenerateRoute: Router.generateRoute,
+            localizationsDelegates: [
+              GlobalWidgetsLocalizations.delegate,
+              GlobalMaterialLocalizations.delegate,
+              S.delegate,
+            ],
+            supportedLocales: S.delegate.supportedLocales,
+            localeResolutionCallback: (locale, locales) {
+              if (Config.debug) {
+                locale = Locale('fr', '');
+              }
 
-    return MaterialApp(
-        title: 'Dofus Items',
-        initialRoute: Router.categories,
-        onGenerateRoute: Router.generateRoute,
-        localizationsDelegates: [
-          GlobalWidgetsLocalizations.delegate,
-          GlobalMaterialLocalizations.delegate,
-          S.delegate,
-        ],
-        supportedLocales: S.delegate.supportedLocales,
-        localeResolutionCallback: (locale, locales) {
-          // FIXME locale = Locale('fr', 'fr_BE');
-          Provider.of<AppState>(context, listen: false).locale = locale;
-          return S.delegate.resolution(
-            fallback: en,
-            withCountry: false,
-          )(locale, locales);
-        },
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          brightness: Brightness.dark,
-          splashColor: Colors.transparent,
-          primaryColor: AppTheme.primary,
-          accentColor: AppTheme.primary,
-          buttonTheme: ButtonThemeData(minWidth: 10),
-        ));
+              Provider.of<AppState>(context, listen: false).locale = locale;
+              return S.delegate.resolution(
+                fallback: Locale('en', ''),
+                withCountry: false,
+              )(locale, locales);
+            },
+            debugShowCheckedModeBanner: Config.debug,
+            theme: AppTheme.themeData,
+          ),
+        ),
+        Banner(),
+      ],
+    );
   }
 }

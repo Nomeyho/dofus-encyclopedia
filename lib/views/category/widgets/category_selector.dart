@@ -30,14 +30,14 @@ class CategorySelector extends StatelessWidget {
         // fix chip border issue
         shape: const StadiumBorder(
           side: const BorderSide(
-            color: AppTheme.surface,
+            color: AppTheme.background,
             width: 0,
             style: BorderStyle.solid,
           ),
         ),
         selected: selected,
         selectedColor: AppTheme.primary,
-        backgroundColor: AppTheme.surface,
+        backgroundColor: AppTheme.background,
       ),
     );
   }

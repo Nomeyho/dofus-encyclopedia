@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "31984565113",
+    "firebase_url": "https://dofus-items-android.firebaseio.com",
+    "project_id": "dofus-items-android",
+    "storage_bucket": "dofus-items-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31984565113:android:00c7fb4a2c97b948fe0da8",
+        "android_client_info": {
+          "package_name": "io.github.nomeyho.dofus.items"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31984565113-7i5d0hals8ks01srhj5nv067k44gg5q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvgunFCFUBKiZ4BB9Uu26Io1VuTSq8dQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31984565113-7i5d0hals8ks01srhj5nv067k44gg5q3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-3227008925572350~8531124076"
+    }
+  ],
+  "configuration_version": "1"
+}

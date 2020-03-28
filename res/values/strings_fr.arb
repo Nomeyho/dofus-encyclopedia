@@ -92,7 +92,7 @@
   "characteristic_neutral_resistance": "résistance neutre",
   "characteristic_fixed_neutral_resistance": "résistance neutre fixe",
   "characteristic_pushback_resistance": "résistance poussée",
-  "characteristic_pushback_damage": "résistance aux dommages de poussée",
+  "characteristic_pushback_damage": "rés. aux dommages de poussée",
   "characteristic_melee_resistance": "résistance mêlée",
   "characteristic_range_resistance": "résistance à distance",
   "characteristic_critical_resistance": "résistance critique",

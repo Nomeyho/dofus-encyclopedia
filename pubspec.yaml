@@ -1,5 +1,5 @@
 name: dofus_items
-description: Dofus item encyclopedia
+description: Dofus items
 
 version: 1.0.0+1
 
@@ -15,6 +15,7 @@ dependencies:
   flutter_statusbarcolor: ^0.2.3
   flutter_launcher_icons: ^0.7.3
   diacritic: ^0.1.1
+  firebase_admob: ^0.9.3
 
 dev_dependencies:
   flutter_test:

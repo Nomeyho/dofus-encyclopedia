@@ -22,7 +22,7 @@ class CategoryHeader extends StatelessWidget {
         ),
         minHeight: 70,
         maxHeight: 70,
-        background: AppTheme.surface,
+        background: AppTheme.background,
       ),
       pinned: true,
       floating: false,

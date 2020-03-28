@@ -213,7 +213,7 @@ class $fr extends S {
   @override
   String get characteristic_attack_pm => "retrait PM";
   @override
-  String get characteristic_pushback_damage => "résistance aux dommages de poussée";
+  String get characteristic_pushback_damage => "rés. aux dommages de poussée";
   @override
   String get category_weapons => "Armes";
   @override

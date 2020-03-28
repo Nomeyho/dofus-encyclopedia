@@ -9,7 +9,6 @@ flutter pub run flutter_launcher_icons:main
 
 ## Todo
 - screen size UI
-- Admob
 - readme
 
 ## Data fix
