@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:firebase_admob/firebase_admob.dart';
 
 class Config {
-  static final bool debug = false;
+  static final bool debug = true;
 
   static String get appId {
     if (debug) {
@@ -14,6 +14,7 @@ class Config {
       return 'ca-app-pub-3227008925572350~8531124076';
     } else {
       print('App ID not available on platform ${Platform.operatingSystem}');
+      return null;
     }
   }
 
@@ -26,6 +27,7 @@ class Config {
       return 'ca-app-pub-3227008925572350/6455431557';
     } else {
       print('Ad ID not available on platform ${Platform.operatingSystem}');
+      return null;
     }
   }
 }

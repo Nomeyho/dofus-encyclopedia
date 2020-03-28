@@ -3,7 +3,6 @@ import 'package:dofus_items/domain/item_set.dart';
 import 'package:dofus_items/domain/item_type.dart';
 import 'package:dofus_items/repositories/item_repository.dart';
 import 'package:dofus_items/repositories/set_repository.dart';
-import 'package:dofus_items/utils/string_utils.dart';
 
 class ItemService {
   final ItemRepository itemRepository;
@@ -36,7 +35,7 @@ class ItemService {
       _count[item.type] = _count[item.type] + 1;
       _types[item.type].add(item);
 
-      if (item.setId != null && item.setId > 0) {
+      if (item.setId != null && item.setId != -1) {
         final set = _sets[item.setId];
         item.set = set;
         set.items.add(item);
@@ -50,10 +49,9 @@ class ItemService {
 
   List<Item> find(
       String lang, ItemType type, String name, int minLevel, int maxLevel) {
-    final pattern = name.normalize();
     return _types[type]
         .where((item) => item.level >= minLevel && item.level <= maxLevel)
-        .where((item) => item.name.match(lang, pattern))
+        .where((item) => item.name.match(lang, name))
         .toList(growable: false);
   }
 

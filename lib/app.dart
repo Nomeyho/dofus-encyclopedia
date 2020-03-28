@@ -12,33 +12,31 @@ import 'generated/i18n.dart';
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Stack(
       children: <Widget>[
-        Expanded(
-          child: MaterialApp(
-            title: 'Dofus Items',
-            initialRoute: Router.categories,
-            onGenerateRoute: Router.generateRoute,
-            localizationsDelegates: [
-              GlobalWidgetsLocalizations.delegate,
-              GlobalMaterialLocalizations.delegate,
-              S.delegate,
-            ],
-            supportedLocales: S.delegate.supportedLocales,
-            localeResolutionCallback: (locale, locales) {
-              if (Config.debug) {
-                locale = Locale('fr', '');
-              }
+        MaterialApp(
+          title: 'Dofus Items',
+          initialRoute: Router.categories,
+          onGenerateRoute: Router.generateRoute,
+          localizationsDelegates: [
+            GlobalWidgetsLocalizations.delegate,
+            GlobalMaterialLocalizations.delegate,
+            S.delegate,
+          ],
+          supportedLocales: S.delegate.supportedLocales,
+          localeResolutionCallback: (locale, locales) {
+            if (Config.debug) {
+              locale = Locale('fr', '');
+            }
 
-              Provider.of<AppState>(context, listen: false).locale = locale;
-              return S.delegate.resolution(
-                fallback: Locale('en', ''),
-                withCountry: false,
-              )(locale, locales);
-            },
-            debugShowCheckedModeBanner: Config.debug,
-            theme: AppTheme.themeData,
-          ),
+            Provider.of<AppState>(context, listen: false).locale = locale;
+            return S.delegate.resolution(
+              fallback: Locale('en', ''),
+              withCountry: false,
+            )(locale, locales);
+          },
+          debugShowCheckedModeBanner: Config.debug,
+          theme: AppTheme.themeData,
         ),
         Banner(),
       ],

@@ -27,7 +27,7 @@ class Item {
 
   Item.fromJson(final Map<String, dynamic> json)
       : id = json['id'],
-        name = TextModel.fromJson(json['name'], searchable: true),
+        name = TextModel.fromJson(json['name']),
         description = json['description'] == null
             ? TextModel.empty()
             : TextModel.fromJson(json['description']),

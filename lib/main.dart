@@ -1,6 +1,5 @@
 import 'package:dofus_items/app.dart';
 import 'package:dofus_items/app_state.dart';
-import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/repositories/item_repository.dart';
 import 'package:dofus_items/repositories/set_repository.dart';
 import 'package:dofus_items/services/item_service.dart';

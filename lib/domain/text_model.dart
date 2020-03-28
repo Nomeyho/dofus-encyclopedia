@@ -1,25 +1,19 @@
-import 'package:dofus_items/utils/string_utils.dart';
 import 'package:flutter/widgets.dart';
 
 class TextModel {
   final String fr;
   final String en;
-  String _fr;
-  String _en;
 
-  TextModel.fromJson(final Map<String, dynamic> json, {bool searchable = false})
+  TextModel.fromJson(final Map<String, dynamic> json)
       : fr = json['fr'],
-        en = json['en'] {
-    _fr = fr.normalize();
-    _en = en.normalize();
-  }
+        en = json['en'];
 
   TextModel.empty()
       : fr = '',
         en = '';
 
   bool match(String lang, String pattern) {
-    final text = lang == 'fr' ? _fr : _en;
+    final text = lang == 'fr' ? fr : en;
     return text.contains(pattern);
   }
 

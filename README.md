@@ -10,15 +10,9 @@ flutter pub run flutter_launcher_icons:main
 ## Todo
 - screen size UI
 - readme
-
-## Data fix
-- ID = 0 for pets
-- MP/AP mess
-- other bonus placeholders
-- characteristics display order
+- Use embedded database (sqlite?)
 
 ## Roadmap
-- Use embedded database (sqlite?)
 - Add item/set conditions
 - Add item recipe
 - Support i18n plural

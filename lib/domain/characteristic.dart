@@ -21,10 +21,10 @@ enum Characteristic {
   Wisdom,
   Dodge,
   Lock,
-  AttackPa,
-  AttackPm,
-  DodgePa,
-  DodgePm,
+  AttackAp,
+  AttackMp,
+  DodgeAp,
+  DodgeMp,
   //
   EarthResistance,
   FixedEarthResistance,
@@ -108,13 +108,13 @@ String resolveTranslation(BuildContext context, Characteristic characteristic) {
       return S.of(context).characteristic_dodge;
     case Characteristic.Lock:
       return S.of(context).characteristic_lock;
-    case Characteristic.AttackPa:
+    case Characteristic.AttackAp:
       return S.of(context).characteristic_attack_pa;
-    case Characteristic.AttackPm:
+    case Characteristic.AttackMp:
       return S.of(context).characteristic_attack_pm;
-    case Characteristic.DodgePa:
+    case Characteristic.DodgeAp:
       return S.of(context).characteristic_dodge_pa;
-    case Characteristic.DodgePm:
+    case Characteristic.DodgeMp:
       return S.of(context).characteristic_dodge_pm;
     case Characteristic.EarthResistance:
       return S.of(context).characteristic_earth_resistance;
