@@ -1,6 +1,6 @@
 {
   "category_title": "Catégories",
-  "category_equipment": "Equipment",
+  "category_equipment": "Equipement",
   "category_weapons": "Armes",
   "category_pets": "Familiers",
   "category_loading": "Chargement des données...",
@@ -46,7 +46,7 @@
   "set_items": "items",
 
   "items_search": "Recherche",
-  "items_etheral": "Ethérée",
+  "items_etheral": "Arme éthérée",
   "items_lvl": "lvl. ",
 
   "bonus_to": "à",

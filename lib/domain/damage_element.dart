@@ -15,7 +15,12 @@ extension DamageElementExtension on DamageElement {
   }
 }
 
+Map<String, DamageElement> damageElementMap = Map.fromIterable(
+  DamageElement.values,
+  key: (d) => (d as DamageElement).name,
+  value: (d) => d,
+);
+
 DamageElement getElementFromString(String string) {
-  return DamageElement.values
-      .firstWhere((element) => element.name == string, orElse: () => null);
+  return damageElementMap[string];
 }

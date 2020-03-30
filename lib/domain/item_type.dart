@@ -38,12 +38,14 @@ extension ItemTypeExtension on ItemType {
   }
 }
 
+Map<String, ItemType> itemTypeMap = Map.fromIterable(
+  ItemType.values,
+  key: (t) => (t as ItemType).name.toLowerCase(), // TODO fix data (DB key)?
+  value: (t) => t,
+);
+
 ItemType getItemTypeFromString(String string) {
-  return ItemType.values.firstWhere((type) => type.name.toLowerCase() == string,
-      orElse: () {
-    print(string);
-    return null;
-  });
+  return itemTypeMap[string];
 }
 
 String resolveTranslation(BuildContext context, ItemType itemType) {

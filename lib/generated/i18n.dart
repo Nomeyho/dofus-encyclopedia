@@ -233,7 +233,7 @@ class $fr extends S {
   @override
   String get characteristic_earth_resistance => "résistance terre";
   @override
-  String get items_etheral => "Ethérée";
+  String get items_etheral => "Arme éthérée";
   @override
   String get characteristic_water_damage => "dommage eau";
   @override
@@ -257,7 +257,7 @@ class $fr extends S {
   @override
   String get characteristic_pods => "pods";
   @override
-  String get category_equipment => "Equipment";
+  String get category_equipment => "Equipement";
   @override
   String get characteristic_spell_damage => "dommage aux sorts";
   @override

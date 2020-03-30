@@ -64,10 +64,14 @@ extension CharacteristicExtension on Characteristic {
   }
 }
 
+Map<String, Characteristic> characteristicMap = Map.fromIterable(
+  Characteristic.values,
+  key: (c) => (c as Characteristic).name,
+  value: (c) => c,
+);
+
 Characteristic getCharacteristicFromString(String string) {
-  return Characteristic.values.firstWhere(
-      (characteristic) => characteristic.name == string,
-      orElse: () => null);
+  return characteristicMap[string];
 }
 
 String resolveTranslation(BuildContext context, Characteristic characteristic) {
