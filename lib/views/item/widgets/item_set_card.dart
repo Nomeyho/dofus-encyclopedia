@@ -1,5 +1,6 @@
 import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
+import 'package:dofus_items/domain/item.dart';
 import 'package:dofus_items/domain/item_set.dart';
 import 'package:dofus_items/generated/i18n.dart';
 import 'package:dofus_items/router.dart';
@@ -19,11 +20,11 @@ class ItemSetCard extends StatelessWidget {
     );
   }
 
-  Widget _buildSubtitle(BuildContext context, ItemSet set) {
+  Widget _buildSubtitle(BuildContext context, List<Item> items) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
       child: Text(
-        '${set.items.length} ${S.of(context).item_items}',
+        '${items.length} ${S.of(context).item_items}',
         style: const TextStyle(
           fontFamily: 'Lato',
           fontSize: 14,
@@ -37,7 +38,8 @@ class ItemSetCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
-    final set = state.selectedItem.set;
+    final set = state.selectedSet;
+    final List<Item> items = state.selectedSetItems;
 
     return Card(
       elevation: 0,
@@ -60,7 +62,7 @@ class ItemSetCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     _buildTitle(context, set),
-                    _buildSubtitle(context, set),
+                    _buildSubtitle(context, items),
                   ],
                 ),
               ),

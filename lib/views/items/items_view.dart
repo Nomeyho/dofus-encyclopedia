@@ -1,7 +1,5 @@
-import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 import 'widgets/item_list.dart';
 import 'widgets/items_header.dart';
@@ -10,8 +8,6 @@ import 'widgets/items_title.dart';
 class ItemsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Provider.of<AppState>(context, listen: false).clearFilters();
-
     return Scaffold(
       body: SafeArea(
         child: CustomScrollView(

@@ -22,7 +22,7 @@ class SetBonusSelector extends StatelessWidget {
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
     final bonusIndex = state.selectedBonusIndex;
-    final totalNumberItems = state.selectedItem.set.items.length;
+    final totalNumberItems = state.selectedSetItems.length;
 
     return Row(
       children: <Widget>[

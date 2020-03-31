@@ -1,9 +1,8 @@
-import 'package:dofus_items/domain/text_model.dart';
 import 'package:dofus_items/domain/bonuses.dart';
-import 'package:dofus_items/domain/item_set.dart';
 import 'package:dofus_items/domain/item_type.dart';
+import 'package:dofus_items/domain/text_model.dart';
 
-class Item {
+class Item implements Comparable<Item> {
   final int id;
   final TextModel name;
   final TextModel description;
@@ -22,30 +21,26 @@ class Item {
   final int utilizationPerTurn;
   final bool etheral;
 
-  // computed fields
-  ItemSet set;
-
-  Item.fromJson(final Map<String, dynamic> json)
-      : id = json['id'],
-        name = TextModel.fromJson(json['name']),
-        description = json['description'] == null
-            ? TextModel.empty()
-            : TextModel.fromJson(json['description']),
-        type = getItemTypeFromString(json['type']),
-        level = json['level'],
-        iconId = json['iconId'],
-        setId = json['setId'],
-        bonuses = Bonuses.fromJson(json['bonuses']),
-        minRange = json['minRange'],
-        range = json['range'],
-        apCost = json['apCost'],
-        criticalHitBonus = json['criticalHitBonus'],
-        criticalHitProbability = json['criticalHitProbability'],
-        utilizationPerTurn = json['utilizationPerTurn'],
-        etheral = json['etheral'];
+  const Item(
+    this.id,
+    this.name,
+    this.description,
+    this.type,
+    this.level,
+    this.iconId,
+    this.setId,
+    this.bonuses,
+    this.minRange,
+    this.range,
+    this.apCost,
+    this.criticalHitBonus,
+    this.criticalHitProbability,
+    this.utilizationPerTurn,
+    this.etheral,
+  );
 
   @override
-  String toString() {
-    return 'Item{id: $id, name: $name, description: $description, type: $type, level: $level, iconId: $iconId, setId: $setId, bonuses: $bonuses, minRange: $minRange, range: $range, apCost: $apCost, criticalHitBonus: $criticalHitBonus, criticalHitProbability: $criticalHitProbability, utilizationPerTurn: $utilizationPerTurn, set: $set}';
+  int compareTo(other) {
+    return -this.level.compareTo(other.level);
   }
 }

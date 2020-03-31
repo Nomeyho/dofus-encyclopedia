@@ -21,14 +21,11 @@ class ItemView extends StatelessWidget {
     return resolveCategory(itemType) == Category.Weapons;
   }
 
-  bool _showSet(Item item) {
-    return item.set != null;
-  }
-
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
     final item = state.selectedItem;
+    final set = state.selectedSet;
 
     final characteristics = item.bonuses.characteristicBonuses;
     final others = item.bonuses.otherBonuses;
@@ -51,7 +48,7 @@ class ItemView extends StatelessWidget {
                 SectionHeader(title: S.of(context).item_characteristics_title),
                 BonusCharacteristics(characteristics: characteristics),
                 BonusOthers(others: others),
-                if (_showSet(item)) ...[
+                if (set != null) ...[
                   SectionHeader(title: S.of(context).item_set_title),
                   ItemSetCard(),
                 ]

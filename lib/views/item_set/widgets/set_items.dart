@@ -38,7 +38,7 @@ class SetItems extends StatelessWidget {
 
     return SliverGrid.count(
       crossAxisCount: 3,
-      children: state.selectedItem.set.items
+      children: state.selectedSetItems
           .map((item) => _buildItem(item, context))
           .toList(growable: false),
     );

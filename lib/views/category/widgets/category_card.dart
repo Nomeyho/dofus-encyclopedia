@@ -26,7 +26,7 @@ class CategoryCard extends StatelessWidget {
         ),
         child: InkWell(
           onTap: () {
-            state.type = itemType;
+            state.searchItems(itemType, '');
             Navigator.of(context).pushNamed(Router.items);
           },
           child: Padding(

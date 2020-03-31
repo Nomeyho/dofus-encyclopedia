@@ -4,13 +4,10 @@ class TextModel {
   final String fr;
   final String en;
 
-  TextModel.fromJson(final Map<String, dynamic> json)
-      : fr = json['fr'],
-        en = json['en'];
-
-  TextModel.empty()
-      : fr = '',
-        en = '';
+  const TextModel(
+    this.fr,
+    this.en,
+  );
 
   bool match(String lang, String pattern) {
     final text = lang == 'fr' ? fr : en;
@@ -20,10 +17,5 @@ class TextModel {
   String translate(BuildContext context) {
     final lang = Localizations.localeOf(context).languageCode;
     return lang == 'fr' ? fr : en;
-  }
-
-  @override
-  String toString() {
-    return 'Text{fr: $fr, en: $en}';
   }
 }

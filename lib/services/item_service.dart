@@ -1,65 +1,50 @@
+import 'package:dofus_items/data/item_data.dart';
+import 'package:dofus_items/data/set_data.dart';
 import 'package:dofus_items/domain/item.dart';
 import 'package:dofus_items/domain/item_set.dart';
 import 'package:dofus_items/domain/item_type.dart';
-import 'package:dofus_items/repositories/item_repository.dart';
-import 'package:dofus_items/repositories/set_repository.dart';
 
 class ItemService {
-  final ItemRepository itemRepository;
-  final SetRepository setRepository;
+  final Map<int, ItemSet> _sets = {};
+  final Map<int, Item> _items = {};
+  final Map<ItemType, List<Item>> _itemsPerTypes = {};
+  final Map<int, List<Item>> _itemsPerSet = {};
 
-  Map<int, ItemSet> _sets = {};
-  Map<int, Item> _items = {};
-  Map<ItemType, List<Item>> _types = {};
-  Map<ItemType, int> _count = {};
-
-  ItemService(this.itemRepository, this.setRepository);
-
-  Future<void> load() async {
-    final List<ItemSet> sets = await setRepository.load();
-    final List<Item> items = await itemRepository.load();
-
+  ItemService() {
     // sets
     for (ItemSet set in sets) {
       _sets[set.id] = set;
     }
 
     // items
-    for (ItemType itemType in ItemType.values) {
-      _count[itemType] = 0;
-      _types[itemType] = List();
-    }
-
     for (Item item in items) {
       _items[item.id] = item;
-      _count[item.type] = _count[item.type] + 1;
-      _types[item.type].add(item);
-
-      if (item.setId != null && item.setId != -1) {
-        final set = _sets[item.setId];
-        item.set = set;
-        set.items.add(item);
-      }
+      _itemsPerTypes.putIfAbsent(item.type, () => []).add(item);
+      _itemsPerSet.putIfAbsent(item.setId, () => []).add(item);
     }
 
-    for (ItemType itemType in ItemType.values) {
-      _types[itemType].sort((a, b) => b.level - a.level);
-    }
+    _itemsPerTypes.values.forEach((l) => l.sort());
   }
 
-  List<Item> find(
-      String lang, ItemType type, String name, int minLevel, int maxLevel) {
-    return _types[type]
-        .where((item) => item.level >= minLevel && item.level <= maxLevel)
+  List<Item> findItems(String lang, ItemType type, String name) {
+    return _itemsPerTypes[type]
         .where((item) => item.name.match(lang, name))
         .toList(growable: false);
   }
 
-  Item get(String id) {
+  Item getItem(int id) {
     return _items[id];
   }
 
-  int count(ItemType type) {
-    return _count[type];
+  int countItems(ItemType type) {
+    return _itemsPerTypes[type].length;
+  }
+
+  ItemSet getSet(int id) {
+    return _sets[id];
+  }
+
+  List<Item> findSetItems(int setId) {
+    return _itemsPerSet[setId];
   }
 }

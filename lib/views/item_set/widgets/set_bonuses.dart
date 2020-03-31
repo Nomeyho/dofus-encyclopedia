@@ -11,7 +11,7 @@ class SetBonuses extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
-    final bonuses = state.selectedItem.set.bonuses[state.selectedBonusIndex];
+    final bonuses = state.selectedSet.bonuses[state.selectedBonusIndex];
 
     return FadeIn(
       duration: Duration(milliseconds: 700),

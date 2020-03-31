@@ -1,5 +1,6 @@
 import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
+import 'package:dofus_items/data/set_data.dart';
 import 'package:dofus_items/domain/item.dart';
 import 'package:dofus_items/generated/i18n.dart';
 import 'package:dofus_items/router.dart';
@@ -36,10 +37,12 @@ class ItemCard extends StatelessWidget {
   }
 
   String _getSubtitle(BuildContext context) {
+    // TODO
+
     if (item.etheral == true)
       return S.of(context).items_etheral;
-    else if (item.set != null)
-      return item.set.name.translate(context);
+    else if (item.setId != -1)
+      return sets.where((s) => s.id == item.setId).first.name.translate(context);
     else
       return '';
   }

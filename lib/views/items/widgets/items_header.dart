@@ -23,8 +23,8 @@ class ItemsHeader extends StatelessWidget {
             ),
           ),
           child: TextField(
-            onChanged: (value) {
-              state.name = value;
+            onChanged: (name) {
+              state.searchItems(state.type, name);
             },
             textInputAction: TextInputAction.search,
             cursorColor: AppTheme.primary,

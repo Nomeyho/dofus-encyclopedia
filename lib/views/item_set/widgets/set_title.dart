@@ -8,7 +8,7 @@ class SetTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
-    final set = state.selectedItem.set;
+    final set = state.selectedSet;
 
     return SliverAppBar(
       forceElevated: true,
