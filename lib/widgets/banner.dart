@@ -5,6 +5,10 @@ import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
 
 class Banner extends StatefulWidget {
+  static Widget bottomPadding = const SliverPadding(
+    padding: const EdgeInsets.only(bottom: 50),
+  );
+
   @override
   _BannerState createState() => _BannerState();
 }

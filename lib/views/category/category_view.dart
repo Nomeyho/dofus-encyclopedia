@@ -1,5 +1,6 @@
 import 'package:dofus_items/app_theme.dart';
-import 'package:flutter/material.dart' hide Title;
+import 'package:dofus_items/widgets/banner.dart';
+import 'package:flutter/material.dart' hide Banner;
 
 import 'widgets/category_header.dart';
 import 'widgets/category_list.dart';
@@ -15,6 +16,7 @@ class CategoryView extends StatelessWidget {
             CategoryTitle(),
             CategoryHeader(),
             CategoryList(),
+            Banner.bottomPadding,
           ],
         ),
       ),

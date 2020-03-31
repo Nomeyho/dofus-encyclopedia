@@ -16,9 +16,12 @@ class ItemCard extends StatelessWidget {
   Widget _buildIcon() {
     return Padding(
       padding: const EdgeInsets.only(right: 8),
-      child: Image.asset(
-        'assets/img/items/${item.iconId}.png',
-        height: 60,
+      child: Hero(
+        tag: item.iconId,
+        child: Image.asset(
+          'assets/img/items/${item.iconId}.png',
+          height: 60,
+        ),
       ),
     );
   }

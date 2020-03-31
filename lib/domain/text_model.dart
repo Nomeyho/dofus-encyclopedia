@@ -11,7 +11,7 @@ class TextModel {
 
   bool match(String lang, String pattern) {
     final text = lang == 'fr' ? fr : en;
-    return text.contains(pattern);
+    return text.toLowerCase().contains(pattern.toLowerCase());
   }
 
   String translate(BuildContext context) {
