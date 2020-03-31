@@ -8,7 +8,7 @@ import 'package:dofus_items/domain/characteristic.dart';
 const sets = [
   const ItemSet(
       1,
-      TextModel(
+      Translation(
         "Panoplie du Bouftou",
         "Gobball Set",
       ),
@@ -85,7 +85,7 @@ const sets = [
       ]),
   const ItemSet(
       2,
-      TextModel(
+      Translation(
         "Panoplie du Kwak de Flammes",
         "Fire Kwak Set",
       ),
@@ -177,7 +177,7 @@ const sets = [
       ]),
   const ItemSet(
       3,
-      TextModel(
+      Translation(
         "Panoplie de l'Abraknyde",
         "Treechnid Set",
       ),
@@ -258,7 +258,7 @@ const sets = [
       ]),
   const ItemSet(
       4,
-      TextModel(
+      Translation(
         "Panoplie du Bouftou Royal",
         "Royal Gobball's Set",
       ),
@@ -324,7 +324,7 @@ const sets = [
       ]),
   const ItemSet(
       5,
-      TextModel(
+      Translation(
         "Panoplie du Jeune Aventurier",
         "Young Adventurer Set",
       ),
@@ -403,7 +403,7 @@ const sets = [
       ]),
   const ItemSet(
       6,
-      TextModel(
+      Translation(
         "Panoplie Gelax",
         "Jellix Set",
       ),
@@ -451,7 +451,7 @@ const sets = [
       ]),
   const ItemSet(
       7,
-      TextModel(
+      Translation(
         "Panoplie de Toady",
         "Toady Set",
       ),
@@ -474,7 +474,7 @@ const sets = [
       ]),
   const ItemSet(
       8,
-      TextModel(
+      Translation(
         "Panoplie du Corbac",
         "Crow Set",
       ),
@@ -521,7 +521,7 @@ const sets = [
       ]),
   const ItemSet(
       9,
-      TextModel(
+      Translation(
         "Panoplie Tortue",
         "Turtle Set",
       ),
@@ -562,7 +562,7 @@ const sets = [
       ]),
   const ItemSet(
       10,
-      TextModel(
+      Translation(
         "Panoplie Végétatif",
         "Vegetative Set",
       ),
@@ -589,7 +589,7 @@ const sets = [
       ]),
   const ItemSet(
       11,
-      TextModel(
+      Translation(
         "Panoplie de la Cawotte",
         "Cawwot Set",
       ),
@@ -622,7 +622,7 @@ const sets = [
       ]),
   const ItemSet(
       12,
-      TextModel(
+      Translation(
         "Panoplie de l'Homme Ours",
         "Bearman Set",
       ),
@@ -726,7 +726,7 @@ const sets = [
       ]),
   const ItemSet(
       13,
-      TextModel(
+      Translation(
         "Panoplie du Kwak de Glace",
         "Ice Kwak Set",
       ),
@@ -818,7 +818,7 @@ const sets = [
       ]),
   const ItemSet(
       14,
-      TextModel(
+      Translation(
         "Panoplie du Kwak de Terre",
         "Earth Kwak Set",
       ),
@@ -910,7 +910,7 @@ const sets = [
       ]),
   const ItemSet(
       15,
-      TextModel(
+      Translation(
         "Panoplie du Kwak du Vent",
         "Wind Kwak Set",
       ),
@@ -1001,7 +1001,7 @@ const sets = [
       ]),
   const ItemSet(
       16,
-      TextModel(
+      Translation(
         "Panoplie Fourbasse",
         "Ambusher Set",
       ),
@@ -1040,7 +1040,7 @@ const sets = [
       ]),
   const ItemSet(
       17,
-      TextModel(
+      Translation(
         "Panoplie de Farle Ingalsse",
         "Farle Ingalsse Set",
       ),
@@ -1117,7 +1117,7 @@ const sets = [
       ]),
   const ItemSet(
       18,
-      TextModel(
+      Translation(
         "Panoplie Champêtre",
         "Country Set",
       ),
@@ -1186,7 +1186,7 @@ const sets = [
       ]),
   const ItemSet(
       19,
-      TextModel(
+      Translation(
         "Panoplie du Chef Bwork",
         "Bwork Chief Set",
       ),
@@ -1263,7 +1263,7 @@ const sets = [
       ]),
   const ItemSet(
       20,
-      TextModel(
+      Translation(
         "Panoplie du Chef Crocodaille",
         "Crocodyl Chief Set",
       ),
@@ -1343,7 +1343,7 @@ const sets = [
       ]),
   const ItemSet(
       21,
-      TextModel(
+      Translation(
         "Panoplie du Sanglier",
         "Boar Set",
       ),
@@ -1374,7 +1374,7 @@ const sets = [
       ]),
   const ItemSet(
       22,
-      TextModel(
+      Translation(
         "Panoplie Arakne",
         "Arachnee Set",
       ),
@@ -1411,7 +1411,7 @@ const sets = [
       ]),
   const ItemSet(
       23,
-      TextModel(
+      Translation(
         "Panoplie Moskito",
         "Moskito Set",
       ),
@@ -1449,7 +1449,7 @@ const sets = [
       ]),
   const ItemSet(
       24,
-      TextModel(
+      Translation(
         "Panoplie Champ Champ",
         "Mush Mush Set",
       ),
@@ -1487,7 +1487,7 @@ const sets = [
       ]),
   const ItemSet(
       25,
-      TextModel(
+      Translation(
         "Panoplie du Bandit",
         "Bandit Set",
       ),
@@ -1539,7 +1539,7 @@ const sets = [
       ]),
   const ItemSet(
       26,
-      TextModel(
+      Translation(
         "Panoplie du Craqueleur",
         "Crackler Set",
       ),
@@ -1632,7 +1632,7 @@ const sets = [
       ]),
   const ItemSet(
       27,
-      TextModel(
+      Translation(
         "Panoplie du Scarafeuille Vert",
         "Green Scaraleaf Set",
       ),
@@ -1674,7 +1674,7 @@ const sets = [
       ]),
   const ItemSet(
       28,
-      TextModel(
+      Translation(
         "Panoplie du Scarafeuille Rouge",
         "Red Scaraleaf Set",
       ),
@@ -1716,7 +1716,7 @@ const sets = [
       ]),
   const ItemSet(
       29,
-      TextModel(
+      Translation(
         "Panoplie du Scarafeuille Blanc",
         "White Scaraleaf Set",
       ),
@@ -1756,7 +1756,7 @@ const sets = [
       ]),
   const ItemSet(
       30,
-      TextModel(
+      Translation(
         "Panoplie du Scarafeuille Bleu",
         "Blue Scaraleaf Set",
       ),
@@ -1798,7 +1798,7 @@ const sets = [
       ]),
   const ItemSet(
       31,
-      TextModel(
+      Translation(
         "Panoplie du Prespic",
         "Prespic Set",
       ),
@@ -1839,7 +1839,7 @@ const sets = [
       ]),
   const ItemSet(
       32,
-      TextModel(
+      Translation(
         "Panoplie du Mulou",
         "Boowolf Set",
       ),
@@ -1912,7 +1912,7 @@ const sets = [
       ]),
   const ItemSet(
       33,
-      TextModel(
+      Translation(
         "Panoplie Larvesque",
         "Larval Set",
       ),
@@ -1966,7 +1966,7 @@ const sets = [
       ]),
   const ItemSet(
       34,
-      TextModel(
+      Translation(
         "Panoplie Akwadala",
         "Akwadala Set",
       ),
@@ -2036,7 +2036,7 @@ const sets = [
       ]),
   const ItemSet(
       35,
-      TextModel(
+      Translation(
         "Panoplie Aerdala",
         "Aerdala Set",
       ),
@@ -2116,7 +2116,7 @@ const sets = [
       ]),
   const ItemSet(
       36,
-      TextModel(
+      Translation(
         "Panoplie Terrdala",
         "Terrdala Set",
       ),
@@ -2190,7 +2190,7 @@ const sets = [
       ]),
   const ItemSet(
       37,
-      TextModel(
+      Translation(
         "Panoplie Feudala",
         "Feudala Set",
       ),
@@ -2266,7 +2266,7 @@ const sets = [
       ]),
   const ItemSet(
       38,
-      TextModel(
+      Translation(
         "Panoplie O'Boul",
         "O'Ball Set",
       ),
@@ -2310,7 +2310,7 @@ const sets = [
       ]),
   const ItemSet(
       39,
-      TextModel(
+      Translation(
         "Panoplie d'Elya Wood",
         "Elya Wood Set",
       ),
@@ -2351,7 +2351,7 @@ const sets = [
       ]),
   const ItemSet(
       40,
-      TextModel(
+      Translation(
         "Panoplie du Wa",
         "Wa Set",
       ),
@@ -2398,7 +2398,7 @@ const sets = [
       ]),
   const ItemSet(
       41,
-      TextModel(
+      Translation(
         "Panoplie du Kitsou",
         "Kitsou Set",
       ),
@@ -2434,7 +2434,7 @@ const sets = [
       ]),
   const ItemSet(
       42,
-      TextModel(
+      Translation(
         "Panoplie Dindo",
         "Turko Set",
       ),
@@ -2475,7 +2475,7 @@ const sets = [
       ]),
   const ItemSet(
       43,
-      TextModel(
+      Translation(
         "Panoplie du Boufcoul",
         "Gobkool Set",
       ),
@@ -2544,7 +2544,7 @@ const sets = [
       ]),
   const ItemSet(
       44,
-      TextModel(
+      Translation(
         "Panoplie du Koulosse",
         "Koolich Set",
       ),
@@ -2585,7 +2585,7 @@ const sets = [
       ]),
   const ItemSet(
       46,
-      TextModel(
+      Translation(
         "Panoplie du Koalak",
         "Koalak Set",
       ),
@@ -2668,7 +2668,7 @@ const sets = [
       ]),
   const ItemSet(
       47,
-      TextModel(
+      Translation(
         "Panoplie du Paysan",
         "Farmer Set",
       ),
@@ -2737,7 +2737,7 @@ const sets = [
       ]),
   const ItemSet(
       49,
-      TextModel(
+      Translation(
         "Panoplie du Scarafeuille Noir",
         "Black Scaraleaf Set",
       ),
@@ -2781,7 +2781,7 @@ const sets = [
       ]),
   const ItemSet(
       50,
-      TextModel(
+      Translation(
         "Panoplie du Tofu",
         "Tofu Set",
       ),
@@ -2855,7 +2855,7 @@ const sets = [
       ]),
   const ItemSet(
       51,
-      TextModel(
+      Translation(
         "Panoplie Scarabosse Doré",
         "Golden Scarabugly Set",
       ),
@@ -2926,7 +2926,7 @@ const sets = [
       ]),
   const ItemSet(
       52,
-      TextModel(
+      Translation(
         "Panoplie du Craqueleur Légendaire",
         "Legendary Crackler Set",
       ),
@@ -3001,7 +3001,7 @@ const sets = [
       ]),
   const ItemSet(
       53,
-      TextModel(
+      Translation(
         "Panoplie de Shika Ingalsse",
         "Shika Ingalsse Set",
       ),
@@ -3096,7 +3096,7 @@ const sets = [
       ]),
   const ItemSet(
       54,
-      TextModel(
+      Translation(
         "Panoplie du Minotoror",
         "Minotoror Set",
       ),
@@ -3158,7 +3158,7 @@ const sets = [
       ]),
   const ItemSet(
       55,
-      TextModel(
+      Translation(
         "Panoplie du Meulou",
         "Moowolf Set",
       ),
@@ -3215,7 +3215,7 @@ const sets = [
       ]),
   const ItemSet(
       56,
-      TextModel(
+      Translation(
         "Panoplie du Dragoeuf Vagabond",
         "Vagabond Dreggon Set",
       ),
@@ -3252,7 +3252,7 @@ const sets = [
       ]),
   const ItemSet(
       57,
-      TextModel(
+      Translation(
         "Panoplie du Minotot",
         "Minotot Set",
       ),
@@ -3324,7 +3324,7 @@ const sets = [
       ]),
   const ItemSet(
       58,
-      TextModel(
+      Translation(
         "Panoplie du Dragon Cochon",
         "Dragon Pig Set",
       ),
@@ -3395,7 +3395,7 @@ const sets = [
       ]),
   const ItemSet(
       60,
-      TextModel(
+      Translation(
         "Panoplie du Piou Rouge",
         "Red Piwi Set",
       ),
@@ -3441,7 +3441,7 @@ const sets = [
       ]),
   const ItemSet(
       61,
-      TextModel(
+      Translation(
         "Panoplie du Piou Bleu",
         "Blue Piwi Set",
       ),
@@ -3487,7 +3487,7 @@ const sets = [
       ]),
   const ItemSet(
       62,
-      TextModel(
+      Translation(
         "Panoplie du Piou Violet",
         "Purple Piwi Set",
       ),
@@ -3533,7 +3533,7 @@ const sets = [
       ]),
   const ItemSet(
       63,
-      TextModel(
+      Translation(
         "Panoplie en Mousse",
         "Sponge Set",
       ),
@@ -3610,7 +3610,7 @@ const sets = [
       ]),
   const ItemSet(
       64,
-      TextModel(
+      Translation(
         "Panoplie Cérémoniale",
         "Ceremonial Set",
       ),
@@ -3668,7 +3668,7 @@ const sets = [
       ]),
   const ItemSet(
       65,
-      TextModel(
+      Translation(
         "Panoplie Ancestrale",
         "Ancestral Set",
       ),
@@ -3740,7 +3740,7 @@ const sets = [
       ]),
   const ItemSet(
       66,
-      TextModel(
+      Translation(
         "Panoplie du Chêne Mou",
         "Soft Oak Set",
       ),
@@ -3801,7 +3801,7 @@ const sets = [
       ]),
   const ItemSet(
       67,
-      TextModel(
+      Translation(
         "Panoplie du Rat Blanc",
         "White Rat Set",
       ),
@@ -3875,7 +3875,7 @@ const sets = [
       ]),
   const ItemSet(
       68,
-      TextModel(
+      Translation(
         "Panoplie du Rat Noir",
         "Black Rat Set",
       ),
@@ -3957,7 +3957,7 @@ const sets = [
       ]),
   const ItemSet(
       69,
-      TextModel(
+      Translation(
         "Panoplie du Boune",
         "Boon Set",
       ),
@@ -4031,7 +4031,7 @@ const sets = [
       ]),
   const ItemSet(
       70,
-      TextModel(
+      Translation(
         "Panoplie du Piou Rose",
         "Pink Piwi Set",
       ),
@@ -4086,7 +4086,7 @@ const sets = [
       ]),
   const ItemSet(
       71,
-      TextModel(
+      Translation(
         "Panoplie du Piou Vert",
         "Green Piwi Set",
       ),
@@ -4132,7 +4132,7 @@ const sets = [
       ]),
   const ItemSet(
       72,
-      TextModel(
+      Translation(
         "Panoplie du Piou Jaune",
         "Yellow Piwi Set",
       ),
@@ -4178,7 +4178,7 @@ const sets = [
       ]),
   const ItemSet(
       77,
-      TextModel(
+      Translation(
         "Panoplie Vassale",
         "Vassal Set",
       ),
@@ -4222,7 +4222,7 @@ const sets = [
       ]),
   const ItemSet(
       78,
-      TextModel(
+      Translation(
         "Panoplie Souveraine",
         "Sovereign Set",
       ),
@@ -4255,7 +4255,7 @@ const sets = [
       ]),
   const ItemSet(
       79,
-      TextModel(
+      Translation(
         "Panoplie Claire",
         "Light Set",
       ),
@@ -4299,7 +4299,7 @@ const sets = [
       ]),
   const ItemSet(
       80,
-      TextModel(
+      Translation(
         "Panoplie Sombre",
         "Dark Set",
       ),
@@ -4330,7 +4330,7 @@ const sets = [
       ]),
   const ItemSet(
       81,
-      TextModel(
+      Translation(
         "Panoplie Téméraire",
         "Reckless Set",
       ),
@@ -4425,7 +4425,7 @@ const sets = [
       ]),
   const ItemSet(
       82,
-      TextModel(
+      Translation(
         "Panoplie du Prince des voleurs",
         "Prince of Thieves Set",
       ),
@@ -4520,7 +4520,7 @@ const sets = [
       ]),
   const ItemSet(
       83,
-      TextModel(
+      Translation(
         "Panoplie Altruiste",
         "Altruistic Set",
       ),
@@ -4615,7 +4615,7 @@ const sets = [
       ]),
   const ItemSet(
       84,
-      TextModel(
+      Translation(
         "Panoplie de l'Innombrable",
         "Innumerable Set",
       ),
@@ -4710,7 +4710,7 @@ const sets = [
       ]),
   const ItemSet(
       85,
-      TextModel(
+      Translation(
         "Panoplie Vénérable",
         "Venerable Set",
       ),
@@ -4805,7 +4805,7 @@ const sets = [
       ]),
   const ItemSet(
       86,
-      TextModel(
+      Translation(
         "Panoplie Intemporelle",
         "Timeless Set",
       ),
@@ -4900,7 +4900,7 @@ const sets = [
       ]),
   const ItemSet(
       87,
-      TextModel(
+      Translation(
         "Panoplie Exsangue",
         "Bloodless Set",
       ),
@@ -4995,7 +4995,7 @@ const sets = [
       ]),
   const ItemSet(
       88,
-      TextModel(
+      Translation(
         "Panoplie de Gouttière",
         "Gutter Set",
       ),
@@ -5090,7 +5090,7 @@ const sets = [
       ]),
   const ItemSet(
       89,
-      TextModel(
+      Translation(
         "Panoplie Criminelle",
         "Criminal Set",
       ),
@@ -5185,7 +5185,7 @@ const sets = [
       ]),
   const ItemSet(
       90,
-      TextModel(
+      Translation(
         "Panoplie Sauvage",
         "Wild Set",
       ),
@@ -5280,7 +5280,7 @@ const sets = [
       ]),
   const ItemSet(
       91,
-      TextModel(
+      Translation(
         "Panoplie Indestructible",
         "Indestructible Set",
       ),
@@ -5375,7 +5375,7 @@ const sets = [
       ]),
   const ItemSet(
       92,
-      TextModel(
+      Translation(
         "Panoplie Ethylique",
         "Alcoholic Set",
       ),
@@ -5470,7 +5470,7 @@ const sets = [
       ]),
   const ItemSet(
       93,
-      TextModel(
+      Translation(
         "Panoplie du Zoth Zotheur",
         "Lispzoth Set",
       ),
@@ -5492,7 +5492,7 @@ const sets = [
       ]),
   const ItemSet(
       94,
-      TextModel(
+      Translation(
         "Panoplie du Zothuliste",
         "Zothulist Set",
       ),
@@ -5514,7 +5514,7 @@ const sets = [
       ]),
   const ItemSet(
       95,
-      TextModel(
+      Translation(
         "Panoplie du Zothicien",
         "Zothician Set",
       ),
@@ -5533,7 +5533,7 @@ const sets = [
       ]),
   const ItemSet(
       96,
-      TextModel(
+      Translation(
         "Panoplie Baveuse",
         "Sloppy Set",
       ),
@@ -5567,7 +5567,7 @@ const sets = [
       ]),
   const ItemSet(
       97,
-      TextModel(
+      Translation(
         "Panoplie Ventouse",
         "Sucker Set",
       ),
@@ -5594,7 +5594,7 @@ const sets = [
       ]),
   const ItemSet(
       98,
-      TextModel(
+      Translation(
         "Panoplie Blop Griotte",
         "Morello Cherry Blop Set",
       ),
@@ -5662,7 +5662,7 @@ const sets = [
       ]),
   const ItemSet(
       99,
-      TextModel(
+      Translation(
         "Panoplie Blop Reinette",
         "Pippin Blop Set",
       ),
@@ -5727,7 +5727,7 @@ const sets = [
       ]),
   const ItemSet(
       100,
-      TextModel(
+      Translation(
         "Panoplie Blop Coco",
         "Coco Blop Set",
       ),
@@ -5795,7 +5795,7 @@ const sets = [
       ]),
   const ItemSet(
       101,
-      TextModel(
+      Translation(
         "Panoplie Blop Indigo",
         "Indigo Blop Set",
       ),
@@ -5863,7 +5863,7 @@ const sets = [
       ]),
   const ItemSet(
       102,
-      TextModel(
+      Translation(
         "Panoplie Blop Griotte Royale",
         "Royal Morello Cherry Blop Set",
       ),
@@ -5904,7 +5904,7 @@ const sets = [
       ]),
   const ItemSet(
       103,
-      TextModel(
+      Translation(
         "Panoplie Blop Reinette Royale",
         "Royal Pippin Blop Set",
       ),
@@ -5945,7 +5945,7 @@ const sets = [
       ]),
   const ItemSet(
       104,
-      TextModel(
+      Translation(
         "Panoplie Blop Coco Royale",
         "Royal Coco Blop Set",
       ),
@@ -5986,7 +5986,7 @@ const sets = [
       ]),
   const ItemSet(
       105,
-      TextModel(
+      Translation(
         "Panoplie Blop Indigo Royale",
         "Royal Indigo Blop Set",
       ),
@@ -6027,7 +6027,7 @@ const sets = [
       ]),
   const ItemSet(
       106,
-      TextModel(
+      Translation(
         "Panoplie Blop Multicolore Royale",
         "Royal Rainbow Blop Set",
       ),
@@ -6069,7 +6069,7 @@ const sets = [
       ]),
   const ItemSet(
       107,
-      TextModel(
+      Translation(
         "Panoplie Tue-Mouche",
         "Stringsecticide Set",
       ),
@@ -6110,7 +6110,7 @@ const sets = [
       ]),
   const ItemSet(
       108,
-      TextModel(
+      Translation(
         "Panoplie du Bworker Berserker",
         "Berserker Bworker Set",
       ),
@@ -6151,7 +6151,7 @@ const sets = [
       ]),
   const ItemSet(
       109,
-      TextModel(
+      Translation(
         "Panoplie du Bworker Gladiateur",
         "Gladiator Bworker Set",
       ),
@@ -6192,7 +6192,7 @@ const sets = [
       ]),
   const ItemSet(
       118,
-      TextModel(
+      Translation(
         "Panoplie Ougah",
         "Ougaa Set",
       ),
@@ -6234,7 +6234,7 @@ const sets = [
       ]),
   const ItemSet(
       119,
-      TextModel(
+      Translation(
         "Panoplignon",
         "Shroom Set",
       ),
@@ -6278,7 +6278,7 @@ const sets = [
       ]),
   const ItemSet(
       120,
-      TextModel(
+      Translation(
         "Panoplie des Sous-bois",
         "Undergrowth Set",
       ),
@@ -6311,7 +6311,7 @@ const sets = [
       ]),
   const ItemSet(
       121,
-      TextModel(
+      Translation(
         "Panoplycélium",
         "Funguset",
       ),
@@ -6342,7 +6342,7 @@ const sets = [
       ]),
   const ItemSet(
       144,
-      TextModel(
+      Translation(
         "Panoplie de Grüt",
         "Grute Set",
       ),
@@ -6373,7 +6373,7 @@ const sets = [
       ]),
   const ItemSet(
       145,
-      TextModel(
+      Translation(
         "Panoplie de Kocksis",
         "Koksiks Set",
       ),
@@ -6404,7 +6404,7 @@ const sets = [
       ]),
   const ItemSet(
       146,
-      TextModel(
+      Translation(
         "Panoplie de Gobeuf",
         "Goboff Set",
       ),
@@ -6435,7 +6435,7 @@ const sets = [
       ]),
   const ItemSet(
       147,
-      TextModel(
+      Translation(
         "Panoplie de Laikteur",
         "Lektor Set",
       ),
@@ -6468,7 +6468,7 @@ const sets = [
       ]),
   const ItemSet(
       148,
-      TextModel(
+      Translation(
         "Panoplie de Rekto Topi",
         "Stroy Zemol Set",
       ),
@@ -6501,7 +6501,7 @@ const sets = [
       ]),
   const ItemSet(
       149,
-      TextModel(
+      Translation(
         "Panoplie de Grizou",
         "Fyred Ampe Set",
       ),
@@ -6532,7 +6532,7 @@ const sets = [
       ]),
   const ItemSet(
       150,
-      TextModel(
+      Translation(
         "Panoplie de l'intrépide",
         "Intrepid Set",
       ),
@@ -6602,7 +6602,7 @@ const sets = [
       ]),
   const ItemSet(
       151,
-      TextModel(
+      Translation(
         "Panoplie du Roks Or",
         "Hax Or Set",
       ),
@@ -6648,7 +6648,7 @@ const sets = [
       ]),
   const ItemSet(
       152,
-      TextModel(
+      Translation(
         "Panoplie d'Hulkrap",
         "Hulkrap Set",
       ),
@@ -6679,7 +6679,7 @@ const sets = [
       ]),
   const ItemSet(
       153,
-      TextModel(
+      Translation(
         "Panoplie de Klüme",
         "Klume Set",
       ),
@@ -6710,7 +6710,7 @@ const sets = [
       ]),
   const ItemSet(
       154,
-      TextModel(
+      Translation(
         "Panoplie de Kloug",
         "Kloug Set",
       ),
@@ -6741,7 +6741,7 @@ const sets = [
       ]),
   const ItemSet(
       156,
-      TextModel(
+      Translation(
         "Panoplie de Rapine",
         "Plunder Set",
       ),
@@ -6772,7 +6772,7 @@ const sets = [
       ]),
   const ItemSet(
       158,
-      TextModel(
+      Translation(
         "Panoplie d'Hectaupe",
         "Ektope Set",
       ),
@@ -6800,7 +6800,7 @@ const sets = [
       ]),
   const ItemSet(
       173,
-      TextModel(
+      Translation(
         "Frimanoplie",
         "Sleet Set",
       ),
@@ -6841,7 +6841,7 @@ const sets = [
       ]),
   const ItemSet(
       174,
-      TextModel(
+      Translation(
         "Panoplie Grésil",
         "Hail Set",
       ),
@@ -6882,7 +6882,7 @@ const sets = [
       ]),
   const ItemSet(
       176,
-      TextModel(
+      Translation(
         "Panoplie du Royalmouth",
         "Royal Mastogob Set",
       ),
@@ -6925,7 +6925,7 @@ const sets = [
       ]),
   const ItemSet(
       177,
-      TextModel(
+      Translation(
         "Panoplie du Mansot Royal",
         "Royal Pingwin Set",
       ),
@@ -6957,7 +6957,7 @@ const sets = [
       ]),
   const ItemSet(
       178,
-      TextModel(
+      Translation(
         "Panoplie de Ben le Ripate",
         "Buck Anear Set",
       ),
@@ -7000,7 +7000,7 @@ const sets = [
       ]),
   const ItemSet(
       179,
-      TextModel(
+      Translation(
         "Panoplie de l'Obsidiantre",
         "Obsidemon Set",
       ),
@@ -7049,7 +7049,7 @@ const sets = [
       ]),
   const ItemSet(
       180,
-      TextModel(
+      Translation(
         "Panoplie de Grouillot",
         "Grouillot Set",
       ),
@@ -7082,7 +7082,7 @@ const sets = [
       ]),
   const ItemSet(
       181,
-      TextModel(
+      Translation(
         "Panoplie de Karotz",
         "Karotz Set",
       ),
@@ -7113,7 +7113,7 @@ const sets = [
       ]),
   const ItemSet(
       182,
-      TextModel(
+      Translation(
         "Panoplie de Rapiat",
         "Rapiat Set",
       ),
@@ -7145,7 +7145,7 @@ const sets = [
       ]),
   const ItemSet(
       183,
-      TextModel(
+      Translation(
         "Panoplie de Kubitus",
         "Kubitus Set",
       ),
@@ -7176,7 +7176,7 @@ const sets = [
       ]),
   const ItemSet(
       184,
-      TextModel(
+      Translation(
         "Panoplie de Piggy Paupe",
         "Piggy Paupe Set",
       ),
@@ -7208,7 +7208,7 @@ const sets = [
       ]),
   const ItemSet(
       185,
-      TextModel(
+      Translation(
         "Panoplie d'Ougicle",
         "Ougicle Set",
       ),
@@ -7240,7 +7240,7 @@ const sets = [
       ]),
   const ItemSet(
       186,
-      TextModel(
+      Translation(
         "Panoplie du Tengu Givrefoux",
         "Tengu Snowfoux Set",
       ),
@@ -7281,7 +7281,7 @@ const sets = [
       ]),
   const ItemSet(
       187,
-      TextModel(
+      Translation(
         "Panoplie du Korriandre",
         "Korriander Set",
       ),
@@ -7322,7 +7322,7 @@ const sets = [
       ]),
   const ItemSet(
       188,
-      TextModel(
+      Translation(
         "Panoplie de Kolosso",
         "Kolosso Set",
       ),
@@ -7359,7 +7359,7 @@ const sets = [
       ]),
   const ItemSet(
       189,
-      TextModel(
+      Translation(
         "Panoplie Glourséleste",
         "Celestial Bearbarian Set",
       ),
@@ -7433,7 +7433,7 @@ const sets = [
       ]),
   const ItemSet(
       193,
-      TextModel(
+      Translation(
         "Panoplie du Harpirate",
         "Harpy Pirate Set",
       ),
@@ -7461,7 +7461,7 @@ const sets = [
       ]),
   const ItemSet(
       194,
-      TextModel(
+      Translation(
         "Panoplie du Kanniboul Ebil",
         "Kanniball Andchain Set",
       ),
@@ -7506,7 +7506,7 @@ const sets = [
       ]),
   const ItemSet(
       195,
-      TextModel(
+      Translation(
         "Panoplie du Boostache",
         "Boostache Set",
       ),
@@ -7551,7 +7551,7 @@ const sets = [
       ]),
   const ItemSet(
       196,
-      TextModel(
+      Translation(
         "Panoplie du Kwakwa",
         "Kwakwa Set",
       ),
@@ -7619,7 +7619,7 @@ const sets = [
       ]),
   const ItemSet(
       198,
-      TextModel(
+      Translation(
         "Panoplie de Traçon",
         "Tracon Set",
       ),
@@ -7651,7 +7651,7 @@ const sets = [
       ]),
   const ItemSet(
       199,
-      TextModel(
+      Translation(
         "Panoplie de Mirh",
         "Mirh Set",
       ),
@@ -7683,7 +7683,7 @@ const sets = [
       ]),
   const ItemSet(
       201,
-      TextModel(
+      Translation(
         "Panoplie de Kalkanéus",
         "Kalkaneus Set",
       ),
@@ -7718,7 +7718,7 @@ const sets = [
       ]),
   const ItemSet(
       202,
-      TextModel(
+      Translation(
         "Panoplie d'Hichète",
         "Hichete Set",
       ),
@@ -7751,7 +7751,7 @@ const sets = [
       ]),
   const ItemSet(
       203,
-      TextModel(
+      Translation(
         "Panoplie d'Haku",
         "Haku Set",
       ),
@@ -7785,7 +7785,7 @@ const sets = [
       ]),
   const ItemSet(
       204,
-      TextModel(
+      Translation(
         "Panoplie de Nelween",
         "Nelween Set",
       ),
@@ -7834,12 +7834,12 @@ const sets = [
             const CharacteristicBonus(Characteristic.AirDamage, "+", 15, 15)
           ],
           [],
-          [const OtherBonus(const TextModel("undefined", "undefined"))],
+          [const OtherBonus(const Translation("undefined", "undefined"))],
         )
       ]),
   const ItemSet(
       205,
-      TextModel(
+      Translation(
         "Panoplie Moutheuze",
         "Mastic Set",
       ),
@@ -7880,7 +7880,7 @@ const sets = [
       ]),
   const ItemSet(
       206,
-      TextModel(
+      Translation(
         "Panoplie de Frigostine",
         "Frigostine Set",
       ),
@@ -7934,7 +7934,7 @@ const sets = [
       ]),
   const ItemSet(
       207,
-      TextModel(
+      Translation(
         "Panoplie de Cantile",
         "Cantile Set",
       ),
@@ -7982,7 +7982,7 @@ const sets = [
       ]),
   const ItemSet(
       208,
-      TextModel(
+      Translation(
         "Panoplie des Prophètes",
         "Set of the Prophets",
       ),
@@ -8015,7 +8015,7 @@ const sets = [
       ]),
   const ItemSet(
       209,
-      TextModel(
+      Translation(
         "Panoplie de Guten Tak",
         "Guten Tak Set",
       ),
@@ -8053,7 +8053,7 @@ const sets = [
       ]),
   const ItemSet(
       210,
-      TextModel(
+      Translation(
         "Panoplie de Boréale",
         "Borealis Set",
       ),
@@ -8115,7 +8115,7 @@ const sets = [
       ]),
   const ItemSet(
       211,
-      TextModel(
+      Translation(
         "Panoplie du Professeur Xa",
         "Professor Xa Set",
       ),
@@ -8182,7 +8182,7 @@ const sets = [
       ]),
   const ItemSet(
       212,
-      TextModel(
+      Translation(
         "Panoplie Gloursonne",
         "Bearbaric Set",
       ),
@@ -8221,7 +8221,7 @@ const sets = [
       ]),
   const ItemSet(
       213,
-      TextModel(
+      Translation(
         "Panoplie de la Fuji Givrefoux",
         "Fuji Snowfoux Set",
       ),
@@ -8271,7 +8271,7 @@ const sets = [
       ]),
   const ItemSet(
       214,
-      TextModel(
+      Translation(
         "Panoplie de Nowel",
         "Kwismas Set",
       ),
@@ -8290,7 +8290,7 @@ const sets = [
       ]),
   const ItemSet(
       215,
-      TextModel(
+      Translation(
         "Panoplie du Gorgouille",
         "Gorgoyle Set",
       ),
@@ -8337,7 +8337,7 @@ const sets = [
       ]),
   const ItemSet(
       217,
-      TextModel(
+      Translation(
         "Panoplie Explosive",
         "Explosive Set",
       ),
@@ -8432,7 +8432,7 @@ const sets = [
       ]),
   const ItemSet(
       218,
-      TextModel(
+      Translation(
         "Panoplie Lunatique",
         "Moody Set",
       ),
@@ -8527,7 +8527,7 @@ const sets = [
       ]),
   const ItemSet(
       219,
-      TextModel(
+      Translation(
         "Panoplie du Vulkain",
         "Vulkanno Set",
       ),
@@ -8576,12 +8576,12 @@ const sets = [
             const CharacteristicBonus(Characteristic.Heal, "+", 8, 8)
           ],
           [],
-          [const OtherBonus(const TextModel("undefined", "undefined"))],
+          [const OtherBonus(const Translation("undefined", "undefined"))],
         )
       ]),
   const ItemSet(
       220,
-      TextModel(
+      Translation(
         "Panoplie du Krokilleur",
         "Saurosheller Set",
       ),
@@ -8607,12 +8607,12 @@ const sets = [
             const CharacteristicBonus(Characteristic.Lock, "+", 8, 8)
           ],
           [],
-          [const OtherBonus(const TextModel("undefined", "undefined"))],
+          [const OtherBonus(const Translation("undefined", "undefined"))],
         )
       ]),
   const ItemSet(
       221,
-      TextModel(
+      Translation(
         "Panoplie de Grozilla",
         "Grozilla Set",
       ),
@@ -8654,12 +8654,12 @@ const sets = [
             const CharacteristicBonus(Characteristic.Dodge, "+", 10, 10)
           ],
           [],
-          [const OtherBonus(const TextModel("undefined", "undefined"))],
+          [const OtherBonus(const Translation("undefined", "undefined"))],
         )
       ]),
   const ItemSet(
       229,
-      TextModel(
+      Translation(
         "Panoplie de Daïgoro",
         "Daggero's Set",
       ),
@@ -8704,7 +8704,7 @@ const sets = [
       ]),
   const ItemSet(
       232,
-      TextModel(
+      Translation(
         "Panoplie du Glutin",
         "Goblimp Set",
       ),
@@ -8745,7 +8745,7 @@ const sets = [
       ]),
   const ItemSet(
       233,
-      TextModel(
+      Translation(
         "Panoplie de Redolphe",
         "Redolph Set",
       ),
@@ -8790,7 +8790,7 @@ const sets = [
       ]),
   const ItemSet(
       234,
-      TextModel(
+      Translation(
         "Panoplie du Nowel Cauchemardesque",
         "Kwismas Nightmare Set",
       ),
@@ -8825,12 +8825,12 @@ const sets = [
             const CharacteristicBonus(Characteristic.Damage, "+", 15, 15)
           ],
           [],
-          [const OtherBonus(const TextModel("undefined", "undefined"))],
+          [const OtherBonus(const Translation("undefined", "undefined"))],
         )
       ]),
   const ItemSet(
       239,
-      TextModel(
+      Translation(
         "Panoplie des Anciens Chafers",
         "Ancient Chafer Set",
       ),
@@ -8871,7 +8871,7 @@ const sets = [
       ]),
   const ItemSet(
       240,
-      TextModel(
+      Translation(
         "Panoplie de Brouce Boulgoure",
         "Brouce Boulgoure Set",
       ),
@@ -8904,7 +8904,7 @@ const sets = [
       ]),
   const ItemSet(
       241,
-      TextModel(
+      Translation(
         "Panoplie d'Otomaï",
         "Otomai Set",
       ),
@@ -8937,7 +8937,7 @@ const sets = [
       ]),
   const ItemSet(
       242,
-      TextModel(
+      Translation(
         "Panoplie de Danathor",
         "Danathor Set",
       ),
@@ -8970,7 +8970,7 @@ const sets = [
       ]),
   const ItemSet(
       243,
-      TextModel(
+      Translation(
         "Panoplie d'Allister",
         "Allister Set",
       ),
@@ -9003,7 +9003,7 @@ const sets = [
       ]),
   const ItemSet(
       244,
-      TextModel(
+      Translation(
         "Panoplie de Léthaline",
         "Lethaline Set",
       ),
@@ -9036,7 +9036,7 @@ const sets = [
       ]),
   const ItemSet(
       245,
-      TextModel(
+      Translation(
         "Panoplie d'Ogivol",
         "Ogivol Set",
       ),
@@ -9078,7 +9078,7 @@ const sets = [
       ]),
   const ItemSet(
       246,
-      TextModel(
+      Translation(
         "Panoplie Coffre",
         "Chest Set",
       ),
@@ -9121,7 +9121,7 @@ const sets = [
       ]),
   const ItemSet(
       250,
-      TextModel(
+      Translation(
         "Panoplie Submersible",
         "Submersible Set",
       ),
@@ -9216,7 +9216,7 @@ const sets = [
       ]),
   const ItemSet(
       252,
-      TextModel(
+      Translation(
         "Panoplitrouille",
         "Punkin' Set",
       ),
@@ -9225,7 +9225,7 @@ const sets = [
         Bonuses(
           [],
           [],
-          [const OtherBonus(const TextModel("undefined", "undefined"))],
+          [const OtherBonus(const Translation("undefined", "undefined"))],
         ),
         Bonuses(
           [
@@ -9235,7 +9235,7 @@ const sets = [
             const CharacteristicBonus(Characteristic.Heal, "+", 2, 2)
           ],
           [],
-          [const OtherBonus(const TextModel("undefined", "undefined"))],
+          [const OtherBonus(const Translation("undefined", "undefined"))],
         ),
         Bonuses(
           [
@@ -9245,7 +9245,7 @@ const sets = [
             const CharacteristicBonus(Characteristic.Heal, "+", 4, 4)
           ],
           [],
-          [const OtherBonus(const TextModel("undefined", "undefined"))],
+          [const OtherBonus(const Translation("undefined", "undefined"))],
         ),
         Bonuses(
           [
@@ -9256,12 +9256,12 @@ const sets = [
             const CharacteristicBonus(Characteristic.Heal, "+", 6, 6)
           ],
           [],
-          [const OtherBonus(const TextModel("undefined", "undefined"))],
+          [const OtherBonus(const Translation("undefined", "undefined"))],
         )
       ]),
   const ItemSet(
       255,
-      TextModel(
+      Translation(
         "Panoplie Rose",
         "Pink Set",
       ),
@@ -9283,7 +9283,7 @@ const sets = [
       ]),
   const ItemSet(
       256,
-      TextModel(
+      Translation(
         "Panoplie d'Henual",
         "Henual Set",
       ),
@@ -9318,7 +9318,7 @@ const sets = [
       ]),
   const ItemSet(
       257,
-      TextModel(
+      Translation(
         "Panoplie d'Oshimo",
         "Oshimo Set",
       ),
@@ -9353,7 +9353,7 @@ const sets = [
       ]),
   const ItemSet(
       258,
-      TextModel(
+      Translation(
         "Panoplie de Nevark",
         "Nevark Set",
       ),
@@ -9388,7 +9388,7 @@ const sets = [
       ]),
   const ItemSet(
       259,
-      TextModel(
+      Translation(
         "Panoplie de Théodoran Ax",
         "Antyklime Ax Set",
       ),
@@ -9423,7 +9423,7 @@ const sets = [
       ]),
   const ItemSet(
       260,
-      TextModel(
+      Translation(
         "Panoplie de Padgref",
         "Nomarow Set",
       ),
@@ -9459,7 +9459,7 @@ const sets = [
       ]),
   const ItemSet(
       261,
-      TextModel(
+      Translation(
         "Panoplie d'Hel Munster",
         "Hel Munster Set",
       ),
@@ -9496,7 +9496,7 @@ const sets = [
       ]),
   const ItemSet(
       262,
-      TextModel(
+      Translation(
         "Panoplie d'Aermyne",
         "Aermyne Set",
       ),
@@ -9535,7 +9535,7 @@ const sets = [
       ]),
   const ItemSet(
       263,
-      TextModel(
+      Translation(
         "Panoplie de Kéké",
         "Tailblazer Set",
       ),
@@ -9566,7 +9566,7 @@ const sets = [
       ]),
   const ItemSet(
       264,
-      TextModel(
+      Translation(
         "Panoplie du Frelon Noir",
         "Black Hornet Set",
       ),
@@ -9588,7 +9588,7 @@ const sets = [
       ]),
   const ItemSet(
       266,
-      TextModel(
+      Translation(
         "Panoplie Infernale",
         "Infernal Set",
       ),
@@ -9629,17 +9629,17 @@ const sets = [
           ],
           [],
           [
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined"))
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined"))
           ],
         )
       ]),
   const ItemSet(
       267,
-      TextModel(
+      Translation(
         "Panoplie Fluviale",
         "Fluvial Set",
       ),
@@ -9680,17 +9680,17 @@ const sets = [
           ],
           [],
           [
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined"))
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined"))
           ],
         )
       ]),
   const ItemSet(
       268,
-      TextModel(
+      Translation(
         "Panoplie Contrebandière",
         "Contrabanned Set",
       ),
@@ -9731,17 +9731,17 @@ const sets = [
           ],
           [],
           [
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined"))
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined"))
           ],
         )
       ]),
   const ItemSet(
       269,
-      TextModel(
+      Translation(
         "Panoplie Meurtrière",
         "Murderous Set",
       ),
@@ -9782,17 +9782,17 @@ const sets = [
           ],
           [],
           [
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined"))
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined"))
           ],
         )
       ]),
   const ItemSet(
       270,
-      TextModel(
+      Translation(
         "Panoplie du Comte Harebourg",
         "Count Harebourg Set",
       ),
@@ -9825,7 +9825,7 @@ const sets = [
       ]),
   const ItemSet(
       271,
-      TextModel(
+      Translation(
         "Panoplie Séculaire",
         "Age-Old Set",
       ),
@@ -9860,7 +9860,7 @@ const sets = [
       ]),
   const ItemSet(
       272,
-      TextModel(
+      Translation(
         "Panoplie Cryochrone",
         "Cryochrone Set",
       ),
@@ -9895,7 +9895,7 @@ const sets = [
       ]),
   const ItemSet(
       273,
-      TextModel(
+      Translation(
         "Panoplie du Cycloïde",
         "Cycloid Set",
       ),
@@ -9931,7 +9931,7 @@ const sets = [
       ]),
   const ItemSet(
       274,
-      TextModel(
+      Translation(
         "Panoplie du Strigide",
         "Treadfast Set",
       ),
@@ -9966,7 +9966,7 @@ const sets = [
       ]),
   const ItemSet(
       275,
-      TextModel(
+      Translation(
         "Panoplie du Sinistrofu",
         "Sinistrofu Set",
       ),
@@ -10003,7 +10003,7 @@ const sets = [
       ]),
   const ItemSet(
       276,
-      TextModel(
+      Translation(
         "Panoplie du Granduk",
         "Bubotron Set",
       ),
@@ -10035,7 +10035,7 @@ const sets = [
       ]),
   const ItemSet(
       277,
-      TextModel(
+      Translation(
         "Panoplie du Nocturlabe",
         "Nocturnowl Set",
       ),
@@ -10076,7 +10076,7 @@ const sets = [
       ]),
   const ItemSet(
       278,
-      TextModel(
+      Translation(
         "Panoplie de Klime",
         "Klime Set",
       ),
@@ -10109,7 +10109,7 @@ const sets = [
       ]),
   const ItemSet(
       279,
-      TextModel(
+      Translation(
         "Panoplie Vicieuse",
         "Vicious Set",
       ),
@@ -10144,7 +10144,7 @@ const sets = [
       ]),
   const ItemSet(
       280,
-      TextModel(
+      Translation(
         "Panoplie Glaciale",
         "Glacial Set",
       ),
@@ -10177,7 +10177,7 @@ const sets = [
       ]),
   const ItemSet(
       281,
-      TextModel(
+      Translation(
         "Panoplie de Missiz Frizz",
         "Missiz Freezz Set",
       ),
@@ -10212,7 +10212,7 @@ const sets = [
       ]),
   const ItemSet(
       282,
-      TextModel(
+      Translation(
         "Panoplie de Nileza",
         "Nileza Set",
       ),
@@ -10243,7 +10243,7 @@ const sets = [
       ]),
   const ItemSet(
       283,
-      TextModel(
+      Translation(
         "Panoplie Instable",
         "Unstable Set",
       ),
@@ -10277,7 +10277,7 @@ const sets = [
       ]),
   const ItemSet(
       284,
-      TextModel(
+      Translation(
         "Panoplie de Sylargh",
         "Sylargh Set",
       ),
@@ -10312,7 +10312,7 @@ const sets = [
       ]),
   const ItemSet(
       285,
-      TextModel(
+      Translation(
         "Panoplie du Kanimate",
         "Kan-O-Mat Set",
       ),
@@ -10345,7 +10345,7 @@ const sets = [
       ]),
   const ItemSet(
       286,
-      TextModel(
+      Translation(
         "Panoplie de Maître Nabur",
         "Master Nabur Set",
       ),
@@ -10369,7 +10369,7 @@ const sets = [
       ]),
   const ItemSet(
       287,
-      TextModel(
+      Translation(
         "Panoplie Magmatique",
         "Magmatic Set",
       ),
@@ -10402,7 +10402,7 @@ const sets = [
       ]),
   const ItemSet(
       288,
-      TextModel(
+      Translation(
         "Panoplie Quartzésienne",
         "Quartzotic Set",
       ),
@@ -10437,7 +10437,7 @@ const sets = [
       ]),
   const ItemSet(
       293,
-      TextModel(
+      Translation(
         "Panoplie du Wabbit",
         "Wabbit Set",
       ),
@@ -10478,7 +10478,7 @@ const sets = [
       ]),
   const ItemSet(
       294,
-      TextModel(
+      Translation(
         "Panoplie du Wa Wobot",
         "Wa Wobot Set",
       ),
@@ -10513,7 +10513,7 @@ const sets = [
       ]),
   const ItemSet(
       295,
-      TextModel(
+      Translation(
         "Panoplie du Blanc Pa Wabbit",
         "Whitepaw Wabbit Set",
       ),
@@ -10548,7 +10548,7 @@ const sets = [
       ]),
   const ItemSet(
       296,
-      TextModel(
+      Translation(
         "Panoplie du Wabbit Céphale",
         "Janus Wabbit Set",
       ),
@@ -10579,7 +10579,7 @@ const sets = [
       ]),
   const ItemSet(
       297,
-      TextModel(
+      Translation(
         "Panoplie du Wabbit Garou",
         "Wewe-Wabbit Set",
       ),
@@ -10610,7 +10610,7 @@ const sets = [
       ]),
   const ItemSet(
       299,
-      TextModel(
+      Translation(
         "Panoplie Dramatik",
         "Dramatik Set",
       ),
@@ -10637,7 +10637,7 @@ const sets = [
       ]),
   const ItemSet(
       300,
-      TextModel(
+      Translation(
         "Panoplie Talienne",
         "Talian Set",
       ),
@@ -10670,7 +10670,7 @@ const sets = [
       ]),
   const ItemSet(
       313,
-      TextModel(
+      Translation(
         "Panoplie Engloutie",
         "Sunken Set",
       ),
@@ -10711,7 +10711,7 @@ const sets = [
       ]),
   const ItemSet(
       318,
-      TextModel(
+      Translation(
         "Pikoplie",
         "Barbakle Set",
       ),
@@ -10746,7 +10746,7 @@ const sets = [
       ]),
   const ItemSet(
       319,
-      TextModel(
+      Translation(
         "Panoplie du Cartographe",
         "Cartographer Set",
       ),
@@ -10785,7 +10785,7 @@ const sets = [
       ]),
   const ItemSet(
       320,
-      TextModel(
+      Translation(
         "Panoplie des Abysses",
         "Abyss Set",
       ),
@@ -10826,7 +10826,7 @@ const sets = [
       ]),
   const ItemSet(
       321,
-      TextModel(
+      Translation(
         "Panoplie Obscure",
         "Lost Set",
       ),
@@ -10863,7 +10863,7 @@ const sets = [
       ]),
   const ItemSet(
       322,
-      TextModel(
+      Translation(
         "Panoplie d'Ombre",
         "Shadow Set",
       ),
@@ -10896,7 +10896,7 @@ const sets = [
       ]),
   const ItemSet(
       323,
-      TextModel(
+      Translation(
         "Panoplie du Père Fwetar",
         "Father Whupper Set",
       ),
@@ -10929,7 +10929,7 @@ const sets = [
       ]),
   const ItemSet(
       324,
-      TextModel(
+      Translation(
         "Panoplie de Flèche Mauve",
         "Violet Arrow Set",
       ),
@@ -10962,7 +10962,7 @@ const sets = [
       ]),
   const ItemSet(
       325,
-      TextModel(
+      Translation(
         "Panoplie d'Ambi Guman",
         "Veg Antilleze Set",
       ),
@@ -10994,7 +10994,7 @@ const sets = [
       ]),
   const ItemSet(
       326,
-      TextModel(
+      Translation(
         "Panoplie du Kaniblou",
         "Kanazure Set",
       ),
@@ -11025,7 +11025,7 @@ const sets = [
       ]),
   const ItemSet(
       327,
-      TextModel(
+      Translation(
         "Panoplie de l'Orfélin",
         "Orfan Set",
       ),
@@ -11056,7 +11056,7 @@ const sets = [
       ]),
   const ItemSet(
       330,
-      TextModel(
+      Translation(
         "Panoplie du Barbétoal",
         "Staruman Set",
       ),
@@ -11089,7 +11089,7 @@ const sets = [
       ]),
   const ItemSet(
       331,
-      TextModel(
+      Translation(
         "Panoplie de Nidas",
         "Nidas Set",
       ),
@@ -11122,7 +11122,7 @@ const sets = [
       ]),
   const ItemSet(
       332,
-      TextModel(
+      Translation(
         "Panoplie du Piloztère",
         "Hairsh Set",
       ),
@@ -11157,7 +11157,7 @@ const sets = [
       ]),
   const ItemSet(
       333,
-      TextModel(
+      Translation(
         "Panoplie du Lévitrof",
         "Levitrof Set",
       ),
@@ -11194,7 +11194,7 @@ const sets = [
       ]),
   const ItemSet(
       334,
-      TextModel(
+      Translation(
         "Panoplie du Kamasterisk",
         "Kamasterisk Set",
       ),
@@ -11227,7 +11227,7 @@ const sets = [
       ]),
   const ItemSet(
       335,
-      TextModel(
+      Translation(
         "Panoplie Phossile",
         "Drhossil Set",
       ),
@@ -11258,7 +11258,7 @@ const sets = [
       ]),
   const ItemSet(
       336,
-      TextModel(
+      Translation(
         "Panoplie du Père Phorreur",
         "Powa Drhell Set",
       ),
@@ -11291,7 +11291,7 @@ const sets = [
       ]),
   const ItemSet(
       337,
-      TextModel(
+      Translation(
         "Panoplie Précieuse",
         "Precious Set",
       ),
@@ -11322,7 +11322,7 @@ const sets = [
       ]),
   const ItemSet(
       338,
-      TextModel(
+      Translation(
         "Panoplie du Berserkoffre",
         "Hurtful Locker Set",
       ),
@@ -11353,7 +11353,7 @@ const sets = [
       ]),
   const ItemSet(
       340,
-      TextModel(
+      Translation(
         "Panoplie Truche",
         "Strich Set",
       ),
@@ -11384,7 +11384,7 @@ const sets = [
       ]),
   const ItemSet(
       341,
-      TextModel(
+      Translation(
         "Gruchoplie",
         "Stretch Set",
       ),
@@ -11415,7 +11415,7 @@ const sets = [
       ]),
   const ItemSet(
       342,
-      TextModel(
+      Translation(
         "Panoplie de la Cour Sombre",
         "Dark Court Set",
       ),
@@ -11448,7 +11448,7 @@ const sets = [
       ]),
   const ItemSet(
       343,
-      TextModel(
+      Translation(
         "Panoplie de Gein",
         "Gein Set",
       ),
@@ -11483,7 +11483,7 @@ const sets = [
       ]),
   const ItemSet(
       344,
-      TextModel(
+      Translation(
         "Panoplie de la Reine des Voleurs",
         "Queen of Thieves Set",
       ),
@@ -11530,7 +11530,7 @@ const sets = [
       ]),
   const ItemSet(
       345,
-      TextModel(
+      Translation(
         "Panoplie des Malveilleurs",
         "Malitiamen Set",
       ),
@@ -11569,7 +11569,7 @@ const sets = [
       ]),
   const ItemSet(
       346,
-      TextModel(
+      Translation(
         "Panoplie du Katcheur",
         "Rassler Set",
       ),
@@ -11604,7 +11604,7 @@ const sets = [
       ]),
   const ItemSet(
       347,
-      TextModel(
+      Translation(
         "Panoplie Nécrotique",
         "Necrotick Set",
       ),
@@ -11641,7 +11641,7 @@ const sets = [
       ]),
   const ItemSet(
       348,
-      TextModel(
+      Translation(
         "Panoplie de Dremoan",
         "Dremoan Set",
       ),
@@ -11672,7 +11672,7 @@ const sets = [
       ]),
   const ItemSet(
       350,
-      TextModel(
+      Translation(
         "Panoplie du Capitaine Ekarlatte",
         "Captain Scarlight Set",
       ),
@@ -11707,7 +11707,7 @@ const sets = [
       ]),
   const ItemSet(
       351,
-      TextModel(
+      Translation(
         "Panoplie d'Ali Grothor",
         "Mastigator Set",
       ),
@@ -11752,7 +11752,7 @@ const sets = [
       ]),
   const ItemSet(
       352,
-      TextModel(
+      Translation(
         "Panoplie de Frakacia Leukocytine",
         "Stellia Blutzell Set",
       ),
@@ -11779,7 +11779,7 @@ const sets = [
       ]),
   const ItemSet(
       354,
-      TextModel(
+      Translation(
         "Panoplibou",
         "Lwo Set",
       ),
@@ -11814,7 +11814,7 @@ const sets = [
       ]),
   const ItemSet(
       355,
-      TextModel(
+      Translation(
         "Panoplie des égarés",
         "Fugitive Set",
       ),
@@ -11847,7 +11847,7 @@ const sets = [
       ]),
   const ItemSet(
       356,
-      TextModel(
+      Translation(
         "Panoplie de Vortex",
         "Vortex Set",
       ),
@@ -11880,7 +11880,7 @@ const sets = [
       ]),
   const ItemSet(
       357,
-      TextModel(
+      Translation(
         "Harpinoplie",
         "Harpiset",
       ),
@@ -11907,7 +11907,7 @@ const sets = [
       ]),
   const ItemSet(
       358,
-      TextModel(
+      Translation(
         "Panoplie Pnose",
         "Mesm Set",
       ),
@@ -11944,7 +11944,7 @@ const sets = [
       ]),
   const ItemSet(
       359,
-      TextModel(
+      Translation(
         "Panoplie de XLII",
         "XLII Set",
       ),
@@ -11987,7 +11987,7 @@ const sets = [
       ]),
   const ItemSet(
       360,
-      TextModel(
+      Translation(
         "Panoplie de Soissanth",
         "Siks-T Set",
       ),
@@ -12020,7 +12020,7 @@ const sets = [
       ]),
   const ItemSet(
       361,
-      TextModel(
+      Translation(
         "Panoplie de Fraktale",
         "Fraktal Set",
       ),
@@ -12053,7 +12053,7 @@ const sets = [
       ]),
   const ItemSet(
       362,
-      TextModel(
+      Translation(
         "Panoplie Xélomorphe",
         "Xelomorph Set",
       ),
@@ -12086,7 +12086,7 @@ const sets = [
       ]),
   const ItemSet(
       363,
-      TextModel(
+      Translation(
         "Panoplie Fouduglen",
         "Akornaddikt Set",
       ),
@@ -12113,7 +12113,7 @@ const sets = [
       ]),
   const ItemSet(
       364,
-      TextModel(
+      Translation(
         "Microplie",
         "Microset",
       ),
@@ -12164,7 +12164,7 @@ const sets = [
       ]),
   const ItemSet(
       365,
-      TextModel(
+      Translation(
         "Panoplie Palliative",
         "Palliative Set",
       ),
@@ -12197,7 +12197,7 @@ const sets = [
       ]),
   const ItemSet(
       366,
-      TextModel(
+      Translation(
         "Panoplie de la Voleuse",
         "Thief Set",
       ),
@@ -12235,7 +12235,7 @@ const sets = [
       ]),
   const ItemSet(
       367,
-      TextModel(
+      Translation(
         "Panoplie des Fonds marins",
         "Deep Sea Set",
       ),
@@ -12268,7 +12268,7 @@ const sets = [
       ]),
   const ItemSet(
       370,
-      TextModel(
+      Translation(
         "Panoplie Transcendante",
         "Transcendent Set",
       ),
@@ -12358,12 +12358,12 @@ const sets = [
             const CharacteristicBonus(Characteristic.AirResistance, "+", 10, 10)
           ],
           [],
-          [const OtherBonus(const TextModel("undefined", "undefined"))],
+          [const OtherBonus(const Translation("undefined", "undefined"))],
         )
       ]),
   const ItemSet(
       371,
-      TextModel(
+      Translation(
         "Panoplie de la Tisseuse",
         "Spynner Set",
       ),
@@ -12394,7 +12394,7 @@ const sets = [
       ]),
   const ItemSet(
       372,
-      TextModel(
+      Translation(
         "Panoplie de la Pondeuse",
         "Broody Set",
       ),
@@ -12425,7 +12425,7 @@ const sets = [
       ]),
   const ItemSet(
       373,
-      TextModel(
+      Translation(
         "Panoplie Invisible",
         "Invisible Set",
       ),
@@ -12449,7 +12449,7 @@ const sets = [
       ]),
   const ItemSet(
       375,
-      TextModel(
+      Translation(
         "Panoplie de Kardorim",
         "Kardorim Set",
       ),
@@ -12480,7 +12480,7 @@ const sets = [
       ]),
   const ItemSet(
       376,
-      TextModel(
+      Translation(
         "Panoplie des Âmes",
         "Soul Set",
       ),
@@ -12504,7 +12504,7 @@ const sets = [
       ]),
   const ItemSet(
       378,
-      TextModel(
+      Translation(
         "Panoplie du Capitaine Pirate",
         "Pirate Captain Set",
       ),
@@ -12536,7 +12536,7 @@ const sets = [
       ]),
   const ItemSet(
       379,
-      TextModel(
+      Translation(
         "Panoplie de Moon",
         "Moon Set",
       ),
@@ -12567,7 +12567,7 @@ const sets = [
       ]),
   const ItemSet(
       380,
-      TextModel(
+      Translation(
         "Panoplie de Zatoïshwan",
         "Zatoishwan Set",
       ),
@@ -12600,7 +12600,7 @@ const sets = [
       ]),
   const ItemSet(
       381,
-      TextModel(
+      Translation(
         "Panoplie du Bretteur Céleste",
         "Celestial Swashbuckler Set",
       ),
@@ -12647,7 +12647,7 @@ const sets = [
       ]),
   const ItemSet(
       382,
-      TextModel(
+      Translation(
         "Panoplie du K.O.",
         "K.O. Set",
       ),
@@ -12684,7 +12684,7 @@ const sets = [
       ]),
   const ItemSet(
       383,
-      TextModel(
+      Translation(
         "Panoplie de Voldelor",
         "Voldelor Set",
       ),
@@ -12717,7 +12717,7 @@ const sets = [
       ]),
   const ItemSet(
       384,
-      TextModel(
+      Translation(
         "Panoplie de Kongoku",
         "Kongoku Set",
       ),
@@ -12750,7 +12750,7 @@ const sets = [
       ]),
   const ItemSet(
       391,
-      TextModel(
+      Translation(
         "Panoplie du Chasseur Embusqué",
         "Ambushing Hunter Set",
       ),
@@ -12781,7 +12781,7 @@ const sets = [
       ]),
   const ItemSet(
       392,
-      TextModel(
+      Translation(
         "Panoplie Quadramentale",
         "Quadramental Set",
       ),
@@ -12876,7 +12876,7 @@ const sets = [
       ]),
   const ItemSet(
       402,
-      TextModel(
+      Translation(
         "Panoplie du Roi Joueur",
         "King Playa Set",
       ),
@@ -12913,7 +12913,7 @@ const sets = [
       ]),
   const ItemSet(
       403,
-      TextModel(
+      Translation(
         "Panoplie de la Dame du Hasard",
         "Queen of Fate Set",
       ),
@@ -12950,7 +12950,7 @@ const sets = [
       ]),
   const ItemSet(
       404,
-      TextModel(
+      Translation(
         "Panoplie du Chalœil",
         "Catseye Set",
       ),
@@ -12991,7 +12991,7 @@ const sets = [
       ]),
   const ItemSet(
       405,
-      TextModel(
+      Translation(
         "Panoplie du Valet Veinard",
         "Jammy Jack Set",
       ),
@@ -13022,7 +13022,7 @@ const sets = [
       ]),
   const ItemSet(
       406,
-      TextModel(
+      Translation(
         "Panoplie d'Atcham",
         "Atcham Set",
       ),
@@ -13061,7 +13061,7 @@ const sets = [
       ]),
   const ItemSet(
       407,
-      TextModel(
+      Translation(
         "Panoplie de Ush",
         "Ush Set",
       ),
@@ -13096,7 +13096,7 @@ const sets = [
       ]),
   const ItemSet(
       408,
-      TextModel(
+      Translation(
         "Panoplie des Matougarous",
         "Weremoggies Set",
       ),
@@ -13127,7 +13127,7 @@ const sets = [
       ]),
   const ItemSet(
       409,
-      TextModel(
+      Translation(
         "Panoplie du Pounicheur",
         "Colousses Set",
       ),
@@ -13157,7 +13157,7 @@ const sets = [
       ]),
   const ItemSet(
       410,
-      TextModel(
+      Translation(
         "Panoplie des Ecaflipuces",
         "Ecaflees Set",
       ),
@@ -13189,7 +13189,7 @@ const sets = [
       ]),
   const ItemSet(
       413,
-      TextModel(
+      Translation(
         "Poulplie",
         "Octoset",
       ),
@@ -13222,7 +13222,7 @@ const sets = [
       ]),
   const ItemSet(
       414,
-      TextModel(
+      Translation(
         "Panoplie Trithon",
         "Tritun Set",
       ),
@@ -13249,7 +13249,7 @@ const sets = [
       ]),
   const ItemSet(
       415,
-      TextModel(
+      Translation(
         "Panoplie de Meno",
         "Meno Set",
       ),
@@ -13282,7 +13282,7 @@ const sets = [
       ]),
   const ItemSet(
       416,
-      TextModel(
+      Translation(
         "Panoplie de l'Indicible",
         "Unspeakable Set",
       ),
@@ -13321,7 +13321,7 @@ const sets = [
       ]),
   const ItemSet(
       417,
-      TextModel(
+      Translation(
         "Panoplie Luminescente",
         "Luminescent Set",
       ),
@@ -13358,7 +13358,7 @@ const sets = [
       ]),
   const ItemSet(
       418,
-      TextModel(
+      Translation(
         "Panoplie de R'lyugluglu",
         "Rygurgal Set",
       ),
@@ -13395,7 +13395,7 @@ const sets = [
       ]),
   const ItemSet(
       420,
-      TextModel(
+      Translation(
         "Panoplie Ouroboulos",
         "Ourobubble Set",
       ),
@@ -13428,7 +13428,7 @@ const sets = [
       ]),
   const ItemSet(
       421,
-      TextModel(
+      Translation(
         "Panoplie du Désert",
         "Desert Set",
       ),
@@ -13459,7 +13459,7 @@ const sets = [
       ]),
   const ItemSet(
       422,
-      TextModel(
+      Translation(
         "Panoplie Cacterre",
         "Castuc Set",
       ),
@@ -13492,7 +13492,7 @@ const sets = [
       ]),
   const ItemSet(
       423,
-      TextModel(
+      Translation(
         "Panoplie d'El Piko",
         "El Piko Set",
       ),
@@ -13527,7 +13527,7 @@ const sets = [
       ]),
   const ItemSet(
       426,
-      TextModel(
+      Translation(
         "Vernoplie",
         "Worm Set",
       ),
@@ -13554,7 +13554,7 @@ const sets = [
       ]),
   const ItemSet(
       427,
-      TextModel(
+      Translation(
         "Pernoplie",
         "Wurmlord Set",
       ),
@@ -13581,7 +13581,7 @@ const sets = [
       ]),
   const ItemSet(
       428,
-      TextModel(
+      Translation(
         "Panoplie de Tal Kasha",
         "Tal Kasha Set",
       ),
@@ -13616,7 +13616,7 @@ const sets = [
       ]),
   const ItemSet(
       429,
-      TextModel(
+      Translation(
         "Panoplistik",
         "Setstik",
       ),
@@ -13653,7 +13653,7 @@ const sets = [
       ]),
   const ItemSet(
       430,
-      TextModel(
+      Translation(
         "Panoplie Enragée",
         "Enraged Set",
       ),
@@ -13748,7 +13748,7 @@ const sets = [
       ]),
   const ItemSet(
       432,
-      TextModel(
+      Translation(
         "Panoplie du Comte Razof",
         "Count Razof Set",
       ),
@@ -13781,7 +13781,7 @@ const sets = [
       ]),
   const ItemSet(
       433,
-      TextModel(
+      Translation(
         "Panoplie des Chassouilleurs",
         "Chassulliers Set",
       ),
@@ -13814,7 +13814,7 @@ const sets = [
       ]),
   const ItemSet(
       435,
-      TextModel(
+      Translation(
         "Panoplie d'Anerice",
         "Anerice Set",
       ),
@@ -13859,7 +13859,7 @@ const sets = [
       ]),
   const ItemSet(
       436,
-      TextModel(
+      Translation(
         "Panoplie de la Goule",
         "Ghoul Set",
       ),
@@ -13892,7 +13892,7 @@ const sets = [
       ]),
   const ItemSet(
       437,
-      TextModel(
+      Translation(
         "Panoplie du Scorbute",
         "Scurvion Set",
       ),
@@ -13926,7 +13926,7 @@ const sets = [
       ]),
   const ItemSet(
       438,
-      TextModel(
+      Translation(
         "Panoplie de Choudini",
         "Cauldini Set",
       ),
@@ -13961,7 +13961,7 @@ const sets = [
       ]),
   const ItemSet(
       439,
-      TextModel(
+      Translation(
         "Panoplie Riktus",
         "Riktus Set",
       ),
@@ -13994,7 +13994,7 @@ const sets = [
       ]),
   const ItemSet(
       440,
-      TextModel(
+      Translation(
         "Panoplie du Muloubar",
         "Moowoldlum Set",
       ),
@@ -14030,7 +14030,7 @@ const sets = [
       ]),
   const ItemSet(
       444,
-      TextModel(
+      Translation(
         "Panoplie du Cœur Vaillant",
         "Valiant Heart Set",
       ),
@@ -14061,7 +14061,7 @@ const sets = [
       ]),
   const ItemSet(
       445,
-      TextModel(
+      Translation(
         "Panoplie du Cœur Saignant",
         "Bleeding Heart Set",
       ),
@@ -14092,7 +14092,7 @@ const sets = [
       ]),
   const ItemSet(
       446,
-      TextModel(
+      Translation(
         "Panoplie de l'Esprit Salvateur",
         "Salvatory Spirit Set",
       ),
@@ -14119,7 +14119,7 @@ const sets = [
       ]),
   const ItemSet(
       447,
-      TextModel(
+      Translation(
         "Panoplie de l'Esprit Malsain",
         "Unsound Mind Set",
       ),
@@ -14146,7 +14146,7 @@ const sets = [
       ]),
   const ItemSet(
       448,
-      TextModel(
+      Translation(
         "Panoplie de l'Œil Attentif",
         "Sharp Eye Set",
       ),
@@ -14173,7 +14173,7 @@ const sets = [
       ]),
   const ItemSet(
       449,
-      TextModel(
+      Translation(
         "Panoplie de l'Œil Putride",
         "Putrid Eye Set",
       ),
@@ -14206,7 +14206,7 @@ const sets = [
       ]),
   const ItemSet(
       450,
-      TextModel(
+      Translation(
         "Panoplie d'Ilyzaelle",
         "Ilyzaelle Set",
       ),
@@ -14241,7 +14241,7 @@ const sets = [
       ]),
   const ItemSet(
       451,
-      TextModel(
+      Translation(
         "Panoplie Brûlâme",
         "Soul-Blaze Set",
       ),
@@ -14276,7 +14276,7 @@ const sets = [
       ]),
   const ItemSet(
       453,
-      TextModel(
+      Translation(
         "Panoplie Ardente",
         "Burning Set",
       ),
@@ -14309,7 +14309,7 @@ const sets = [
       ]),
   const ItemSet(
       454,
-      TextModel(
+      Translation(
         "Panoplie Volcanique",
         "Volcanic Set",
       ),
@@ -14344,7 +14344,7 @@ const sets = [
       ]),
   const ItemSet(
       455,
-      TextModel(
+      Translation(
         "Panoplie Submergée",
         "Submerged Set",
       ),
@@ -14371,7 +14371,7 @@ const sets = [
       ]),
   const ItemSet(
       456,
-      TextModel(
+      Translation(
         "Panoplie de Bethel",
         "Bethel Set",
       ),
@@ -14402,7 +14402,7 @@ const sets = [
       ]),
   const ItemSet(
       458,
-      TextModel(
+      Translation(
         "Grithriloplie",
         "Grithril Set",
       ),
@@ -14429,7 +14429,7 @@ const sets = [
       ]),
   const ItemSet(
       459,
-      TextModel(
+      Translation(
         "Panoplie Martegel",
         "Freezammer Set",
       ),
@@ -14460,7 +14460,7 @@ const sets = [
       ]),
   const ItemSet(
       460,
-      TextModel(
+      Translation(
         "Panoplie Volkorne",
         "Rhineetle Set",
       ),
@@ -14527,7 +14527,7 @@ const sets = [
       ]),
   const ItemSet(
       466,
-      TextModel(
+      Translation(
         "Panoplie du Vampyre maudit",
         "Cursed Vampire set",
       ),
@@ -14537,14 +14537,14 @@ const sets = [
           [],
           [],
           [
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined"))
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined"))
           ],
         ),
         Bonuses(
@@ -14554,14 +14554,14 @@ const sets = [
           ],
           [],
           [
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined"))
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined"))
           ],
         ),
         Bonuses(
@@ -14571,14 +14571,14 @@ const sets = [
           ],
           [],
           [
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined"))
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined"))
           ],
         ),
         Bonuses(
@@ -14588,14 +14588,14 @@ const sets = [
           ],
           [],
           [
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined"))
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined"))
           ],
         ),
         Bonuses(
@@ -14606,14 +14606,14 @@ const sets = [
           ],
           [],
           [
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined"))
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined"))
           ],
         ),
         Bonuses(
@@ -14625,20 +14625,20 @@ const sets = [
           ],
           [],
           [
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined")),
-            const OtherBonus(const TextModel("undefined", "undefined"))
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined")),
+            const OtherBonus(const Translation("undefined", "undefined"))
           ],
         )
       ]),
   const ItemSet(
       467,
-      TextModel(
+      Translation(
         "Panoplie Paztek",
         "Paztek Set",
       ),
@@ -14671,7 +14671,7 @@ const sets = [
       ]),
   const ItemSet(
       468,
-      TextModel(
+      Translation(
         "Panoplie des Chocomanciens",
         "Chocomancer Set",
       ),
@@ -14706,7 +14706,7 @@ const sets = [
       ]),
   const ItemSet(
       469,
-      TextModel(
+      Translation(
         "Panoplie du Mawabouaino",
         "Mawabouwaino Set",
       ),
@@ -14739,7 +14739,7 @@ const sets = [
       ]),
   const ItemSet(
       470,
-      TextModel(
+      Translation(
         "Panoplie Croquante",
         "Chocruncher Set",
       ),
@@ -14770,7 +14770,7 @@ const sets = [
       ]),
   const ItemSet(
       471,
-      TextModel(
+      Translation(
         "Panoplie Lunaire",
         "Lunar Set",
       ),
@@ -14803,7 +14803,7 @@ const sets = [
       ]),
   const ItemSet(
       472,
-      TextModel(
+      Translation(
         "Panoplie de Torkélonia",
         "Turtelonia Set",
       ),
@@ -14836,7 +14836,7 @@ const sets = [
       ]),
   const ItemSet(
       473,
-      TextModel(
+      Translation(
         "Panoplie du Dragoeuf Cuirassé",
         "Armoured Dreggon Set",
       ),

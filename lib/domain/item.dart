@@ -4,8 +4,8 @@ import 'package:dofus_items/domain/text_model.dart';
 
 class Item implements Comparable<Item> {
   final int id;
-  final TextModel name;
-  final TextModel description;
+  final Translation name;
+  final Translation description;
   final ItemType type;
   final int level;
   final int iconId;

@@ -1,10 +1,10 @@
 import 'package:flutter/widgets.dart';
 
-class TextModel {
+class Translation {
   final String fr;
   final String en;
 
-  const TextModel(
+  const Translation(
     this.fr,
     this.en,
   );

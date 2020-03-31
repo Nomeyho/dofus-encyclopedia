@@ -26,7 +26,10 @@ class SetItems extends StatelessWidget {
         },
         child: Padding(
           padding: const EdgeInsets.all(12.0),
-          child: Image.asset('assets/img/items/${item.iconId}.png'),
+          child: Hero(
+            tag: item.iconId,
+            child: Image.asset('assets/img/items/${item.iconId}.png'),
+          ),
         ),
       ),
     );

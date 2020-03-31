@@ -24,7 +24,7 @@ class SetTitle extends StatelessWidget {
               style: TextStyle(
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.w700,
-                fontSize: 16,
+                fontSize: 14,
                 color: AppTheme.high_emphasis,
               ),
             ),

@@ -24,8 +24,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - 'assets/data/items.json'
-    - 'assets/data/sets.json'
     - 'assets/img/categories/'
     - 'assets/img/items/'
     - 'assets/img/characteristics/'

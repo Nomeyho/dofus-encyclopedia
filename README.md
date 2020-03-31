@@ -1,25 +1,25 @@
-# Dofus Encyclopedia
+# Dofus items
+> A cross-platform mobile application to browser items et sets from the Dofus MMORPG.
 
-> Dofus item encyclopedia
 
-## Generate icons
+## Development
+
+### Generate icons
 ```
 flutter pub run flutter_launcher_icons:main
 ```
 
-## Todo
+### Generate data
+1. Retrieve `items.json` and `sets.json`
+2. Configure and execute `index_item.js` and `index_set.js`
+
+### TODO
 - Test UI size on tablets
 - readme
-- Use embedded database (sqlite?)
-- Cleanup mess
-- Cache services
-- Use BLoC pattern
-- Issue with bonus count?
-- Add padding everywhere
 - Info modal + copyrights
 - min/max range issue
 
-## Roadmap
+### Roadmap
 - Add item/set conditions
 - Add item recipe
 - Support i18n plural
