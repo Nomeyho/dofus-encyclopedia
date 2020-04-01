@@ -1,6 +1,7 @@
 import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/config.dart';
+import 'package:dofus_items/notification_manager.dart';
 import 'package:dofus_items/router.dart';
 import 'package:dofus_items/widgets/banner.dart';
 import 'package:flutter/material.dart' hide Banner;
@@ -12,6 +13,9 @@ import 'generated/i18n.dart';
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+    PushNotificationsManager.instance.init();
+
     return Stack(
       children: <Widget>[
         MaterialApp(

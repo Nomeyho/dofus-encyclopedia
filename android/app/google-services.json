@@ -1,35 +1,42 @@
 {
   "project_info": {
-    "project_number": "31984565113",
-    "firebase_url": "https://dofus-items-android.firebaseio.com",
-    "project_id": "dofus-items-android",
-    "storage_bucket": "dofus-items-android.appspot.com"
+    "project_number": "908108863600",
+    "firebase_url": "https://dofus-items-ce36c.firebaseio.com",
+    "project_id": "dofus-items-ce36c",
+    "storage_bucket": "dofus-items-ce36c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:31984565113:android:00c7fb4a2c97b948fe0da8",
+        "mobilesdk_app_id": "1:908108863600:android:4e1e5b814a83ea6d7f7cb5",
         "android_client_info": {
           "package_name": "io.github.nomeyho.dofus.items"
         }
       },
       "oauth_client": [
         {
-          "client_id": "31984565113-7i5d0hals8ks01srhj5nv067k44gg5q3.apps.googleusercontent.com",
+          "client_id": "908108863600-mbkeldd582c6stda5rjnb5fa03b94hhp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAvgunFCFUBKiZ4BB9Uu26Io1VuTSq8dQc"
+          "current_key": "AIzaSyCvK7MA0diTeWso6JLsRIdNSH7Sl48wdLE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "31984565113-7i5d0hals8ks01srhj5nv067k44gg5q3.apps.googleusercontent.com",
+              "client_id": "908108863600-mbkeldd582c6stda5rjnb5fa03b94hhp.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "908108863600-af14ecj9kfi9ehgk1cf90hcsvtq0ouao.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.github.nomeyho.dofus.items"
+              }
             }
           ]
         }

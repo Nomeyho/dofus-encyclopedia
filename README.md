@@ -18,6 +18,7 @@ flutter pub run flutter_launcher_icons:main
 - readme
 - Info modal + copyrights
 - min/max range issue
+- use appropriate logger
 
 ### Roadmap
 - Add item/set conditions
