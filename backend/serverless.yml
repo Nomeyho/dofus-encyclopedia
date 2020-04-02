@@ -8,25 +8,14 @@ provider:
   apiKeys:
     - dofus-items-api-register-key
   environment:
-    REGION: ${self:provider.region}
-    APPLICATION_PLATFORM_ARN: arn:aws:sns:eu-west-1:117476207589:app/GCM/Dofus-Items
-    TOPIC_ARN: arn:aws:sns:eu-west-1:117476207589:dofus-items-daily-topic
-    SUBSCRIPTION_TABLE: dofus-items_subscriptions
-  iamRoleStatements:
-    - Effect: "Allow"
-      Action:
-        - "SNS:*"
-      Resource: "*"
-    - Effect: "Allow"
-      Action:
-        - "DynamoDB:*"
-      Resource: "*"
+    NOTIFICATION_TOPIC_FR: dofus-items-topic-fr
+    NOTIFICATION_TOPIC_EN: dofus-items-topic-en
 
 functions:
   # Register
   register-device:
     name: dofus-items_register-device
-    handler: register.handler
+    handler: src/handler.register
     memorySize: 128
     events:
       - http:
@@ -35,7 +24,7 @@ functions:
   # Notify
   send-notification:
     name: dofus-items_send-notification
-    handler: send.handler
+    handler: src/handler.notify
     memorySize: 128
     events:
       - schedule:
@@ -46,17 +35,3 @@ functions:
           private: true
           path: /notify
           method: post
-
-resources:
-  Resources:
-    devices:
-      Type: AWS::DynamoDB::Table
-      Properties:
-        TableName: dofus-items_subscriptions
-        AttributeDefinitions:
-          - AttributeName: token
-            AttributeType: S
-        KeySchema:
-          - AttributeName: token
-            KeyType: HASH
-        BillingMode: PAY_PER_REQUEST

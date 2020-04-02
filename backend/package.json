@@ -1,0 +1,16 @@
+{
+  "name": "dofus-items-api",
+  "version": "1.0.0",
+  "description": "Backend for the Dofus Items mobile application",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Nomeyho",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.650.0",
+    "serverless": "^1.67.0"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.10.0"
+  }
+}

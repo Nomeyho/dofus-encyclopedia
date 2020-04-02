@@ -14,10 +14,30 @@ flutter pub run flutter_launcher_icons:main
 2. Configure and execute `index_item.js` and `index_set.js`
 
 ### Backend
+
+#### Setup
+1. Download the private key from the Firebase console and copy it under the `backend/key.json`.
+2. Deploy the backend
 ```
     cd backend
     npm install
     serverless deploy
+```
+
+### API
+Register a device
+```
+curl --request POST 'https://h1r13t4xug.execute-api.eu-west-1.amazonaws.com/dev/register' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+	"token": "fcm-token",
+	"lang": "fr"
+}'
+```
+
+Send notification
+```
+curl --location --request POST 'https://h1r13t4xug.execute-api.eu-west-1.amazonaws.com/dev/notify'
 ```
 
 ### TODO

@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-const INPUT = 'assets/data/items.json';
-const OUTPUT = 'lib/data/item_data.dart';
+const INPUT = 'items.json';
+const OUTPUT = '../lib/data/item_data.dart';
 
 async function main() {
     const input = fs.readFileSync(INPUT);

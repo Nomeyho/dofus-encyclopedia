@@ -1,0 +1,1462 @@
+[
+  {
+    "fr": "Arc Hétype",
+    "en": "Archetypal Bow"
+  },
+  {
+    "fr": "Frimamulette",
+    "en": "Sleet Amulet"
+  },
+  {
+    "fr": "Bâton Beau",
+    "en": "Sepulchral Sceptre"
+  },
+  {
+    "fr": "Chapeau des Malveilleurs",
+    "en": "Malitiamen Hat"
+  },
+  {
+    "fr": "Ceinture de la Reine des Voleurs",
+    "en": "Queen of Thieves' Belt"
+  },
+  {
+    "fr": "Pataugastrique",
+    "en": "Pathogastrics"
+  },
+  {
+    "fr": "Cape de Dremoan",
+    "en": "Dremoan Cape"
+  },
+  {
+    "fr": "Cape du Chalœil",
+    "en": "Catseye Cape"
+  },
+  {
+    "fr": "Alliance de Missiz Frizz",
+    "en": "Missiz Freezz's Ring"
+  },
+  {
+    "fr": "Alliance Brûlâme",
+    "en": "Soul-Blaze Wedding Ring"
+  },
+  {
+    "fr": "Trompe-la-Mort",
+    "en": "Death-Defying"
+  },
+  {
+    "fr": "Pelle de Katrepat",
+    "en": "Forfut Shovel"
+  },
+  {
+    "fr": "Bouclier du Stalak",
+    "en": "Stalak Shield"
+  },
+  {
+    "fr": "Sangle de Sylargh",
+    "en": "Sylargh's Strap"
+  },
+  {
+    "fr": "Epée Kari",
+    "en": "Peccary Blade"
+  },
+  {
+    "fr": "Bottes de la Cour Sombre",
+    "en": "Dark Court Boots"
+  },
+  {
+    "fr": "Ceinture de Léthaline",
+    "en": "Lethaline's Belt"
+  },
+  {
+    "fr": "Bracelet Ming",
+    "en": "Lemming Bracelet"
+  },
+  {
+    "fr": "Amulette du Cœur Saignant",
+    "en": "Amulet of the Bleeding Heart"
+  },
+  {
+    "fr": "Calotte Spot",
+    "en": "Stonebrimmed Hat"
+  },
+  {
+    "fr": "Épée d'Otomaï",
+    "en": "Otomai's Sword"
+  },
+  {
+    "fr": "Cape de la Fuji Givrefoux",
+    "en": "Fuji Snowfoux Cloak"
+  },
+  {
+    "fr": "Amulette d'Oshimo",
+    "en": "Oshimo's Amulet"
+  },
+  {
+    "fr": "Bottes de Brouce",
+    "en": "Broucey Boots"
+  },
+  {
+    "fr": "Dofus Abyssal",
+    "en": "Abyssal Dofus"
+  },
+  {
+    "fr": "La Rondelle",
+    "en": "Cawwot Wound"
+  },
+  {
+    "fr": "Amulule",
+    "en": "Jahn Locket"
+  },
+  {
+    "fr": "Ceinture de Kongoku",
+    "en": "Kongoku Belt"
+  },
+  {
+    "fr": "Bottistik",
+    "en": "Mumystiboots"
+  },
+  {
+    "fr": "Masque de Kao",
+    "en": "Chokao Mask"
+  },
+  {
+    "fr": "Sangle Ouare",
+    "en": "Epeni's Belt"
+  },
+  {
+    "fr": "Crocobur",
+    "en": "Crocobur"
+  },
+  {
+    "fr": "Épée Brûlâme",
+    "en": "Soul-Blaze Sword"
+  },
+  {
+    "fr": "Hache du Chalœil",
+    "en": "Catseye Axe"
+  },
+  {
+    "fr": "Marteau de Katrepat",
+    "en": "Forfut Hammer"
+  },
+  {
+    "fr": "Épée d'Otomaï",
+    "en": "Otomai's Sword"
+  },
+  {
+    "fr": "Cape Paztek",
+    "en": "Paztek Cloak"
+  },
+  {
+    "fr": "Anneau Rifique",
+    "en": "Horrifing"
+  },
+  {
+    "fr": "String Tue-Mouche",
+    "en": "Stringsecticide"
+  },
+  {
+    "fr": "Rapière aux Glyphes",
+    "en": "Gilbert G. Rapier"
+  },
+  {
+    "fr": "Jadis",
+    "en": "Wunsupon"
+  },
+  {
+    "fr": "Culotte de Bethel",
+    "en": "Bethel's Panties"
+  },
+  {
+    "fr": "Masque de Funespadon",
+    "en": "Funerbroadsword Mask"
+  },
+  {
+    "fr": "Casque des égarés",
+    "en": "Fugitive Helmet"
+  },
+  {
+    "fr": "Bottes Dogues",
+    "en": "Hot Docs"
+  },
+  {
+    "fr": "Cape d'Aermyne",
+    "en": "Aermyne's Cape"
+  },
+  {
+    "fr": "Cape du Professeur Xa",
+    "en": "Professor Xa's Cloak"
+  },
+  {
+    "fr": "Coiffe du Kanimate",
+    "en": "Kan-O-Mat Headgear"
+  },
+  {
+    "fr": "Collier de la Dame du Hasard",
+    "en": "Queen of Fate Necklace"
+  },
+  {
+    "fr": "Capuche de Moum-Ra",
+    "en": "Moum-Ra's Hood"
+  },
+  {
+    "fr": "Casquette de Meno",
+    "en": "Meno Cap"
+  },
+  {
+    "fr": "Bottes du Cœur Vaillant",
+    "en": "Boots of the Valiant Heart"
+  },
+  {
+    "fr": "Cape de la Dame du Hasard",
+    "en": "Queen of Fate Cape"
+  },
+  {
+    "fr": "Ceinture des Chocomanciens",
+    "en": "Chocomancer Belt"
+  },
+  {
+    "fr": "Anneau Lunaire",
+    "en": "Lunar Ring"
+  },
+  {
+    "fr": "Collier Rophante",
+    "en": "Hirofant Necklace"
+  },
+  {
+    "fr": "Cape d'Ogivol",
+    "en": "Ogivol's Cloak"
+  },
+  {
+    "fr": "Bracelet du Minotoboule",
+    "en": "Minotoball Bracelet"
+  },
+  {
+    "fr": "Rapière aux Glyphes",
+    "en": "Gilbert G. Rapier"
+  },
+  {
+    "fr": "Chevelure de Tal Kasha",
+    "en": "Tal Kasha Head of Hair"
+  },
+  {
+    "fr": "Anneau Aimgéroks",
+    "en": "Awmigawd Band"
+  },
+  {
+    "fr": "Cape Nécrotique",
+    "en": "Necrotick Cape"
+  },
+  {
+    "fr": "Casque des égarés",
+    "en": "Fugitive Helmet"
+  },
+  {
+    "fr": "Baguette Hique",
+    "en": "Ethical Wand"
+  },
+  {
+    "fr": "Arc Ahique",
+    "en": "Archaic Bow"
+  },
+  {
+    "fr": "Talisman Igans",
+    "en": "Talismagic"
+  },
+  {
+    "fr": "Baguette Héroclite",
+    "en": "Mishmash Wand"
+  },
+  {
+    "fr": "Bottes d'Allister",
+    "en": "Allister's Boots"
+  },
+  {
+    "fr": "Ceinture d'Henual",
+    "en": "Henual's Belt"
+  },
+  {
+    "fr": "Chapeau des Malveilleurs",
+    "en": "Malitiamen Hat"
+  },
+  {
+    "fr": "Chaussons Pignons",
+    "en": "Spore Boots"
+  },
+  {
+    "fr": "Bouclier Bontarien",
+    "en": "Bontarian Shield"
+  },
+  {
+    "fr": "Kidibonnet",
+    "en": "Kideebonnet"
+  },
+  {
+    "fr": "Bouclier cubiste",
+    "en": "Cubist Shield"
+  },
+  {
+    "fr": "Bottes des Malveilleurs",
+    "en": "Malitiamen Boots"
+  },
+  {
+    "fr": "Talisman Igans",
+    "en": "Talismagic"
+  },
+  {
+    "fr": "Ceinture Bine",
+    "en": "Turbine Belt"
+  },
+  {
+    "fr": "Bouclier de Solar",
+    "en": "Solar's Shield"
+  },
+  {
+    "fr": "Tentassons",
+    "en": "Tentashoes"
+  },
+  {
+    "fr": "Ceinture de Gein",
+    "en": "Gein's Belt"
+  },
+  {
+    "fr": "Bouclier Brâkmarien",
+    "en": "Brakmarian Shield"
+  },
+  {
+    "fr": "Bottes de Léthaline",
+    "en": "Lethaline's Boots"
+  },
+  {
+    "fr": "Pelle Emélaka",
+    "en": "Shovel Emlaka"
+  },
+  {
+    "fr": "Couteaux sacrés",
+    "en": "Sacred Knives"
+  },
+  {
+    "fr": "Epée Maudite du Saigneur Guerrier",
+    "en": "Blord Warrior's Cursed Sword"
+  },
+  {
+    "fr": "Poulpagne",
+    "en": "Ockloth"
+  },
+  {
+    "fr": "Arc corrompu",
+    "en": "Corrupted Bow"
+  },
+  {
+    "fr": "Jadis",
+    "en": "Wunsupon"
+  },
+  {
+    "fr": "Anneau du Comte Harebourg",
+    "en": "Count Harebourg's Ring"
+  },
+  {
+    "fr": "Bouclier des Chocomanciens",
+    "en": "Chocomancer Shield"
+  },
+  {
+    "fr": "Ougamulette",
+    "en": "Ougaamulet"
+  },
+  {
+    "fr": "Anneau des égarés",
+    "en": "Fugitive Ring"
+  },
+  {
+    "fr": "Masque de Funespadon",
+    "en": "Funerbroadsword Mask"
+  },
+  {
+    "fr": "Massier",
+    "en": "Steelymace"
+  },
+  {
+    "fr": "Cape de Diondin",
+    "en": "Merdiodon Cloak"
+  },
+  {
+    "fr": "Couronne de Brâm Barbe-Monde",
+    "en": "Bram Worldbeard's Crown"
+  },
+  {
+    "fr": "Sept ans de malheur",
+    "en": "Seven Years Bad Luck"
+  },
+  {
+    "fr": "Bottes Refois",
+    "en": "Somboots"
+  },
+  {
+    "fr": "Jadis",
+    "en": "Wunsupon"
+  },
+  {
+    "fr": "Couronne du Roi Joueur",
+    "en": "King Playa Crown"
+  },
+  {
+    "fr": "Epée Kari",
+    "en": "Peccary Blade"
+  },
+  {
+    "fr": "Masque mortuaire",
+    "en": "Death Mask"
+  },
+  {
+    "fr": "Carapace de Torkélonia",
+    "en": "Turtelonia Carapace"
+  },
+  {
+    "fr": "Bottes du Katcheur",
+    "en": "Rassler Boots"
+  },
+  {
+    "fr": "Masque de Klime",
+    "en": "Klime's Mask"
+  },
+  {
+    "fr": "Cape Nécrotique",
+    "en": "Necrotick Cape"
+  },
+  {
+    "fr": "Cape Tif",
+    "en": "Tive Cape"
+  },
+  {
+    "fr": "Marteau d'Henual",
+    "en": "Henual's Hammer"
+  },
+  {
+    "fr": "Cape de Crânonier",
+    "en": "Sucgunner Cape"
+  },
+  {
+    "fr": "Némès de Tal Kasha",
+    "en": "Tal Kasha Nemes"
+  },
+  {
+    "fr": "Frimamulette",
+    "en": "Sleet Amulet"
+  },
+  {
+    "fr": "Marteau des égarés",
+    "en": "Fugitive Hammer"
+  },
+  {
+    "fr": "Masque Ardent",
+    "en": "Burning Mask"
+  },
+  {
+    "fr": "Collier de Tourthon",
+    "en": "Crabtun Necklace"
+  },
+  {
+    "fr": "Grésilanneau",
+    "en": "Hail Ring"
+  },
+  {
+    "fr": "Anneau du Cycloïde",
+    "en": "Cycloid Ring"
+  },
+  {
+    "fr": "Masque Paztek",
+    "en": "Paztek Mask"
+  },
+  {
+    "fr": "Bottes du Cycloïde",
+    "en": "Cycloid Boots"
+  },
+  {
+    "fr": "Bouclier d'Anerice",
+    "en": "Anerice Shield"
+  },
+  {
+    "fr": "Droiture de Fallanster",
+    "en": "Fallanster's Rectitude"
+  },
+  {
+    "fr": "Pelle Vétik",
+    "en": "Vetic Shovel"
+  },
+  {
+    "fr": "Masque de Funespadon",
+    "en": "Funerbroadsword Mask"
+  },
+  {
+    "fr": "Chapeau du Comte Razof",
+    "en": "Count Razof's Helmet"
+  },
+  {
+    "fr": "Ceinture de l'Esprit Malsain",
+    "en": "Belt of the Unsound Mind"
+  },
+  {
+    "fr": "Cape Erforée",
+    "en": "Chee Cape"
+  },
+  {
+    "fr": "Coiffe de Padgref",
+    "en": "Nomarow's Helmet"
+  },
+  {
+    "fr": "Ceinture des Chocomanciens",
+    "en": "Chocomancer Belt"
+  },
+  {
+    "fr": "Torquistik",
+    "en": "Mumystorque"
+  },
+  {
+    "fr": "Bague Nostik",
+    "en": "Copper Nickus Ring"
+  },
+  {
+    "fr": "Talisman Songe",
+    "en": "White Lai Amulet"
+  },
+  {
+    "fr": "Dagues de Srambad",
+    "en": "Srambad Daggers"
+  },
+  {
+    "fr": "Sept ans de malheur",
+    "en": "Seven Years Bad Luck"
+  },
+  {
+    "fr": "Bâton Brageut",
+    "en": "Stormcloud Staff"
+  },
+  {
+    "fr": "Epée Maudite du Saigneur Guerrier",
+    "en": "Blord Warrior's Cursed Sword"
+  },
+  {
+    "fr": "Chapeau Potin",
+    "en": "Mad Chatter"
+  },
+  {
+    "fr": "Casque des égarés",
+    "en": "Fugitive Helmet"
+  },
+  {
+    "fr": "Capignon",
+    "en": "Deadly Night Cape"
+  },
+  {
+    "fr": "Cape du Chalœil",
+    "en": "Catseye Cape"
+  },
+  {
+    "fr": "Ceinture du Comte Razof",
+    "en": "Count Razof's Belt"
+  },
+  {
+    "fr": "Ceinture des Chocomanciens",
+    "en": "Chocomancer Belt"
+  },
+  {
+    "fr": "Bottes du Roi Joueur",
+    "en": "King Playa Boots"
+  },
+  {
+    "fr": "Bottes d'Otomaï",
+    "en": "Otomai's Boots"
+  },
+  {
+    "fr": "Kralamansion",
+    "en": "Kralomansion"
+  },
+  {
+    "fr": "Couteaux à Champignons",
+    "en": "Mush Cuteers"
+  },
+  {
+    "fr": "Masque Ardent",
+    "en": "Burning Mask"
+  },
+  {
+    "fr": "Quatre-feuilles",
+    "en": "Four-Leaf"
+  },
+  {
+    "fr": "Casque du Chalœil",
+    "en": "Catseye Helmet"
+  },
+  {
+    "fr": "Dofus Abyssal",
+    "en": "Abyssal Dofus"
+  },
+  {
+    "fr": "Bottes de Léthaline",
+    "en": "Lethaline's Boots"
+  },
+  {
+    "fr": "Chevelure de Tal Kasha",
+    "en": "Tal Kasha Head of Hair"
+  },
+  {
+    "fr": "Arc à Lamelles",
+    "en": "Beddy Bow"
+  },
+  {
+    "fr": "Bouclier d'Anerice",
+    "en": "Anerice Shield"
+  },
+  {
+    "fr": "Bottes de l'Esprit Salvateur",
+    "en": "Boots of the Salvatory Spirit"
+  },
+  {
+    "fr": "Plume de Buhorado",
+    "en": "Buhorado Feather"
+  },
+  {
+    "fr": "Bottistik",
+    "en": "Mumystiboots"
+  },
+  {
+    "fr": "Bague Instable",
+    "en": "Unstable Band"
+  },
+  {
+    "fr": "Sangle Oriole",
+    "en": "Bluster Belt"
+  },
+  {
+    "fr": "Épée Brûlâme",
+    "en": "Soul-Blaze Sword"
+  },
+  {
+    "fr": "Anneau Tamie",
+    "en": "Shylock's Ring"
+  },
+  {
+    "fr": "Casqnoar",
+    "en": "Nitekap"
+  },
+  {
+    "fr": "Collier de Tourthon",
+    "en": "Crabtun Necklace"
+  },
+  {
+    "fr": "Ceinture de Kongoku",
+    "en": "Kongoku Belt"
+  },
+  {
+    "fr": "Cape de la Dame du Hasard",
+    "en": "Queen of Fate Cape"
+  },
+  {
+    "fr": "Bottes de la Reine des Voleurs",
+    "en": "Queen of Thieves' Boots"
+  },
+  {
+    "fr": "Amulette du Kanimate",
+    "en": "Kan-O-Mat Amulet"
+  },
+  {
+    "fr": "Cape Ovri",
+    "en": "Pauper's Robe"
+  },
+  {
+    "fr": "Amulette du Sinistrofu",
+    "en": "Sinistrofu Amulet"
+  },
+  {
+    "fr": "Bottes Voldelor",
+    "en": "Voldelor Boots"
+  },
+  {
+    "fr": "Bottes du Strigide",
+    "en": "Treadfast Boots"
+  },
+  {
+    "fr": "Bottes du Roi Joueur",
+    "en": "King Playa Boots"
+  },
+  {
+    "fr": "Chaussures Face",
+    "en": "Spitshiners"
+  },
+  {
+    "fr": "Cape Ovri",
+    "en": "Pauper's Robe"
+  },
+  {
+    "fr": "Torquistik",
+    "en": "Mumystorque"
+  },
+  {
+    "fr": "Bouclier du Cycloïde",
+    "en": "Cycloid Shield"
+  },
+  {
+    "fr": "Casque Cyclopéen",
+    "en": "Cycloptic Helmet"
+  },
+  {
+    "fr": "Pendentif Oton",
+    "en": "Quartzovski Crystal"
+  },
+  {
+    "fr": "Cape de Klime",
+    "en": "Klime's Cloak"
+  },
+  {
+    "fr": "Casque des égarés",
+    "en": "Fugitive Helmet"
+  },
+  {
+    "fr": "Cape de Crânonier",
+    "en": "Sucgunner Cape"
+  },
+  {
+    "fr": "Chapeau Lochon",
+    "en": "Somnambulist's Nightcap"
+  },
+  {
+    "fr": "Cape de Sylargh",
+    "en": "Sylargh's Cloak"
+  },
+  {
+    "fr": "Bottes d'Allister",
+    "en": "Allister's Boots"
+  },
+  {
+    "fr": "Coiffe de Kolosso",
+    "en": "Kolosso Helmet"
+  },
+  {
+    "fr": "Cape Tif",
+    "en": "Tive Cape"
+  },
+  {
+    "fr": "Baguette de Malléfisk",
+    "en": "Brutatax Wand"
+  },
+  {
+    "fr": "Epée Gloursonne",
+    "en": "Bearbaric Sword"
+  },
+  {
+    "fr": "Cape des Malveilleurs",
+    "en": "Malitiamen Cape"
+  },
+  {
+    "fr": "Cape de Théodoran Ax",
+    "en": "Antyklime Ax's Cloak"
+  },
+  {
+    "fr": "Lance corrompue",
+    "en": "Corrupted Spear"
+  },
+  {
+    "fr": "Chaussures Ardentes",
+    "en": "Burning Shoes"
+  },
+  {
+    "fr": "Chaussons de Macrab",
+    "en": "Micrab Slippers"
+  },
+  {
+    "fr": "Menoture",
+    "en": "Menobelt"
+  },
+  {
+    "fr": "Coiffe du Kanimate",
+    "en": "Kan-O-Mat Headgear"
+  },
+  {
+    "fr": "Dofus Argenté Scintillant",
+    "en": "Sparkling Silver Dofus"
+  },
+  {
+    "fr": "Capuche de l'Œil Putride",
+    "en": "Hood of the Putrid Eye"
+  },
+  {
+    "fr": "Dagues Ricol",
+    "en": "Joyous Seizers"
+  },
+  {
+    "fr": "Amulette du Piloztère",
+    "en": "Hairsh Amulet"
+  },
+  {
+    "fr": "Bottines Hodore",
+    "en": "Odourless Boots"
+  },
+  {
+    "fr": "Coiffe du Glourséleste",
+    "en": "Celestial Bearbarian Headdress"
+  },
+  {
+    "fr": "Anneau Lunaire",
+    "en": "Lunar Ring"
+  },
+  {
+    "fr": "Pyraguette",
+    "en": "Pyraring"
+  },
+  {
+    "fr": "Epée Loponèze",
+    "en": "Sword Indinz"
+  },
+  {
+    "fr": "Amulette du K.O.",
+    "en": "KOs' Amulet"
+  },
+  {
+    "fr": "Sandales Circulaires du Kimbo",
+    "en": "Round Kimbo Sandals"
+  },
+  {
+    "fr": "Bottes du Cycloïde",
+    "en": "Cycloid Boots"
+  },
+  {
+    "fr": "Amulette Héroclite",
+    "en": "Eroclite Amulet"
+  },
+  {
+    "fr": "Hache Ériphe",
+    "en": "Riff Hatchet"
+  },
+  {
+    "fr": "Masque mortuaire",
+    "en": "Death Mask"
+  },
+  {
+    "fr": "Goulbottes",
+    "en": "Goulboots"
+  },
+  {
+    "fr": "Chapeau de Tournoyé",
+    "en": "Drowhirl Hat"
+  },
+  {
+    "fr": "Roncier",
+    "en": "Brambler"
+  },
+  {
+    "fr": "Ceinture d'Henual",
+    "en": "Henual's Belt"
+  },
+  {
+    "fr": "Hache Téroïde",
+    "en": "Teroid Axe"
+  },
+  {
+    "fr": "Bottes du Comte Harebourg",
+    "en": "Count Harebourg's Boots"
+  },
+  {
+    "fr": "Marteau Phossile",
+    "en": "Drhossil Hammer"
+  },
+  {
+    "fr": "Chapeau de Tournoyé",
+    "en": "Drowhirl Hat"
+  },
+  {
+    "fr": "Pataugastrique",
+    "en": "Pathogastrics"
+  },
+  {
+    "fr": "Capuche de l'Œil Putride",
+    "en": "Hood of the Putrid Eye"
+  },
+  {
+    "fr": "Chevelure de Tal Kasha",
+    "en": "Tal Kasha Head of Hair"
+  },
+  {
+    "fr": "Cape Paztek",
+    "en": "Paztek Cloak"
+  },
+  {
+    "fr": "Bottes de la Dame du Hasard",
+    "en": "Queen of Fate Boots"
+  },
+  {
+    "fr": "Anneau du Professeur Xa",
+    "en": "Professor Xa's Ring"
+  },
+  {
+    "fr": "Pendentif mignon de Koutoulou",
+    "en": "Cute Koutoulou Pendant"
+  },
+  {
+    "fr": "Ceinture de Nevark",
+    "en": "Nevark's Belt"
+  },
+  {
+    "fr": "Ceinture d'Henual",
+    "en": "Henual's Belt"
+  },
+  {
+    "fr": "Talisman Songe",
+    "en": "White Lai Amulet"
+  },
+  {
+    "fr": "Coiffe de la Fuji Givrefoux",
+    "en": "Fuji Snowfoux Headgear"
+  },
+  {
+    "fr": "Bandeau Culaire",
+    "en": "Barband"
+  },
+  {
+    "fr": "Sceptre du Roi Joueur",
+    "en": "King Playa's Scepta"
+  },
+  {
+    "fr": "Bottes des égarés",
+    "en": "Fugitive Boots"
+  },
+  {
+    "fr": "Frimature",
+    "en": "Sleet Belt"
+  },
+  {
+    "fr": "Cape de Jahash Jurgen",
+    "en": "Jahash Jurgen's Cloak"
+  },
+  {
+    "fr": "Masque Trithon",
+    "en": "Tritun Mask"
+  },
+  {
+    "fr": "Ceinture Glaciale",
+    "en": "Glacial Belt"
+  },
+  {
+    "fr": "Amulette du Professeur Xa",
+    "en": "Professor Xa's Amulet"
+  },
+  {
+    "fr": "Cape Hiculteur",
+    "en": "Eculture Cape"
+  },
+  {
+    "fr": "Cape Reski",
+    "en": "Thermal Cloak"
+  },
+  {
+    "fr": "Lance Horselé",
+    "en": "Ensorcel Lance"
+  },
+  {
+    "fr": "Ceinture Rasboulaire du Rasboul",
+    "en": "Bherbal Bherb Belt"
+  },
+  {
+    "fr": "Masque de Funespadon",
+    "en": "Funerbroadsword Mask"
+  },
+  {
+    "fr": "Hache du Korriandre",
+    "en": "Korriander Axe"
+  },
+  {
+    "fr": "Dagues Érhy",
+    "en": "Flinty Daggers"
+  },
+  {
+    "fr": "Cape Glaciale",
+    "en": "Glacial Cape"
+  },
+  {
+    "fr": "Audace de Dodge",
+    "en": "Dodge's Audacity"
+  },
+  {
+    "fr": "Cape du Sinistrofu",
+    "en": "Sinistrofu Cloak"
+  },
+  {
+    "fr": "Épée du Granduk",
+    "en": "Bubotron Sword"
+  },
+  {
+    "fr": "Ceinture Luminescente",
+    "en": "Luminescent Belt"
+  },
+  {
+    "fr": "Goulano",
+    "en": "Goulring"
+  },
+  {
+    "fr": "Ceinture de Gein",
+    "en": "Gein's Belt"
+  },
+  {
+    "fr": "Coiffe de la Reine des Voleurs",
+    "en": "Queen of Thieves' Headpiece"
+  },
+  {
+    "fr": "Cape de Théodoran Ax",
+    "en": "Antyklime Ax's Cloak"
+  },
+  {
+    "fr": "Amulette de Shokkoth",
+    "en": "Spookkoth Amulet"
+  },
+  {
+    "fr": "Sangle Aise",
+    "en": "Jolly Good Belt"
+  },
+  {
+    "fr": "Bottarpille",
+    "en": "Kroks"
+  },
+  {
+    "fr": "Cape d'Atcham",
+    "en": "Atcham Cape"
+  },
+  {
+    "fr": "Bâton Brelle",
+    "en": "Sunshade Staff"
+  },
+  {
+    "fr": "Frimamulette",
+    "en": "Sleet Amulet"
+  },
+  {
+    "fr": "Bottes de Léthaline",
+    "en": "Lethaline's Boots"
+  },
+  {
+    "fr": "Bottes Honyme",
+    "en": "Boot Boots"
+  },
+  {
+    "fr": "Dagues Açantes",
+    "en": "Aggravating Daggers"
+  },
+  {
+    "fr": "Pelle Vétik",
+    "en": "Vetic Shovel"
+  },
+  {
+    "fr": "Casqnoar",
+    "en": "Nitekap"
+  },
+  {
+    "fr": "Anneau Rifique",
+    "en": "Horrifing"
+  },
+  {
+    "fr": "Bottes du Cycloïde",
+    "en": "Cycloid Boots"
+  },
+  {
+    "fr": "Cape de Klime",
+    "en": "Klime's Cloak"
+  },
+  {
+    "fr": "Anneau de la Fuji Givrefoux",
+    "en": "Fuji Snowfoux Ring"
+  },
+  {
+    "fr": "Arc Oleptik",
+    "en": "Little Bow Sleep"
+  },
+  {
+    "fr": "Bottes Répané",
+    "en": "Pierced Boots"
+  },
+  {
+    "fr": "Tentassons",
+    "en": "Tentashoes"
+  },
+  {
+    "fr": "Racine Hueuse",
+    "en": "Sinuous Amulet"
+  },
+  {
+    "fr": "Épouvante",
+    "en": "Terrord"
+  },
+  {
+    "fr": "Dofus Ivoire",
+    "en": "Ivory Dofus"
+  },
+  {
+    "fr": "Masque de Klime",
+    "en": "Klime's Mask"
+  },
+  {
+    "fr": "Amulette Rangleur",
+    "en": "Gilded Choker"
+  },
+  {
+    "fr": "Bouclier du Stalak",
+    "en": "Stalak Shield"
+  },
+  {
+    "fr": "Bottes de Léthaline",
+    "en": "Lethaline's Boots"
+  },
+  {
+    "fr": "Ambrouclier",
+    "en": "Ambuckler"
+  },
+  {
+    "fr": "Baguette Hernelle",
+    "en": "Eternal Wand"
+  },
+  {
+    "fr": "Coiffe d'Oshimo",
+    "en": "Oshimo's Helmet"
+  },
+  {
+    "fr": "Bague Nostik",
+    "en": "Copper Nickus Ring"
+  },
+  {
+    "fr": "Couteaux sacrés",
+    "en": "Sacred Knives"
+  },
+  {
+    "fr": "Arc Volkorne",
+    "en": "Rhineetle Bow"
+  },
+  {
+    "fr": "Crocanneau",
+    "en": "Crocoring"
+  },
+  {
+    "fr": "Capibou",
+    "en": "Showl"
+  },
+  {
+    "fr": "Tongues de Nidas",
+    "en": "Nidas's Sandals"
+  },
+  {
+    "fr": "Boucle d'oreille de Kongoku",
+    "en": "Kongoku Earring"
+  },
+  {
+    "fr": "Anneau Glacial",
+    "en": "Glacial Ring"
+  },
+  {
+    "fr": "Anneau Tique",
+    "en": "Ringaling"
+  },
+  {
+    "fr": "Crocanneau",
+    "en": "Crocoring"
+  },
+  {
+    "fr": "Frimanneau",
+    "en": "Sleet Ring"
+  },
+  {
+    "fr": "Ceinture Instable",
+    "en": "Unstable Belt"
+  },
+  {
+    "fr": "Pikottes",
+    "en": "Barboots"
+  },
+  {
+    "fr": "Arc Nécrotique",
+    "en": "Necrotick Bow"
+  },
+  {
+    "fr": "Pendentif affamé",
+    "en": "Hungry Pendant"
+  },
+  {
+    "fr": "Bouclier du Cycloïde",
+    "en": "Cycloid Shield"
+  },
+  {
+    "fr": "Anneau Tamie",
+    "en": "Shylock's Ring"
+  },
+  {
+    "fr": "Collier de la Dame du Hasard",
+    "en": "Queen of Fate Necklace"
+  },
+  {
+    "fr": "Anneau du Cycloïde",
+    "en": "Cycloid Ring"
+  },
+  {
+    "fr": "Bouclier du Stalak",
+    "en": "Stalak Shield"
+  },
+  {
+    "fr": "Cape du Sinistrofu",
+    "en": "Sinistrofu Cloak"
+  },
+  {
+    "fr": "Coiffe de la Reine des Voleurs",
+    "en": "Queen of Thieves' Headpiece"
+  },
+  {
+    "fr": "Baguistik",
+    "en": "Mumysring"
+  },
+  {
+    "fr": "Ceinture du Glourséleste",
+    "en": "Celestial Bearbarian Belt"
+  },
+  {
+    "fr": "Bottes Innommables",
+    "en": "Unnamable Boots"
+  },
+  {
+    "fr": "Droiture de Fallanster",
+    "en": "Fallanster's Rectitude"
+  },
+  {
+    "fr": "Cape Parition",
+    "en": "Cape of Pohdoog"
+  },
+  {
+    "fr": "Lame Assacre",
+    "en": "Day'inda Knife"
+  },
+  {
+    "fr": "Bottes de Nileza",
+    "en": "Nileza's Boots"
+  },
+  {
+    "fr": "Amulette Luminescente",
+    "en": "Luminescent Amulet"
+  },
+  {
+    "fr": "Cape de Kongoku",
+    "en": "Kongoku Cloak"
+  },
+  {
+    "fr": "Chapeau des Malveilleurs",
+    "en": "Malitiamen Hat"
+  },
+  {
+    "fr": "Anneau d'Allister",
+    "en": "Allister's Ring"
+  },
+  {
+    "fr": "Plume de Buhorado",
+    "en": "Buhorado Feather"
+  },
+  {
+    "fr": "Ceinture du Barbétoal",
+    "en": "Staruman Belt"
+  },
+  {
+    "fr": "Amulette du Granduk",
+    "en": "Bubotron Amulet"
+  },
+  {
+    "fr": "Cape de Nileza",
+    "en": "Nileza's Cloak"
+  },
+  {
+    "fr": "Bivalve",
+    "en": "Bivalve"
+  },
+  {
+    "fr": "Bottistik",
+    "en": "Mumystiboots"
+  },
+  {
+    "fr": "Protopagne",
+    "en": "Protozash"
+  },
+  {
+    "fr": "Bottes de Boréale",
+    "en": "Borealis's Boots"
+  },
+  {
+    "fr": "Couronne de Brâm Barbe-Monde",
+    "en": "Bram Worldbeard's Crown"
+  },
+  {
+    "fr": "Cape de la Dame du Hasard",
+    "en": "Queen of Fate Cape"
+  },
+  {
+    "fr": "Cape Ardente",
+    "en": "Burning Cape"
+  },
+  {
+    "fr": "Ceinture Luminescente",
+    "en": "Luminescent Belt"
+  },
+  {
+    "fr": "Amulette Voldelor",
+    "en": "Voldelor Amulet"
+  },
+  {
+    "fr": "Bottes d'Otomaï",
+    "en": "Otomai's Boots"
+  },
+  {
+    "fr": "Grésilobottes",
+    "en": "Hail Boots"
+  },
+  {
+    "fr": "Ceinture Instable",
+    "en": "Unstable Belt"
+  },
+  {
+    "fr": "Arc corrompu",
+    "en": "Corrupted Bow"
+  },
+  {
+    "fr": "Cape du Valet Veinard",
+    "en": "Jammy Jack Cape"
+  },
+  {
+    "fr": "Coiffe de Padgref",
+    "en": "Nomarow's Helmet"
+  },
+  {
+    "fr": "Maskrobe",
+    "en": "Maskrobial"
+  },
+  {
+    "fr": "Capuche de l'Œil Attentif",
+    "en": "Hood of the Sharp Eye"
+  },
+  {
+    "fr": "Baguistik",
+    "en": "Mumysring"
+  },
+  {
+    "fr": "Hache du Korriandre",
+    "en": "Korriander Axe"
+  },
+  {
+    "fr": "Arc Nécrotique",
+    "en": "Necrotick Bow"
+  },
+  {
+    "fr": "Bottes du Sinistrofu",
+    "en": "Sinistrofu Boots"
+  },
+  {
+    "fr": "Hache du Chalœil",
+    "en": "Catseye Axe"
+  },
+  {
+    "fr": "Cape des Justiciers",
+    "en": "Vigilante Cape"
+  },
+  {
+    "fr": "Ceinture de l'Esprit Malsain",
+    "en": "Belt of the Unsound Mind"
+  },
+  {
+    "fr": "Pendentif affamé",
+    "en": "Hungry Pendant"
+  },
+  {
+    "fr": "Pikano",
+    "en": "Barbring"
+  },
+  {
+    "fr": "Épée du Granduk",
+    "en": "Bubotron Sword"
+  },
+  {
+    "fr": "Cape Martegel",
+    "en": "Freezammer Cloak"
+  },
+  {
+    "fr": "Sangle Oriole",
+    "en": "Bluster Belt"
+  },
+  {
+    "fr": "Bottes d'Otomaï",
+    "en": "Otomai's Boots"
+  },
+  {
+    "fr": "Capuche de Sylargh",
+    "en": "Sylargh's Hood"
+  },
+  {
+    "fr": "Goulclier",
+    "en": "Goulshield"
+  },
+  {
+    "fr": "Ceinture de Vortex",
+    "en": "Vortex Belt"
+  },
+  {
+    "fr": "Hache Ériphe",
+    "en": "Riff Hatchet"
+  },
+  {
+    "fr": "Cape de Mantaze",
+    "en": "Mantaze Cloak"
+  },
+  {
+    "fr": "Masque du Barbétoal",
+    "en": "Staruman Mask"
+  },
+  {
+    "fr": "Ankhape",
+    "en": "Ankhape"
+  },
+  {
+    "fr": "Dofus Vulbis",
+    "en": "Vulbis Dofus"
+  },
+  {
+    "fr": "Rouleau à Pâtisserie d'Aermyne",
+    "en": "Aermyne's Rolling Pin"
+  },
+  {
+    "fr": "Ceinture Instable",
+    "en": "Unstable Belt"
+  },
+  {
+    "fr": "Amulette du Granduk",
+    "en": "Bubotron Amulet"
+  },
+  {
+    "fr": "Amibou",
+    "en": "Owlmulet"
+  },
+  {
+    "fr": "Ankhape",
+    "en": "Ankhape"
+  },
+  {
+    "fr": "Ougarteau",
+    "en": "Ougaammer"
+  },
+  {
+    "fr": "Dofus Forgelave",
+    "en": "Lavasmith Dofus"
+  },
+  {
+    "fr": "Marteau des égarés",
+    "en": "Fugitive Hammer"
+  },
+  {
+    "fr": "Bouclier d'Ilyzaelle",
+    "en": "Ilyzaelle Shield"
+  },
+  {
+    "fr": "Bottes de Brouce",
+    "en": "Broucey Boots"
+  },
+  {
+    "fr": "Pagne du Rykaon",
+    "en": "Sneerena Loincloth"
+  }
+]
