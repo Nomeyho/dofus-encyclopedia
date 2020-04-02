@@ -1,6 +1,5 @@
 # Dofus items
-> A cross-platform mobile application to browser items et sets from the Dofus MMORPG.
-
+> A cross-platform mobile application allowing to browser items et sets from the Dofus MMORPG.
 
 ## Development
 
@@ -10,8 +9,9 @@ flutter pub run flutter_launcher_icons:main
 ```
 
 ### Generate data
-1. Retrieve `items.json` and `sets.json`
-2. Configure and execute `index_item.js` and `index_set.js`
+Configure and execute the following scripts:
+* `index_item.js`
+* `index_set.js`
 
 ### Backend
 
@@ -40,19 +40,18 @@ Send notification
 curl --location --request POST 'https://h1r13t4xug.execute-api.eu-west-1.amazonaws.com/dev/notify'
 ```
 
-### TODO
+## Roadmap
+- Add item/set conditions
+- Add item recipe
+- Support i18n plural
+- Automate deployment with Codemagic CI/CD
+
+## TODO
 - Test UI size on tablets
 - readme
 - Info modal + copyrights
 - min/max range issue
 - use appropriate logger
-
-- i18n locale for notifications
 - open appropriate page
-
-
-### Roadmap
-- Add item/set conditions
-- Add item recipe
-- Support i18n plural
-- Automate deployment with Codemagic CI/CD
+- test notification on Android
+- deploy on stores

@@ -1,8 +1,8 @@
 import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/config.dart';
-import 'package:dofus_items/notification_manager.dart';
 import 'package:dofus_items/router.dart';
+import 'package:dofus_items/services/notification_service.dart';
 import 'package:dofus_items/widgets/banner.dart';
 import 'package:flutter/material.dart' hide Banner;
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -30,7 +30,8 @@ class App extends StatelessWidget {
               locale = Locale('fr', '');
             }
 
-            PushNotificationsManager.instance.init();
+            Provider.of<NotificationService>(context, listen: false)
+                .init(locale);
             Provider.of<AppState>(context, listen: false).locale = locale;
 
             return S.delegate.resolution(

@@ -30,4 +30,7 @@ class Config {
       return null;
     }
   }
+
+  static String get registerTokenEndpoint =>
+      'https://h1r13t4xug.execute-api.eu-west-1.amazonaws.com/dev/register';
 }
