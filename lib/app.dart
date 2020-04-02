@@ -13,9 +13,6 @@ import 'generated/i18n.dart';
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
-    PushNotificationsManager.instance.init();
-
     return Stack(
       children: <Widget>[
         MaterialApp(
@@ -33,7 +30,9 @@ class App extends StatelessWidget {
               locale = Locale('fr', '');
             }
 
+            PushNotificationsManager.instance.init();
             Provider.of<AppState>(context, listen: false).locale = locale;
+
             return S.delegate.resolution(
               fallback: Locale('en', ''),
               withCountry: false,
