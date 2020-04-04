@@ -1,8 +1,10 @@
 import 'dart:io';
 
 import 'package:firebase_admob/firebase_admob.dart';
+import 'package:logging/logging.dart';
 
 class Config {
+  static final log = Logger('CategoryView');
   static final bool debug = true;
 
   static String get appId {
@@ -13,7 +15,7 @@ class Config {
     } else if (Platform.isAndroid) {
       return 'ca-app-pub-3227008925572350~8531124076';
     } else {
-      print('App ID not available on platform ${Platform.operatingSystem}');
+      log.config('App ID not available on platform ${Platform.operatingSystem}');
       return null;
     }
   }
@@ -26,7 +28,7 @@ class Config {
     } else if (Platform.isAndroid) {
       return 'ca-app-pub-3227008925572350/6455431557';
     } else {
-      print('Ad ID not available on platform ${Platform.operatingSystem}');
+      log.config('Ad ID not available on platform ${Platform.operatingSystem}');
       return null;
     }
   }

@@ -1,10 +1,10 @@
-const Topics = require('./topics');
 const Languages = require('./languages');
 const FCM = require('./fcm');
 const dailyItems = require('../daily_items.json');
+const { NOTIFICATION_TOPIC_FR, NOTIFICATION_TOPIC_EN } = process.env;
 
 module.exports.sendNoticiation = async function(lang) {
-    const topic = Topics.resolveTopic(lang);
+    const topic = resolveTopic(lang);
     const title = getTitle(lang);
     const body = getBody(lang);
     const data = getData();
@@ -49,4 +49,12 @@ function getDay() {
 function getDailyItem() {
   const day = getDay();
   return dailyItems[day];
+}
+
+function resolveTopic(lang) {
+    if(lang === Languages.FR) {
+        return NOTIFICATION_TOPIC_FR;
+    } else {
+        return NOTIFICATION_TOPIC_EN;
+    }
 }

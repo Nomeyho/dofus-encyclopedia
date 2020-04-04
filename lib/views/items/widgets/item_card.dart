@@ -4,6 +4,7 @@ import 'package:dofus_items/data/set_data.dart';
 import 'package:dofus_items/domain/item.dart';
 import 'package:dofus_items/generated/i18n.dart';
 import 'package:dofus_items/router.dart';
+import 'package:dofus_items/services/item_service.dart';
 import 'package:dofus_items/widgets/fade_in.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -40,12 +41,12 @@ class ItemCard extends StatelessWidget {
   }
 
   String _getSubtitle(BuildContext context) {
-    // TODO
     if (item.etheral == true)
       return S.of(context).items_etheral;
-    else if (item.setId != -1)
-      return sets.where((s) => s.id == item.setId).first.name.translate(context);
-    else
+    else if (item.setId != -1) {
+      final itemService = Provider.of<ItemService>(context, listen: false);
+      return itemService.findSetItems(item.setId).first.name.translate(context);
+    } else
       return '';
   }
 

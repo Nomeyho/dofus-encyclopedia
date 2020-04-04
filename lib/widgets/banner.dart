@@ -4,6 +4,7 @@ import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/config.dart';
 import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
+import 'package:logging/logging.dart';
 
 class Banner extends StatefulWidget {
   @override
@@ -11,12 +12,14 @@ class Banner extends StatefulWidget {
 }
 
 class _BannerState extends State<Banner> {
+  static final log = Logger('Banner');
+
   BannerAd _banner;
   AdSize _size = AdSize.banner;
 
   BannerAd _createBanner() {
     if (!Platform.isAndroid && !Platform.isIOS) {
-      print("Cannot display ads on ${Platform.operatingSystem}");
+      log.warning("Cannot display ads on ${Platform.operatingSystem}");
       return null;
     }
 

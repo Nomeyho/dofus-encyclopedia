@@ -3,8 +3,11 @@ import 'package:dofus_items/views/item/item_view.dart';
 import 'package:dofus_items/views/item_set/item_set_view.dart';
 import 'package:dofus_items/views/items/items_view.dart';
 import 'package:flutter/material.dart';
+import 'package:logging/logging.dart';
 
 class Router {
+  static final log = Logger('Router');
+
   static get root => categories;
   static const categories = '/';
   static const items = '/items';
@@ -12,7 +15,7 @@ class Router {
   static const set = '/set';
 
   static Route generateRoute(final RouteSettings settings) {
-    print('Navitaging to ${settings.name}');
+    log.info('Navitaging to ${settings.name}');
 
     switch (settings.name) {
       case categories:

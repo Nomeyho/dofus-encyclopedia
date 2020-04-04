@@ -25,16 +25,6 @@ Configure and execute the following scripts:
 ```
 
 ### API
-Register a device
-```
-curl --request POST 'https://h1r13t4xug.execute-api.eu-west-1.amazonaws.com/dev/register' \
---header 'Content-Type: application/json' \
---data-raw '{
-	"token": "egSPwANcFl4:APA91bFnbOE2_gqPa1t0B...",
-	"lang": "fr"
-}'
-```
-
 Send notification
 ```
 curl --location --request POST 'https://h1r13t4xug.execute-api.eu-west-1.amazonaws.com/dev/notify'
@@ -50,11 +40,12 @@ curl --location --request POST 'https://h1r13t4xug.execute-api.eu-west-1.amazona
 - Test UI size on tablets
 - readme
 - Info modal + copyrights
-- min/max range issue
-- use appropriate logger
-- open appropriate page
 - test notification on Android
 - deploy on stores
 - issue with hero icons (3 refs?)
 - scroll top
 https://medium.com/@superman199323/return-the-scroll-to-the-top-when-pressing-the-bottomnavigationbar-item-with-flutter-b42fddd10d84
+
+## Data issues
+- min/max on wand
+- undefined effect for "Dofus Des Glaces"
