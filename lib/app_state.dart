@@ -10,7 +10,6 @@ class AppState with ChangeNotifier {
 
   AppState(this.itemService);
 
-  Locale locale;
   Category _selectedCategory = Category.Equipment;
   List<Item> _items = [];
   Item _selectedItem;
@@ -44,19 +43,19 @@ class AppState with ChangeNotifier {
     notifyListeners();
   }
 
-  searchItems(ItemType type, String name) {
+  searchItems(String lang, ItemType type, String name) {
     _type = type;
     _name = name;
-    _items = itemService.findItems(locale.languageCode, type, name);
+    _items = itemService.findItems(lang, type, name);
     notifyListeners();
   }
 
-  set selectedItem(Item value) {
-    _selectedItem = value;
-    _selectedSet = itemService.getSet(value.setId);
+  selectItem(int itemId) {
+    _selectedItem = itemService.getItem(itemId);
+    _selectedSet = itemService.getSet(_selectedItem.setId);
 
     if (_selectedSet != null) {
-      _selectedSetItems = itemService.findSetItems(value.setId);
+      _selectedSetItems = itemService.findSetItems(_selectedSet.id);
       _selectedBonusIndex = _selectedSet.bonuses.length - 1;
     } else {
       _selectedSetItems = [];

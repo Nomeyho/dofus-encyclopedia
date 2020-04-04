@@ -14,21 +14,23 @@ class NotificationService {
   String _token;
   bool _initialized = false;
 
-  Future<void> init(Locale locale) async {
+  Future<void> init(
+    Function(Map<String, dynamic>) onMessage,
+    Locale locale,
+  ) async {
     if (_initialized) {
-      print("[FCM] FCM is already initialized");
+      print("[FCM] FCM Already initialized");
       return;
     }
 
+    // TODO consider registering to topic from here! No need for the Lambda then ;)
     try {
       print("[FCM] Initializing...");
       _firebaseMessaging = FirebaseMessaging();
       _firebaseMessaging.requestNotificationPermissions();
-      _firebaseMessaging.configure();
+      _firebaseMessaging.configure(onLaunch: onMessage, onResume: onMessage);
       _token = await _getToken();
       _initialized = true;
-      print("[FCM] Token: $_token");
-
       await _register(_token, locale);
     } catch (e) {
       print("[FCM] Initialization failed: $e");
@@ -52,19 +54,20 @@ class NotificationService {
 
   Future<void> _register(String token, Locale locale) async {
     final response = await retry(
-        () => http.post(Config.registerTokenEndpoint,
-                body: json.encode({
-                  'token': token,
-                  'lang': locale.languageCode,
-                }),
-                headers: {
-                  'Content-type': 'application/json',
-                  'Accept': 'application/json',
-                }).timeout(Duration(seconds: 6)),
-        retryIf: (e) => e is SocketException || e is TimeoutException,
-        onRetry: (e) {
-          print("[FCM] Retrying token registration: $e");
-        });
+      () => http.post(Config.registerTokenEndpoint,
+          body: json.encode({
+            'token': token,
+            'lang': locale.languageCode,
+          }),
+          headers: {
+            'Content-type': 'application/json',
+            'Accept': 'application/json',
+          }).timeout(
+        Duration(seconds: 10),
+      ),
+      retryIf: (e) => e is SocketException || e is TimeoutException,
+      onRetry: (e) => print("[FCM] Retrying token registration: $e"),
+    );
 
     if (response.statusCode != 200) {
       print("[FCM] Failed to register token: ${response.body}");

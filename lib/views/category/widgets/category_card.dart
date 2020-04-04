@@ -14,6 +14,7 @@ class CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
+    final locale = Localizations.localeOf(context);
 
     return FadeIn(
       duration: Duration(milliseconds: 700),
@@ -26,7 +27,7 @@ class CategoryCard extends StatelessWidget {
         ),
         child: InkWell(
           onTap: () {
-            state.searchItems(itemType, '');
+            state.searchItems(locale.languageCode, itemType, '');
             Navigator.of(context).pushNamed(Router.items);
           },
           child: Padding(

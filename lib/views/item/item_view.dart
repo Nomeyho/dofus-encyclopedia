@@ -3,7 +3,6 @@ import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/domain/category.dart';
 import 'package:dofus_items/domain/item_type.dart';
 import 'package:dofus_items/generated/i18n.dart';
-import 'package:dofus_items/widgets/banner.dart';
 import 'package:dofus_items/widgets/bonus_characteristics.dart';
 import 'package:dofus_items/widgets/bonus_damages.dart';
 import 'package:dofus_items/widgets/bonus_others.dart';
@@ -55,7 +54,6 @@ class ItemView extends StatelessWidget {
               ]),
             ),
           ),
-          Banner.bottomPadding,
         ]),
       ),
       backgroundColor: AppTheme.background,

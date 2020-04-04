@@ -1,14 +1,11 @@
 import 'dart:io';
 
+import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/config.dart';
 import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
 
 class Banner extends StatefulWidget {
-  static Widget bottomPadding = const SliverPadding(
-    padding: const EdgeInsets.only(bottom: 50),
-  );
-
   @override
   _BannerState createState() => _BannerState();
 }
@@ -58,6 +55,9 @@ class _BannerState extends State<Banner> {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      color: AppTheme.background,
+      height: _banner == null ? 0 : _size.height.toDouble(),
+    );
   }
 }

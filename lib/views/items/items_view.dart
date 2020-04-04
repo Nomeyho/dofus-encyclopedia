@@ -1,5 +1,4 @@
 import 'package:dofus_items/app_theme.dart';
-import 'package:dofus_items/widgets/banner.dart';
 import 'package:flutter/material.dart' hide Banner;
 
 import 'widgets/item_list.dart';
@@ -16,7 +15,6 @@ class ItemsView extends StatelessWidget {
             ItemsTitle(),
             ItemsHeader(),
             ItemList(),
-            Banner.bottomPadding,
           ],
         ),
       ),

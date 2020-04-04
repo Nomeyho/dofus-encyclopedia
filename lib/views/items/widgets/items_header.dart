@@ -9,6 +9,7 @@ class ItemsHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
+    final locale = Localizations.localeOf(context);
 
     return SliverPersistentHeader(
       delegate: SliverHeaderDelegate(
@@ -24,7 +25,7 @@ class ItemsHeader extends StatelessWidget {
           ),
           child: TextField(
             onChanged: (name) {
-              state.searchItems(state.type, name);
+              state.searchItems(locale.languageCode, state.type, name);
             },
             textInputAction: TextInputAction.search,
             cursorColor: AppTheme.primary,

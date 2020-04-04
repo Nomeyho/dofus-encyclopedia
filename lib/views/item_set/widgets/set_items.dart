@@ -21,7 +21,7 @@ class SetItems extends StatelessWidget {
           navigator.pop();
 
           final state = Provider.of<AppState>(context, listen: false);
-          state.selectedItem = item;
+          state.selectItem(item.id);
           navigator.pushNamed(Router.item);
         },
         child: Padding(

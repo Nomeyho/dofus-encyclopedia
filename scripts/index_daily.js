@@ -21,6 +21,7 @@ async function main() {
         const dailyItem = items[randomIndex];
 
         dailyItems.push({
+            id: dailyItem.id,
             fr: dailyItem.name.fr,
             en: dailyItem.name.en,
         });

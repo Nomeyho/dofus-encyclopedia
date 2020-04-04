@@ -1,49 +1,35 @@
-import 'package:dofus_items/app_state.dart';
+import 'package:dofus_items/app_layout.dart';
 import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/config.dart';
 import 'package:dofus_items/router.dart';
-import 'package:dofus_items/services/notification_service.dart';
-import 'package:dofus_items/widgets/banner.dart';
 import 'package:flutter/material.dart' hide Banner;
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:provider/provider.dart';
 
 import 'generated/i18n.dart';
 
 class App extends StatelessWidget {
+  static final GlobalKey<NavigatorState> navigator = GlobalKey<NavigatorState>();
+
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: <Widget>[
-        MaterialApp(
-          title: 'Dofus Items',
-          initialRoute: Router.categories,
-          onGenerateRoute: Router.generateRoute,
-          localizationsDelegates: [
-            GlobalWidgetsLocalizations.delegate,
-            GlobalMaterialLocalizations.delegate,
-            S.delegate,
-          ],
-          supportedLocales: S.delegate.supportedLocales,
-          localeResolutionCallback: (locale, locales) {
-            if (Config.debug) {
-              locale = Locale('fr', '');
-            }
-
-            Provider.of<NotificationService>(context, listen: false)
-                .init(locale);
-            Provider.of<AppState>(context, listen: false).locale = locale;
-
-            return S.delegate.resolution(
-              fallback: Locale('en', ''),
-              withCountry: false,
-            )(locale, locales);
-          },
-          debugShowCheckedModeBanner: Config.debug,
-          theme: AppTheme.themeData,
-        ),
-        Banner(),
+    return MaterialApp(
+      title: 'Dofus Items',
+      navigatorKey: navigator,
+      initialRoute: Router.categories,
+      builder: (_, app) => AppLayout(child: app),
+      onGenerateRoute: Router.generateRoute,
+      localizationsDelegates: [
+        GlobalWidgetsLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        S.delegate,
       ],
+      supportedLocales: S.delegate.supportedLocales,
+      localeResolutionCallback: S.delegate.resolution(
+        fallback: Locale('en', ''),
+        withCountry: false,
+      ),
+      debugShowCheckedModeBanner: Config.debug,
+      theme: AppTheme.themeData,
     );
   }
 }

@@ -5,6 +5,7 @@ import 'package:dofus_items/views/items/items_view.dart';
 import 'package:flutter/material.dart';
 
 class Router {
+  static get root => categories;
   static const categories = '/';
   static const items = '/items';
   static const item = '/item';

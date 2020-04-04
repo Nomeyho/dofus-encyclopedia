@@ -41,7 +41,6 @@ class ItemCard extends StatelessWidget {
 
   String _getSubtitle(BuildContext context) {
     // TODO
-
     if (item.etheral == true)
       return S.of(context).items_etheral;
     else if (item.setId != -1)
@@ -94,7 +93,7 @@ class ItemCard extends StatelessWidget {
         ),
         child: InkWell(
           onTap: () {
-            state.selectedItem = item;
+            state.selectItem(item.id);
             Navigator.of(context).pushNamed(Router.item);
           },
           child: Padding(

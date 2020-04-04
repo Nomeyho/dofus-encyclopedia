@@ -7,8 +7,9 @@ module.exports.sendNoticiation = async function(lang) {
     const topic = Topics.resolveTopic(lang);
     const title = getTitle(lang);
     const body = getBody(lang);
+    const data = getData();
 
-    await FCM.sendNoticiations(topic, title, body);
+    await FCM.sendNoticiations(topic, title, body, data);
 }
 
 function getTitle(lang) {
@@ -26,6 +27,14 @@ function getBody(lang) {
     return `Découvre l'item du jour: ${item.fr}`;
   } else {
     return `Discover the item of the day: ${item.en}`;
+  }
+}
+
+function getData() {
+  const item = getDailyItem();
+  return {
+    item_id: item.id.toString(),
+    click_action: 'FLUTTER_NOTIFICATION_CLICK'
   }
 }
 
