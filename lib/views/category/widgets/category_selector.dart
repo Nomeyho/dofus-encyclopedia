@@ -6,6 +6,13 @@ import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
 
 class CategorySelector extends StatelessWidget {
+  final ScrollController scrollController;
+
+  const CategorySelector({
+    Key key,
+    this.scrollController,
+  }) : super(key: key);
+
   Widget buildChip(BuildContext context, Category category) {
     final state = Provider.of<AppState>(context);
     final selected = state.selectedCategory == category;
@@ -26,6 +33,11 @@ class CategorySelector extends StatelessWidget {
         ),
         onSelected: (_) {
           state.selectedCategory = category;
+          scrollController.animateTo(
+            0.0,
+            curve: Curves.easeOut,
+            duration: const Duration(milliseconds: 300),
+          );
         },
         // fix chip border issue
         shape: const StadiumBorder(

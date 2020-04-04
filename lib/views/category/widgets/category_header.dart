@@ -5,6 +5,13 @@ import 'package:flutter/material.dart';
 import 'category_selector.dart';
 
 class CategoryHeader extends StatelessWidget {
+  final ScrollController scrollController;
+
+  const CategoryHeader({
+    Key key,
+    this.scrollController,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return SliverPersistentHeader(
@@ -18,7 +25,7 @@ class CategoryHeader extends StatelessWidget {
               ),
             ),
           ),
-          child: CategorySelector(),
+          child: CategorySelector(scrollController: scrollController),
         ),
         minHeight: 70,
         maxHeight: 70,

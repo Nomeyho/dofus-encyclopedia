@@ -11,6 +11,8 @@ import 'widgets/category_list.dart';
 import 'widgets/category_title.dart';
 
 class CategoryView extends StatefulWidget {
+  final ScrollController scrollController = ScrollController();
+
   @override
   _CategoryViewState createState() => _CategoryViewState();
 }
@@ -56,9 +58,10 @@ class _CategoryViewState extends State<CategoryView> {
     return Scaffold(
       body: SafeArea(
         child: CustomScrollView(
+          controller: widget.scrollController,
           slivers: <Widget>[
             CategoryTitle(),
-            CategoryHeader(),
+            CategoryHeader(scrollController: widget.scrollController),
             CategoryList(),
           ],
         ),

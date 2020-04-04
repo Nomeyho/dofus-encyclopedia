@@ -43,8 +43,6 @@ curl --location --request POST 'https://h1r13t4xug.execute-api.eu-west-1.amazona
 - test notification on Android
 - deploy on stores
 - issue with hero icons (3 refs?)
-- scroll top
-https://medium.com/@superman199323/return-the-scroll-to-the-top-when-pressing-the-bottomnavigationbar-item-with-flutter-b42fddd10d84
 
 ## Data issues
 - min/max on wand
