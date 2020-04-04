@@ -12,6 +12,7 @@ void main() async {
   final itemService = ItemService();
   final notificationService = NotificationService();
 
+  WidgetsFlutterBinding.ensureInitialized();
   FlutterStatusbarcolor.setStatusBarWhiteForeground(true);
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   AppLogger.init();

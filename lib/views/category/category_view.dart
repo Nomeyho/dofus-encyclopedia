@@ -1,7 +1,10 @@
+import 'dart:io';
+
 import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/router.dart';
 import 'package:dofus_items/services/notification_service.dart';
+import 'package:dofus_items/widgets/banner.dart';
 import 'package:flutter/material.dart' hide Banner;
 import 'package:logging/logging.dart';
 import 'package:provider/provider.dart';
@@ -27,7 +30,7 @@ class _CategoryViewState extends State<CategoryView> {
 
     notifs.init((message) {
       log.info("Received message $message");
-      final itemId = int.tryParse(message['item_id']);
+      final itemId = _parseItemId(message);
 
       if (itemId != null) {
         log.info("Opening to screen of item $itemId");
@@ -41,6 +44,16 @@ class _CategoryViewState extends State<CategoryView> {
         }
       }
     }, locale);
+  }
+
+  _parseItemId(message) {
+    if(Platform.isIOS) {
+      return int.tryParse(message['item_id']);
+    } else if(Platform.isAndroid) {
+      return int.tryParse(message['data']['item_id']);
+    } else {
+      return null;
+    }
   }
 
   @override
@@ -63,6 +76,7 @@ class _CategoryViewState extends State<CategoryView> {
             CategoryTitle(),
             CategoryHeader(scrollController: widget.scrollController),
             CategoryList(),
+            Banner.bottomPadding,
           ],
         ),
       ),

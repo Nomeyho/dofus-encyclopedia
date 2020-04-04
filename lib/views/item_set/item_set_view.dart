@@ -1,5 +1,6 @@
 import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/generated/i18n.dart';
+import 'package:dofus_items/widgets/banner.dart';
 import 'package:dofus_items/widgets/section_header.dart';
 import 'package:flutter/material.dart' hide Banner;
 
@@ -34,6 +35,7 @@ class ItemSetView extends StatelessWidget {
             padding: const EdgeInsets.only(left: 16, right: 16),
             sliver: SetItems(),
           ),
+          Banner.bottomPadding,
         ]),
       ),
       backgroundColor: AppTheme.background,

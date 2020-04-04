@@ -1,4 +1,3 @@
-import 'package:dofus_items/app_layout.dart';
 import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/config.dart';
 import 'package:dofus_items/router.dart';
@@ -13,7 +12,6 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Dofus Items',
       initialRoute: Router.categories,
-      builder: (_, app) => AppLayout(child: app),
       onGenerateRoute: Router.generateRoute,
       localizationsDelegates: [
         GlobalWidgetsLocalizations.delegate,

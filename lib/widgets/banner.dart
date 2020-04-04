@@ -1,12 +1,15 @@
 import 'dart:io';
 
-import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/config.dart';
 import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
 
 class Banner extends StatefulWidget {
+  static Widget bottomPadding = const SliverPadding(
+    padding: const EdgeInsets.only(bottom: 50),
+  );
+
   @override
   _BannerState createState() => _BannerState();
 }
@@ -28,7 +31,7 @@ class _BannerState extends State<Banner> {
       adUnitId: Config.adId,
       size: _size,
       targetingInfo: MobileAdTargetingInfo(
-        keywords: ['Dofus', 'MMORPG', 'Items', 'Video Games'],
+        keywords: ['Dofus', 'MMORPG', 'Items', 'Video Games', 'Français'],
         childDirected: true,
         testDevices: [
           '7de57089f51ec6257cfd0f200760878f', // iOS - IPhone6s
@@ -58,9 +61,6 @@ class _BannerState extends State<Banner> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: AppTheme.background,
-      height: _banner == null ? 0 : _size.height.toDouble(),
-    );
+    return Container();
   }
 }
