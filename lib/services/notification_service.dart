@@ -14,6 +14,8 @@ class NotificationService {
   String _token;
   bool _initialized = false;
 
+  bool get initialized => _initialized;
+
   Future<void> init(
     Function(Map<String, dynamic>) onMessage,
     Locale locale,

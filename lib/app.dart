@@ -8,13 +8,10 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'generated/i18n.dart';
 
 class App extends StatelessWidget {
-  static final GlobalKey<NavigatorState> navigator = GlobalKey<NavigatorState>();
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Dofus Items',
-      navigatorKey: navigator,
       initialRoute: Router.categories,
       builder: (_, app) => AppLayout(child: app),
       onGenerateRoute: Router.generateRoute,
