@@ -37,13 +37,12 @@ curl --location --request POST 'https://h1r13t4xug.execute-api.eu-west-1.amazona
 - Automate deployment with Codemagic CI/CD
 
 ## TODO
-- Test UI size on tablets
-- readme
-- Info modal + copyrights
-- test notification on Android
-- deploy on stores
+- undefined other effect
 - issue with hero icons (3 refs?)
+- Info modal + copyrights
+- use latest data
+- readme
+- deploy on stores
 
 ## Data issues
 - min/max on wand
-- undefined effect for "Dofus Des Glaces"

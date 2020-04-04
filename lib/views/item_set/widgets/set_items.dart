@@ -35,12 +35,26 @@ class SetItems extends StatelessWidget {
     );
   }
 
+  static int _getCrossAxisCount(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
+    if(size.width < 540) {
+      return 3;
+    } else if(size.width < 760) {
+      return 4;
+    } else if(size.width < 1024) {
+      return 5;
+    } else {
+      return 6;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
 
     return SliverGrid.count(
-      crossAxisCount: 3,
+      crossAxisCount: _getCrossAxisCount(context),
       children: state.selectedSetItems
           .map((item) => _buildItem(item, context))
           .toList(growable: false),

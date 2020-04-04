@@ -7,15 +7,29 @@ import 'package:provider/provider.dart';
 import 'category_card.dart';
 
 class CategoryList extends StatelessWidget {
-  Widget _buildList(List<ItemType> types) {
+  Widget _buildList(BuildContext context, List<ItemType> types) {
     return SliverGrid.count(
-      crossAxisCount: 2,
+      crossAxisCount: _getCrossAxisCount(context),
       children: types
           .map((type) => CategoryCard(itemType: type))
           .toList(growable: false),
       mainAxisSpacing: 12,
       crossAxisSpacing: 12,
     );
+  }
+
+  static int _getCrossAxisCount(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
+    if(size.width < 540) {
+      return 2;
+    } else if(size.width < 760) {
+      return 3;
+    } else if(size.width < 1024) {
+      return 4;
+    } else {
+      return 5;
+    }
   }
 
   @override
@@ -26,7 +40,7 @@ class CategoryList extends StatelessWidget {
     return SliverPadding(
       padding: EdgeInsets.all(12),
       sliver: Container(
-        child: _buildList(types),
+        child: _buildList(context, types),
       ),
     );
   }
