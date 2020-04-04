@@ -2,7 +2,7 @@ import 'package:dofus_items/domain/bonuses.dart';
 import 'package:dofus_items/domain/other_bonus.dart';
 import 'package:dofus_items/domain/characteristic_bonus.dart';
 import 'package:dofus_items/domain/item_set.dart';
-import 'package:dofus_items/domain/text_model.dart';
+import 'package:dofus_items/domain/translation.dart';
 import 'package:dofus_items/domain/characteristic.dart';
 
 const sets = [

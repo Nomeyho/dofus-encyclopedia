@@ -1,6 +1,6 @@
 import 'package:dofus_items/domain/bonuses.dart';
 import 'package:dofus_items/domain/item_type.dart';
-import 'package:dofus_items/domain/text_model.dart';
+import 'package:dofus_items/domain/translation.dart';
 
 class Item implements Comparable<Item> {
   final int id;

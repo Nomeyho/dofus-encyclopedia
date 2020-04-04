@@ -19,7 +19,7 @@ function toItem(item) {
     return `
     const Item(
         ${item.id},
-        TextModel(
+        Translation(
             ${sanitize(item.name.fr)},
             ${sanitize(item.name.en)},
         ),
@@ -60,7 +60,7 @@ function toDamage(d) {
 }
 
 function toOther(o) {
-    return `                const OtherBonus(const Translation("${o.fr}", "${o.en}"))`;
+    return `                const OtherBonus(const Translation(${sanitize(o.description.fr)}, ${sanitize(o.description.en)}))`;
 }
 
 function fallback(value, defaultValue) {

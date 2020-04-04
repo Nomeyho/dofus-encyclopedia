@@ -1,4 +1,4 @@
-import 'package:dofus_items/domain/text_model.dart';
+import 'package:dofus_items/domain/translation.dart';
 
 class OtherBonus {
   final Translation description;
