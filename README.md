@@ -44,7 +44,6 @@ curl --location --request POST 'https://h1r13t4xug.execute-api.eu-west-1.amazona
 - Automate deployment with Codemagic CI/CD
 
 ## TODO
-- Info modal + copyrights
 - deploy on stores
 - readme
 

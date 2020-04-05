@@ -30,6 +30,8 @@ class S implements WidgetsLocalizations {
   String get bonus_steal => "steal";
   String get bonus_to => "to";
   String get bonus_use_per_turn => "use(s) per turn";
+  String get category_copyright_1 => "This application is not affiliated with Ankama Studio.";
+  String get category_copyright_2 => "Artwork by Ankama (https://www.ankama.com).";
   String get category_equipment => "Equipment";
   String get category_loading => "Loading data...";
   String get category_pets => "Pets";
@@ -145,7 +147,11 @@ class $fr extends S {
   @override
   String get characteristic_lock => "tacle";
   @override
+  String get category_copyright_2 => "Artwork by Ankama (https://www.ankama.com).";
+  @override
   String get item_type_hat => "Chapeau";
+  @override
+  String get category_copyright_1 => "Cette application n'est pas un product Ankama.";
   @override
   String get item_type_staff => "Bâton";
   @override

@@ -4,6 +4,8 @@
   "category_weapons": "Weapons",
   "category_pets": "Pets",
   "category_loading": "Loading data...",
+  "category_copyright_1": "This application is not affiliated with Ankama Studio.",
+  "category_copyright_2": "Artwork by Ankama (https://www.ankama.com).",
 
   "item_type_amulet": "Amulet",
   "item_type_ring": "Ring",
