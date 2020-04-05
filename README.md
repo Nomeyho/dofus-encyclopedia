@@ -3,7 +3,7 @@
 <TODO link play store>
 <TODO link apple store>
 
-<img src='screenshots/demo.gif' width='350'>
+<img src='screenshots/demo.gif' width='250'>
 
 ## Features
 * All types of items are supported: equipments, weapons and pets
@@ -31,15 +31,15 @@
 
 ### Tablet
 <p align="center">
-    <img src='screenshots/tablet_1.png' width='200'>
-    <img src='screenshots/tablet_2.png' width='200'>
-    <img src='screenshots/tablet_3.png' width='200'>
-    <img src='screenshots/tablet_4.png' width='200'>
+    <img src='screenshots/tablet_1.png' width='266'>
+    <img src='screenshots/tablet_2.png' width='266'>
+    <img src='screenshots/tablet_3.png' width='266'>
 </p>
 
 <p align="center">
-    <img src='screenshots/tablet_5.png' width='200'>
-    <img src='screenshots/tablet_6.png' width='200'>
+    <img src='screenshots/tablet_4.png' width='266'>
+    <img src='screenshots/tablet_5.png' width='266'>
+    <img src='screenshots/tablet_6.png' width='266'>
 </p>
 
 ## Technical stack
@@ -49,7 +49,7 @@
 
 ## Architecture
 <p align="center">
-    <img src='screenshots/architecture.png' width='500'>
+    <img src='screenshots/architecture.png' width='800'>
 </p>
 
 ## Roadmap
