@@ -21,7 +21,6 @@ class _BannerState extends State<Banner> {
   AdSize _size = AdSize.banner;
 
   BannerAd _createBanner() {
-    return null;
     if (!Platform.isAndroid && !Platform.isIOS) {
       log.warning("Cannot display ads on ${Platform.operatingSystem}");
       return null;

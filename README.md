@@ -1,9 +1,12 @@
 # Dofus items
 > A cross-platform mobile application allowing to browse items et sets from the Dofus MMORPG.
+
+[![Codemagic build status](https://api.codemagic.io/apps/5e89c3d864e0bd73659bc908/5e89c3d864e0bd73659bc907/status_badge.svg)](https://codemagic.io/apps/5e89c3d864e0bd73659bc908/5e89c3d864e0bd73659bc907/latest_build)
+
 <TODO link play store>
 <TODO link apple store>
 
-<img src='screenshots/demo.gif' width='250'>
+<img src='screenshots/demo.gif' width='200'>
 
 ## Features
 * All types of items are supported: equipments, weapons and pets

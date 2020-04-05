@@ -27,7 +27,7 @@ class App extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       localeResolutionCallback: (locale, locales) {
-        locale = Locale('fr');
+        // locale = Locale('fr');
         return S.delegate.resolution(
           fallback: Locale('en', ''),
           withCountry: false,
