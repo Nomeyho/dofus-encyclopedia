@@ -25,7 +25,8 @@ class ItemImage extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 12),
             child: Hero(
               tag: item.iconId,
-              child: Image.asset('assets/img/items/${item.iconId}.png'),),
+              child: Image.asset('assets/img/items/${item.iconId}.png'),
+            ),
           ),
         ),
         minHeight: 80,

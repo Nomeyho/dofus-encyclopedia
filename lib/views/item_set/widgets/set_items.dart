@@ -16,13 +16,14 @@ class SetItems extends StatelessWidget {
       ),
       child: InkWell(
         onTap: () {
-          final navigator = Navigator.of(context);
-          navigator.pop();
-          navigator.pop();
-
           final state = Provider.of<AppState>(context, listen: false);
           state.selectItem(item.id);
-          navigator.pushNamed(Router.item);
+
+          final navigator = Navigator.of(context);
+
+          // root > list > item > set OR root > item > set
+          int c = 2;
+          navigator.pushNamedAndRemoveUntil(Router.item, (_) => c-- == 0);
         },
         child: Padding(
           padding: const EdgeInsets.all(12.0),
@@ -38,11 +39,11 @@ class SetItems extends StatelessWidget {
   static int _getCrossAxisCount(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
-    if(size.width < 540) {
+    if (size.width < 540) {
       return 3;
-    } else if(size.width < 760) {
+    } else if (size.width < 760) {
       return 4;
-    } else if(size.width < 1024) {
+    } else if (size.width < 1024) {
       return 5;
     } else {
       return 6;

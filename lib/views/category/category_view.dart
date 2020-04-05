@@ -83,4 +83,12 @@ class _CategoryViewState extends State<CategoryView> {
       backgroundColor: AppTheme.background,
     );
   }
+
+  @override
+  void dispose() {
+    if(widget.scrollController != null) {
+      widget.scrollController.dispose();
+    }
+    super.dispose();
+  }
 }
