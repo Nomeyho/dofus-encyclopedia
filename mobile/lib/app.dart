@@ -26,10 +26,13 @@ class App extends StatelessWidget {
         S.delegate,
       ],
       supportedLocales: S.delegate.supportedLocales,
-      localeResolutionCallback: S.delegate.resolution(
-        fallback: Locale('en', ''),
-        withCountry: false,
-      ),
+      localeResolutionCallback: (locale, locales) {
+        locale = Locale('fr');
+        return S.delegate.resolution(
+          fallback: Locale('en', ''),
+          withCountry: false,
+        )(locale, locales);
+      },
       debugShowCheckedModeBanner: Config.debug,
       theme: AppTheme.themeData,
     );

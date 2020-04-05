@@ -1,52 +1,60 @@
 # Dofus items
-> A cross-platform mobile application allowing to browser items et sets from the Dofus MMORPG.
+> A cross-platform mobile application allowing to browse items et sets from the Dofus MMORPG.
+<TODO link play store>
+<TODO link apple store>
 
-## Development
+<img src='screenshots/demo.gif' width='350'>
 
-### Generate icons
-```
-flutter pub run flutter_launcher_icons:main
-```
+## Features
+* Support all item types: equipments, weapons and pets.
+* Search items by name or scroll list.
+* Item and set details view.
+* Discover a new item everyday (push notification).
+* Dark theme
+* I18n: French & English
 
-### Generate data
-Configure and execute the following:
-```
-    cd scripts
+## Screenshots
 
-    node index_item.js
-    flutter format ../lib/data/item_data.dart
+### Mobile
+<p align="center">
+    <img src='screenshots/mobile_1.png' width='100'>
+    <img src='screenshots/mobile_2.png' width='100'>
+    <img src='screenshots/mobile_3.png' width='100'>
+    <img src='screenshots/mobile_4.png' width='100'>
+</p>
 
-    node index_set.js
-    flutter format ../lib/data/set_data.dart
-```
+<p align="center">
+    <img src='screenshots/mobile_5.png' width='100'>
+    <img src='screenshots/mobile_6.png' width='100'>
+    <img src='screenshots/mobile_7.png' width='100'>
+</p>
 
-### Backend
+### Tablet
+<p align="center">
+    <img src='screenshots/tablet_1.png' width='100'>
+    <img src='screenshots/tablet_2.png' width='100'>
+    <img src='screenshots/tablet_3.png' width='100'>
+    <img src='screenshots/tablet_4.png' width='100'>
+</p>
 
-#### Setup
-1. Download the private key from the Firebase console and copy it under the `backend/key.json`.
-2. Deploy the backend
-```
-    cd backend
-    npm install
-    serverless deploy
-```
+<p align="center">
+    <img src='screenshots/tablet_5.png' width='100'>
+    <img src='screenshots/tablet_6.png' width='100'>
+</p>
 
-### API
-Send notification
-```
-curl --location --request POST 'https://h1r13t4xug.execute-api.eu-west-1.amazonaws.com/dev/notify'
-```
+## Technical stack
+* Flutter
+* AWS Lambda
+* Firebase Cloud Messaging
+
+## Architecture
+![Architecture](screenshots/architecture.png)
 
 ## Roadmap
-- Add item/set conditions
-- Add item recipe
-- Support i18n plural
-- Automate deployment with Codemagic CI/CD
-
-## TODO
-- deploy on stores
-- readme
-
-## Data issues
-- use latest data
-- min/max on wand
+* Add item/set conditions
+* Add item recipe
+* Support i18n plural
+* Automate deployment with Codemagic CI/CD
+* Fix data issue:
+    - use the latest data
+    - min/max range on wands
