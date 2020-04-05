@@ -6,10 +6,10 @@
 <img src='screenshots/demo.gif' width='350'>
 
 ## Features
-* Support all item types: equipments, weapons and pets.
-* Search items by name or scroll list.
-* Item and set details view.
-* Discover a new item everyday (push notification).
+* All types of items are supported: equipments, weapons and pets
+* Search items by name or scroll the list
+* Item and set details view
+* Discover a new item everyday (push notification)
 * Dark theme
 * I18n: French & English
 
@@ -17,29 +17,29 @@
 
 ### Mobile
 <p align="center">
-    <img src='screenshots/mobile_1.png' width='100'>
-    <img src='screenshots/mobile_2.png' width='100'>
-    <img src='screenshots/mobile_3.png' width='100'>
-    <img src='screenshots/mobile_4.png' width='100'>
+    <img src='screenshots/mobile_1.png' width='200'>
+    <img src='screenshots/mobile_2.png' width='200'>
+    <img src='screenshots/mobile_3.png' width='200'>
+    <img src='screenshots/mobile_4.png' width='200'>
 </p>
 
 <p align="center">
-    <img src='screenshots/mobile_5.png' width='100'>
-    <img src='screenshots/mobile_6.png' width='100'>
-    <img src='screenshots/mobile_7.png' width='100'>
+    <img src='screenshots/mobile_5.png' width='200'>
+    <img src='screenshots/mobile_6.png' width='200'>
+    <img src='screenshots/mobile_7.png' width='200'>
 </p>
 
 ### Tablet
 <p align="center">
-    <img src='screenshots/tablet_1.png' width='100'>
-    <img src='screenshots/tablet_2.png' width='100'>
-    <img src='screenshots/tablet_3.png' width='100'>
-    <img src='screenshots/tablet_4.png' width='100'>
+    <img src='screenshots/tablet_1.png' width='200'>
+    <img src='screenshots/tablet_2.png' width='200'>
+    <img src='screenshots/tablet_3.png' width='200'>
+    <img src='screenshots/tablet_4.png' width='200'>
 </p>
 
 <p align="center">
-    <img src='screenshots/tablet_5.png' width='100'>
-    <img src='screenshots/tablet_6.png' width='100'>
+    <img src='screenshots/tablet_5.png' width='200'>
+    <img src='screenshots/tablet_6.png' width='200'>
 </p>
 
 ## Technical stack
@@ -48,7 +48,9 @@
 * Firebase Cloud Messaging
 
 ## Architecture
-![Architecture](screenshots/architecture.png)
+<p align="center">
+    <img src='screenshots/architecture.png' width='500'>
+</p>
 
 ## Roadmap
 * Add item/set conditions
