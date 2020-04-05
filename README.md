@@ -15,6 +15,7 @@
 * Discover a new item everyday (push notification)
 * Dark theme
 * I18n: French & English
+* Works offline
 
 ## Screenshots
 
