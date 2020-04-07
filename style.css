@@ -12,6 +12,15 @@ body {
     flex-direction: column;
 }
 
+@media screen and (max-width: 720px) {
+    body {
+        flex-direction: column;
+    }
+    main {
+        flex-direction: column;
+    }
+}
+
 * {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
