@@ -3,8 +3,14 @@
 
 [![Codemagic build status](https://api.codemagic.io/apps/5e89c3d864e0bd73659bc908/5e89c3d864e0bd73659bc907/status_badge.svg)](https://codemagic.io/apps/5e89c3d864e0bd73659bc908/5e89c3d864e0bd73659bc907/latest_build)
 
-<TODO link play store>
-<TODO link apple store>
+<p>
+    <a href="https://apps.apple.com/be/app/dofus-item/id1506497755">
+        <img src='screenshots/app-store-badge.png'>
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=io.github.nomeyho.dofus.items">
+        <img src='screenshots/google-play-badge.png'>
+    </a>
+</p>
 
 <img src='screenshots/demo.gif' width='200'>
 

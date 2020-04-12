@@ -16,3 +16,21 @@ Configure and execute the following:
     node index_set.js
     flutter format ../lib/data/set_data.dart
 ```
+
+## Android
+Download `google-services.json` from Firebase and place the file under:
+```
+mobile/android/app/google-services.json
+```
+
+Generate `key.jks` and place it under:
+```
+mobile/android/app/key.jks
+```
+and configure `mobile/android/key.properties`
+
+## iOS
+Resize screenshots
+```
+sips -z 2732 2048 *.png
+```
