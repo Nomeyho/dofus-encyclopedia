@@ -5,10 +5,10 @@
 
 <p>
     <a href="https://apps.apple.com/be/app/dofus-item/id1506497755">
-        <img src='screenshots/app-store-badge.png' width='150px'>
+        <img src="screenshots/app-store-badge.png" width="150px">
     </a>
     <a href="https://play.google.com/store/apps/details?id=io.github.nomeyho.dofus.items">
-        <img src='screenshots/google-play-badge.png' width='150px'>
+        <img src="screenshots/google-play-badge.png" width="150px">
     </a>
 </p>
 
