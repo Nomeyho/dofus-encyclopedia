@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
 
 class Banner extends StatefulWidget {
-  static Widget bottomPadding = const SliverPadding(
-    padding: const EdgeInsets.only(bottom: 50),
+  static Widget bottomPadding = SliverPadding(
+    padding: EdgeInsets.only(bottom: AdSize.banner.height.toDouble()),
   );
 
   @override

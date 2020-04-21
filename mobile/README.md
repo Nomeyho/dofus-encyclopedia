@@ -30,6 +30,11 @@ mobile/android/app/key.jks
 and configure `mobile/android/key.properties`
 
 ## iOS
+Download `GoogleService-Info.plist` and place the file under`(*with XCODE*):
+```
+ios/Runner/GoogleService-Info.plist
+```
+
 Resize screenshots
 ```
 sips -z 2732 2048 *.png
