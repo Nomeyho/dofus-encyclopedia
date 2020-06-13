@@ -1,9 +1,9 @@
 import 'package:dofus_items/domain/bonuses.dart';
-import 'package:dofus_items/domain/other_bonus.dart';
+import 'package:dofus_items/domain/characteristic.dart';
 import 'package:dofus_items/domain/characteristic_bonus.dart';
 import 'package:dofus_items/domain/item_set.dart';
+import 'package:dofus_items/domain/other_bonus.dart';
 import 'package:dofus_items/domain/translation.dart';
-import 'package:dofus_items/domain/characteristic.dart';
 
 const sets = [
   const ItemSet(
@@ -203,10 +203,10 @@ const sets = [
         ),
         Bonuses(
           [
-            const CharacteristicBonus(Characteristic.Vitality, "+", 20, 20),
             const CharacteristicBonus(Characteristic.Strength, "+", 20, 20),
             const CharacteristicBonus(
-                Characteristic.NeutralResistance, "+", 10, 10)
+                Characteristic.NeutralResistance, "+", 10, 10),
+            const CharacteristicBonus(Characteristic.Vitality, "+", 20, 20)
           ],
           [],
           [],
@@ -9534,37 +9534,6 @@ const sets = [
         )
       ]),
   const ItemSet(
-      263,
-      Translation(
-        "Panoplie de Kéké",
-        "Tailblazer Set",
-      ),
-      10,
-      [
-        Bonuses(
-          [],
-          [],
-          [],
-        ),
-        Bonuses(
-          [
-            const CharacteristicBonus(Characteristic.Vitality, "+", 20, 20),
-            const CharacteristicBonus(Characteristic.Wisdom, "+", 10, 10)
-          ],
-          [],
-          [],
-        ),
-        Bonuses(
-          [
-            const CharacteristicBonus(Characteristic.Vitality, "+", 20, 20),
-            const CharacteristicBonus(Characteristic.Wisdom, "+", 10, 10),
-            const CharacteristicBonus(Characteristic.Range, "+", 1, 1)
-          ],
-          [],
-          [],
-        )
-      ]),
-  const ItemSet(
       264,
       Translation(
         "Panoplie du Frelon Noir",
@@ -14871,6 +14840,145 @@ const sets = [
                 Characteristic.FixedAirResistance, "+", 15, 15),
             const CharacteristicBonus(
                 Characteristic.PushbackDamage, "+", 20, 20)
+          ],
+          [],
+          [],
+        )
+      ]),
+  const ItemSet(
+      474,
+      Translation(
+        "Panoplie de Misère",
+        "Misery Set",
+      ),
+      200,
+      [
+        Bonuses(
+          [],
+          [],
+          [],
+        ),
+        Bonuses(
+          [
+            const CharacteristicBonus(Characteristic.Chance, "+", 20, 20),
+            const CharacteristicBonus(Characteristic.Agility, "+", 20, 20),
+            const CharacteristicBonus(Characteristic.DodgeAp, "+", 15, 15),
+            const CharacteristicBonus(Characteristic.DodgeMp, "+", 15, 15),
+            const CharacteristicBonus(
+                Characteristic.CriticalDamage, "+", 10, 10)
+          ],
+          [],
+          [],
+        ),
+        Bonuses(
+          [
+            const CharacteristicBonus(Characteristic.Chance, "+", 20, 20),
+            const CharacteristicBonus(Characteristic.Agility, "+", 20, 20),
+            const CharacteristicBonus(Characteristic.DodgeAp, "+", 40, 40),
+            const CharacteristicBonus(Characteristic.DodgeMp, "+", 40, 40),
+            const CharacteristicBonus(
+                Characteristic.CriticalDamage, "+", 20, 20)
+          ],
+          [],
+          [],
+        )
+      ]),
+  const ItemSet(
+      475,
+      Translation(
+        "Panoplie de Guerre",
+        "War Set",
+      ),
+      200,
+      [
+        Bonuses(
+          [],
+          [],
+          [],
+        ),
+        Bonuses(
+          [
+            const CharacteristicBonus(Characteristic.Intelligence, "+", 50, 50),
+            const CharacteristicBonus(Characteristic.AttackMp, "+", 10, 10),
+            const CharacteristicBonus(
+                Characteristic.CriticalDamage, "+", 10, 10)
+          ],
+          [],
+          [],
+        ),
+        Bonuses(
+          [
+            const CharacteristicBonus(Characteristic.Intelligence, "+", 50, 50),
+            const CharacteristicBonus(Characteristic.AP, "+", 1, 1),
+            const CharacteristicBonus(Characteristic.AttackMp, "+", 10, 10),
+            const CharacteristicBonus(
+                Characteristic.CriticalDamage, "+", 10, 10)
+          ],
+          [],
+          [],
+        )
+      ]),
+  const ItemSet(
+      476,
+      Translation(
+        "Panoplie de Servitude",
+        "Servitude Set",
+      ),
+      200,
+      [
+        Bonuses(
+          [],
+          [],
+          [],
+        ),
+        Bonuses(
+          [
+            const CharacteristicBonus(Characteristic.Initiative, "+", 500, 500),
+            const CharacteristicBonus(
+                Characteristic.PushbackResistance, "+", 50, 50)
+          ],
+          [],
+          [],
+        ),
+        Bonuses(
+          [
+            const CharacteristicBonus(Characteristic.MP, "+", 1, 1),
+            const CharacteristicBonus(Characteristic.Initiative, "+", 500, 500),
+            const CharacteristicBonus(
+                Characteristic.PushbackResistance, "+", 50, 50)
+          ],
+          [],
+          [],
+        )
+      ]),
+  const ItemSet(
+      477,
+      Translation(
+        "Panoplie de Corruption",
+        "Corruption Set",
+      ),
+      200,
+      [
+        Bonuses(
+          [],
+          [],
+          [],
+        ),
+        Bonuses(
+          [
+            const CharacteristicBonus(Characteristic.Strength, "+", 50, 50),
+            const CharacteristicBonus(
+                Characteristic.CriticalDamage, "+", 20, 20)
+          ],
+          [],
+          [],
+        ),
+        Bonuses(
+          [
+            const CharacteristicBonus(Characteristic.Strength, "+", 50, 50),
+            const CharacteristicBonus(Characteristic.CriticalHit, "+", 7, 7),
+            const CharacteristicBonus(
+                Characteristic.CriticalDamage, "+", 20, 20)
           ],
           [],
           [],

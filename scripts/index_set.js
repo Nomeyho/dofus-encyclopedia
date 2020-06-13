@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 const INPUT = 'sets.json';
-const OUTPUT = '../lib/data/set_data.dart';
+const OUTPUT = '../mobile/lib/data/set_data.dart';
 
 async function main() {
     const input = fs.readFileSync(INPUT);
