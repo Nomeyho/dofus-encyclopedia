@@ -11,7 +11,7 @@ class LevelFilter extends StatelessWidget {
       initialValue: initialValue.toString(),
       onChanged: (value) {
         int level = int.tryParse(value);
-        onChanged(level);
+        onChanged(level ?? initialValue);
       },
       textInputAction: TextInputAction.done,
       cursorColor: AppTheme.primary,

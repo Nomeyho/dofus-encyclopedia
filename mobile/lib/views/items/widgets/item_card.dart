@@ -44,7 +44,7 @@ class ItemCard extends StatelessWidget {
       return S.of(context).items_etheral;
     else if (item.setId != -1) {
       final itemService = Provider.of<ItemService>(context, listen: false);
-      return itemService.findSetItems(item.setId).first.name.translate(context);
+      return itemService.getSet(item.setId).name.translate(context);
     } else
       return '';
   }
