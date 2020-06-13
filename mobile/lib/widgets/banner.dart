@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/config.dart';
 import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +32,15 @@ class _BannerState extends State<Banner> {
       adUnitId: Config.adId,
       size: _size,
       targetingInfo: MobileAdTargetingInfo(
-        keywords: ['Dofus', 'MMORPG', 'Items', 'Video Games', 'Français'],
+        keywords: [
+          'Dofus',
+          'MMORPG',
+          'Items',
+          'Video Games',
+          'Jeux video',
+          'Français',
+          'French'
+        ],
         childDirected: true,
         testDevices: [
           '7de57089f51ec6257cfd0f200760878f', // iOS - IPhone6s
@@ -59,8 +68,16 @@ class _BannerState extends State<Banner> {
     super.dispose();
   }
 
+  bool _showBanner() {
+    return _banner != null && MediaQuery.of(context).viewInsets.bottom == 0;
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      color: AppTheme.background,
+      width: MediaQuery.of(context).size.width,
+      height: _showBanner() ? _banner.size.height.toDouble() : 0,
+    );
   }
 }
