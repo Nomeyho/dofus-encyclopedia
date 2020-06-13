@@ -1,6 +1,7 @@
 import 'package:dofus_items/data/item_data.dart';
 import 'package:dofus_items/data/set_data.dart';
 import 'package:dofus_items/domain/item.dart';
+import 'package:dofus_items/domain/item_filter.dart';
 import 'package:dofus_items/domain/item_set.dart';
 import 'package:dofus_items/domain/item_type.dart';
 
@@ -26,9 +27,9 @@ class ItemService {
     _itemsPerTypes.values.forEach((l) => l.sort());
   }
 
-  List<Item> findItems(String lang, ItemType type, String name) {
+  List<Item> findItems(String lang, ItemType type, ItemFilter filter) {
     return _itemsPerTypes[type]
-        .where((item) => item.name.match(lang, name))
+        .where((item) => item.name.match(lang, filter.name))
         .toList(growable: false);
   }
 

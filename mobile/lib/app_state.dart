@@ -1,5 +1,6 @@
 import 'package:dofus_items/domain/category.dart';
 import 'package:dofus_items/domain/item.dart';
+import 'package:dofus_items/domain/item_filter.dart';
 import 'package:dofus_items/domain/item_set.dart';
 import 'package:dofus_items/domain/item_type.dart';
 import 'package:dofus_items/services/item_service.dart';
@@ -17,7 +18,7 @@ class AppState with ChangeNotifier {
   List<Item> _selectedSetItems;
   int _selectedBonusIndex = 0;
   ItemType _type;
-  String _name = '';
+  ItemFilter _filter = ItemFilter();
 
   Category get selectedCategory => _selectedCategory;
 
@@ -35,8 +36,6 @@ class AppState with ChangeNotifier {
 
   ItemType get type => _type;
 
-  String get name => _name;
-
   /* Mutations */
   set selectedCategory(Category value) {
     _selectedCategory = value;
@@ -45,8 +44,8 @@ class AppState with ChangeNotifier {
 
   searchItems(String lang, ItemType type, String name) {
     _type = type;
-    _name = name;
-    _items = itemService.findItems(lang, type, name);
+    _filter.name = name;
+    _items = itemService.findItems(lang, type, _filter);
     notifyListeners();
   }
 

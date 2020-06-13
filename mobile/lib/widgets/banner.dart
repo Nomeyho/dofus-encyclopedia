@@ -69,7 +69,7 @@ class _BannerState extends State<Banner> {
   }
 
   bool _showBanner() {
-    return _banner != null && MediaQuery.of(context).viewInsets.bottom == 0;
+    return _banner != null;
   }
 
   @override

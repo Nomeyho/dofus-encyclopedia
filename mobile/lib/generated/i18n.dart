@@ -58,7 +58,7 @@ class S implements WidgetsLocalizations {
   String get characteristic_fixed_air_resistance => "fixed air resistance";
   String get characteristic_fixed_earth_resistance => "fixed earth resistance";
   String get characteristic_fixed_fire_resistance => "fixed fire resistance";
-  String get characteristic_fixed_neutral_resistance => "fixed_neutral resistance";
+  String get characteristic_fixed_neutral_resistance => "fixed neutral resistance";
   String get characteristic_fixed_water_resistance => "fixed water resistance";
   String get characteristic_heal => "heal";
   String get characteristic_initiative => "initiative";
@@ -121,8 +121,12 @@ class S implements WidgetsLocalizations {
   String get item_type_tool => "Tool";
   String get item_type_trophy => "Trophy";
   String get item_type_wand => "Wand";
+  String get items_characteristics => "Characteristics";
   String get items_etheral => "Etheral";
+  String get items_filters => "Filters";
   String get items_lvl => "lvl. ";
+  String get items_max_level => "Max. level";
+  String get items_min_level => "Min. level";
   String get items_search => "Search";
   String get set_bonuses_title => "Bonuses";
   String get set_items => "items";
@@ -144,6 +148,8 @@ class $fr extends S {
   String get characteristic_summons => "invocation";
   @override
   String get characteristic_strength => "force";
+  @override
+  String get items_characteristics => "Charactéristiques";
   @override
   String get characteristic_lock => "tacle";
   @override
@@ -199,6 +205,8 @@ class $fr extends S {
   @override
   String get item_type_seemyool => "Muldo";
   @override
+  String get items_max_level => "Niveau max.";
+  @override
   String get characteristic_fire_resistance => "résistance feu";
   @override
   String get bonus_damage => "dommage";
@@ -218,6 +226,8 @@ class $fr extends S {
   String get bonus_use_per_turn => "utilisation(s) par tour";
   @override
   String get characteristic_attack_pm => "retrait PM";
+  @override
+  String get items_filters => "Filtres";
   @override
   String get characteristic_pushback_damage => "rés. aux dommages de poussée";
   @override
@@ -324,6 +334,8 @@ class $fr extends S {
   String get characteristic_range_resistance => "résistance à distance";
   @override
   String get item_description_title => "Description";
+  @override
+  String get items_min_level => "Niveau min.";
   @override
   String get item_type_axe => "Hache";
   @override

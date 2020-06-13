@@ -20,5 +20,6 @@ class AppTheme {
     primaryColor: AppTheme.primary,
     accentColor: AppTheme.primary,
     buttonTheme: ButtonThemeData(minWidth: 10),
+    canvasColor: Colors.transparent,
   );
 }

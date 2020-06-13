@@ -48,6 +48,10 @@
   "set_items": "items",
 
   "items_search": "Recherche",
+  "items_filters": "Filtres",
+  "items_min_level": "Niveau min.",
+  "items_max_level": "Niveau max.",
+  "items_characteristics": "Charactéristiques",
   "items_etheral": "Arme éthérée",
   "items_lvl": "lvl. ",
 

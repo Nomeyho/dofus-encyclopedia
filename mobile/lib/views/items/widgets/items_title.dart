@@ -1,6 +1,7 @@
 import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/domain/item_type.dart';
+import 'package:dofus_items/views/items/widgets/items_filters.dart';
 import 'package:dofus_items/widgets/fade_in.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -45,6 +46,9 @@ class ItemsTitle extends StatelessWidget {
           ],
         ),
       ),
+      actions: <Widget>[
+        ItemsFilters(),
+      ],
       pinned: true,
       floating: false,
       elevation: 0,

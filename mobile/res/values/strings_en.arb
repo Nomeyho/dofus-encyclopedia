@@ -48,6 +48,10 @@
   "set_items": "items",
 
   "items_search": "Search",
+  "items_filters": "Filters",
+  "items_min_level": "Min. level",
+  "items_max_level": "Max. level",
+  "items_characteristics": "Characteristics",
   "items_etheral": "Etheral",
   "items_lvl": "lvl. ",
 
@@ -92,7 +96,7 @@
   "characteristic_fire_resistance": "fire resistance",
   "characteristic_fixed_fire_resistance": "fixed fire resistance",
   "characteristic_neutral_resistance": "neutral resistance",
-  "characteristic_fixed_neutral_resistance": "fixed_neutral resistance",
+  "characteristic_fixed_neutral_resistance": "fixed neutral resistance",
   "characteristic_pushback_resistance": "pushback resistance",
   "characteristic_pushback_damage": "pushback damage",
   "characteristic_melee_resistance": "melee resistance",
