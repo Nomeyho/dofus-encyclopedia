@@ -41,6 +41,11 @@ class AppState with ChangeNotifier {
     notifyListeners();
   }
 
+  set itemFilter(ItemFilter value) {
+    _itemFilter = value;
+    notifyListeners();
+  }
+
   searchItems(String lang) {
     _items = itemService.findItems(lang, _itemFilter);
     notifyListeners();

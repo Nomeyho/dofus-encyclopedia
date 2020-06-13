@@ -1,5 +1,5 @@
-import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
+import 'package:dofus_items/domain/item_filter.dart';
 import 'package:dofus_items/generated/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -37,8 +37,7 @@ class LevelFilter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final state = Provider.of<AppState>(context, listen: false);
-    final locale = Localizations.localeOf(context);
+    final itemFilter = Provider.of<ItemFilter>(context);
 
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 0),
@@ -61,10 +60,9 @@ class LevelFilter extends StatelessWidget {
                   ),
                 ),
                 _buildInput(
-                  initialValue: state.itemFilter.minLevel,
+                  initialValue: itemFilter.minLevel,
                   onChanged: (value) {
-                    state.itemFilter.minLevel = value;
-                    state.searchItems(locale.languageCode);
+                    itemFilter.minLevel = value;
                   },
                 ),
               ],
@@ -88,10 +86,9 @@ class LevelFilter extends StatelessWidget {
                   ),
                 ),
                 _buildInput(
-                  initialValue: state.itemFilter.maxLevel,
+                  initialValue: itemFilter.maxLevel,
                   onChanged: (value) {
-                    state.itemFilter.maxLevel = value;
-                    state.searchItems(locale.languageCode);
+                    itemFilter.maxLevel = value;
                   },
                 ),
               ],

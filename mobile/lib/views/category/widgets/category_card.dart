@@ -1,5 +1,6 @@
 import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
+import 'package:dofus_items/domain/item_filter.dart';
 import 'package:dofus_items/domain/item_type.dart';
 import 'package:dofus_items/router.dart';
 import 'package:dofus_items/widgets/fade_in.dart';
@@ -27,8 +28,7 @@ class CategoryCard extends StatelessWidget {
         ),
         child: InkWell(
           onTap: () {
-            state.itemFilter.type = itemType;
-            state.itemFilter.name = '';
+            state.itemFilter = ItemFilter()..type = itemType;
             state.searchItems(locale.languageCode);
             Navigator.of(context).pushNamed(Router.items);
           },

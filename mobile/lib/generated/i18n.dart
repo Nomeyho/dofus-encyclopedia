@@ -121,6 +121,7 @@ class S implements WidgetsLocalizations {
   String get item_type_tool => "Tool";
   String get item_type_trophy => "Trophy";
   String get item_type_wand => "Wand";
+  String get items_apply => "Apply";
   String get items_characteristics => "Characteristics";
   String get items_etheral => "Etheral";
   String get items_filters => "Filters";
@@ -174,6 +175,8 @@ class $fr extends S {
   String get characteristic_critical_damage => "dommage critique";
   @override
   String get item_type_bow => "Arc";
+  @override
+  String get items_apply => "Appliquer";
   @override
   String get characteristic_fixed_earth_resistance => "résistance terre fixe";
   @override

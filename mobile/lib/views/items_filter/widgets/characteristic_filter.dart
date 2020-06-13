@@ -1,6 +1,6 @@
-import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/domain/characteristic.dart';
+import 'package:dofus_items/domain/item_filter.dart';
 import 'package:dofus_items/utils/string_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -37,9 +37,7 @@ class CharacteristicFilter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final state = Provider.of<AppState>(context);
-    final characteristics = state.itemFilter.characteristics;
-    final locale = Localizations.localeOf(context);
+    final itemFilter = Provider.of<ItemFilter>(context);
 
     return ChoiceChip(
       label: Row(
@@ -49,15 +47,13 @@ class CharacteristicFilter extends StatelessWidget {
           _buildLabel(context),
         ],
       ),
-      selected: characteristics.contains(characteristic),
+      selected: itemFilter.hasCharacteristic(characteristic),
       onSelected: (selected) {
-        if(selected) {
-          characteristics.remove(characteristic);
-          characteristics.add(characteristic);
+        if (selected) {
+          itemFilter.addCharacteristic(characteristic);
         } else {
-          characteristics.remove(characteristic);
+          itemFilter.removeCharacteristic(characteristic);
         }
-        state.searchItems(locale.languageCode);
       },
     );
   }
