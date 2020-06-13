@@ -1,7 +1,7 @@
 import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/domain/item_type.dart';
-import 'package:dofus_items/views/items/widgets/items_filters.dart';
+import 'package:dofus_items/views/items_filter/items_filter_view.dart';
 import 'package:dofus_items/widgets/fade_in.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -10,7 +10,7 @@ class ItemsTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
-    final itemType = state.type;
+    final itemType = state.itemFilter.type;
     final count = state.items.length;
 
     return SliverAppBar(
@@ -47,7 +47,15 @@ class ItemsTitle extends StatelessWidget {
         ),
       ),
       actions: <Widget>[
-        ItemsFilters(),
+        IconButton(
+          onPressed: () => showModalBottomSheet(
+            context: context,
+            builder: (BuildContext context) {
+              return ItemsFilters();
+            },
+          ),
+          icon: Icon(Icons.filter_list),
+        ),
       ],
       pinned: true,
       floating: false,

@@ -27,7 +27,9 @@ class CategoryCard extends StatelessWidget {
         ),
         child: InkWell(
           onTap: () {
-            state.searchItems(locale.languageCode, itemType, '');
+            state.itemFilter.type = itemType;
+            state.itemFilter.name = '';
+            state.searchItems(locale.languageCode);
             Navigator.of(context).pushNamed(Router.items);
           },
           child: Padding(

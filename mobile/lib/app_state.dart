@@ -17,8 +17,7 @@ class AppState with ChangeNotifier {
   ItemSet _selectedSet;
   List<Item> _selectedSetItems;
   int _selectedBonusIndex = 0;
-  ItemType _type;
-  ItemFilter _filter = ItemFilter();
+  ItemFilter _itemFilter = ItemFilter();
 
   Category get selectedCategory => _selectedCategory;
 
@@ -34,7 +33,7 @@ class AppState with ChangeNotifier {
 
   int get selectedBonusIndex => _selectedBonusIndex;
 
-  ItemType get type => _type;
+  ItemFilter get itemFilter => _itemFilter;
 
   /* Mutations */
   set selectedCategory(Category value) {
@@ -42,10 +41,8 @@ class AppState with ChangeNotifier {
     notifyListeners();
   }
 
-  searchItems(String lang, ItemType type, String name) {
-    _type = type;
-    _filter.name = name;
-    _items = itemService.findItems(lang, type, _filter);
+  searchItems(String lang) {
+    _items = itemService.findItems(lang, _itemFilter);
     notifyListeners();
   }
 

@@ -25,7 +25,8 @@ class ItemsHeader extends StatelessWidget {
           ),
           child: TextField(
             onChanged: (name) {
-              state.searchItems(locale.languageCode, state.type, name);
+              state.itemFilter.name = name;
+              state.searchItems(locale.languageCode);
             },
             textInputAction: TextInputAction.search,
             cursorColor: AppTheme.primary,
@@ -35,7 +36,7 @@ class ItemsHeader extends StatelessWidget {
                 color: AppTheme.medium_emphasis,
                 fontFamily: 'Lato',
               ),
-              hasFloatingPlaceholder: false,
+              floatingLabelBehavior: FloatingLabelBehavior.never,
               filled: true,
               fillColor: AppTheme.surface,
               suffixIcon: Icon(
