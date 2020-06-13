@@ -27,9 +27,13 @@ class ItemService {
     _itemsPerTypes.values.forEach((l) => l.sort());
   }
 
-  List<Item> findItems(String lang, ItemType type, ItemFilter filter) {
-    return _itemsPerTypes[type]
+  List<Item> findItems(String lang, ItemFilter filter) {
+    return _itemsPerTypes[filter.type]
+        .where((item) => item.level >= filter.minLevel)
+        .where((item) => item.level <= filter.maxLevel)
         .where((item) => item.name.match(lang, filter.name))
+        .where((item) =>
+            item.bonuses.hasBonusWithCharacteristics(filter.characteristics))
         .toList(growable: false);
   }
 
