@@ -16,7 +16,7 @@ class LevelFilter extends StatelessWidget {
       textInputAction: TextInputAction.done,
       cursorColor: AppTheme.primary,
       inputFormatters: <TextInputFormatter>[
-        WhitelistingTextInputFormatter.digitsOnly
+        FilteringTextInputFormatter.digitsOnly,
       ],
       decoration: InputDecoration(
         filled: true,
