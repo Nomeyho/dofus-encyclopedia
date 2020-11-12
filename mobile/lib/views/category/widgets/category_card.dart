@@ -4,7 +4,7 @@ import 'package:dofus_items/domain/item_filter.dart';
 import 'package:dofus_items/domain/item_type.dart';
 import 'package:dofus_items/router.dart';
 import 'package:dofus_items/widgets/fade_in.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide Router;
 import 'package:provider/provider.dart';
 
 class CategoryCard extends StatelessWidget {

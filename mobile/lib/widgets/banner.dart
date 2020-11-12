@@ -68,16 +68,16 @@ class _BannerState extends State<Banner> {
     super.dispose();
   }
 
-  bool _showBanner() {
-    return _banner != null;
-  }
+  double _width() => MediaQuery.of(context).size.width;
+
+  double _height() => _banner == null ? 0 : _banner.size.height.toDouble() + 10;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       color: AppTheme.background,
-      width: MediaQuery.of(context).size.width,
-      height: _showBanner() ? _banner.size.height.toDouble() : 0,
+      width: _width(),
+      height: _height(),
     );
   }
 }

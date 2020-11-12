@@ -2,7 +2,7 @@ import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/config.dart';
 import 'package:dofus_items/router.dart';
 import 'package:dofus_items/widgets/banner.dart';
-import 'package:flutter/material.dart' hide Banner;
+import 'package:flutter/material.dart' hide Banner, Router;
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'generated/i18n.dart';

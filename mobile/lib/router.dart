@@ -2,7 +2,7 @@ import 'package:dofus_items/views/category/category_view.dart';
 import 'package:dofus_items/views/item/item_view.dart';
 import 'package:dofus_items/views/item_set/item_set_view.dart';
 import 'package:dofus_items/views/items/items_view.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide Router;
 import 'package:logging/logging.dart';
 
 class Router {
@@ -15,7 +15,7 @@ class Router {
   static const set = '/set';
 
   static Route generateRoute(final RouteSettings settings) {
-    log.info('Navitaging to ${settings.name}');
+    log.info('Navigating to ${settings.name}');
 
     switch (settings.name) {
       case categories:

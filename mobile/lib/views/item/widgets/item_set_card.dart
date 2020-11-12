@@ -4,7 +4,7 @@ import 'package:dofus_items/domain/item.dart';
 import 'package:dofus_items/domain/item_set.dart';
 import 'package:dofus_items/generated/i18n.dart';
 import 'package:dofus_items/router.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide Router;
 import 'package:provider/provider.dart';
 
 class ItemSetCard extends StatelessWidget {
