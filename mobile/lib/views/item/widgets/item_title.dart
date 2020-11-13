@@ -13,7 +13,7 @@ class ItemTitle extends StatelessWidget {
 
     return SliverAppBar(
       leading: IconButton(
-        icon: Icon(DofusIcons.arrow_left),
+        icon: Icon(DofusIcons.left, size: 20),
         onPressed: () {
           Navigator.pop(context);
         },

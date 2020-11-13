@@ -1,7 +1,6 @@
 import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/generated/i18n.dart';
-import 'package:dofus_items/utils/dofus_icons.dart';
 import 'package:dofus_items/widgets/sliver_header_delegate.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -41,7 +40,7 @@ class ItemsHeader extends StatelessWidget {
               filled: true,
               fillColor: AppTheme.surface,
               suffixIcon: Icon(
-                DofusIcons.search,
+                Icons.search,
                 color: AppTheme.medium_emphasis,
                 size: 20,
               ),

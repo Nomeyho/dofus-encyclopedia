@@ -1,6 +1,5 @@
 import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/generated/i18n.dart';
-import 'package:dofus_items/utils/dofus_icons.dart';
 import 'package:dofus_items/views/category/widgets/category_dialog.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +12,7 @@ class CategoryTitle extends StatelessWidget {
       centerTitle: true,
       actions: <Widget>[
         IconButton(
-          icon: Icon(DofusIcons.copyright),
+          icon: Icon(Icons.copyright),
           onPressed: () async {
             await showDialog(context: context, child: CategoryDialog());
           },

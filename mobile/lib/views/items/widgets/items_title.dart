@@ -16,7 +16,7 @@ class ItemsTitle extends StatelessWidget {
 
     return SliverAppBar(
       leading: IconButton(
-        icon: Icon(DofusIcons.arrow_left),
+        icon: Icon(DofusIcons.left, size: 20),
         onPressed: () {
           Navigator.pop(context);
         },
@@ -62,7 +62,7 @@ class ItemsTitle extends StatelessWidget {
               return ItemsFilterModal();
             },
           ),
-          icon: Icon(DofusIcons.ellipsis_v),
+          icon: Icon(Icons.more_vert_sharp),
         ),
       ],
       pinned: true,
