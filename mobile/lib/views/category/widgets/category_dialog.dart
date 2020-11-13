@@ -28,6 +28,34 @@ class CategoryDialog extends StatelessWidget {
     );
   }
 
+  Widget _buildButton(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: [
+        FlatButton(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          color: AppTheme.surface,
+          textColor: AppTheme.primary,
+          child: Text(
+            S.of(context).close,
+            style: TextStyle(
+              fontFamily: 'Lato',
+              fontWeight: FontWeight.w700,
+              fontSize: 16,
+              color: AppTheme.primary,
+            ),
+          ),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
+        const Padding(padding: const EdgeInsets.all(8)),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return SimpleDialog(
@@ -37,8 +65,8 @@ class CategoryDialog extends StatelessWidget {
       backgroundColor: AppTheme.surface,
       title: _buildTitle('Copyrights'),
       children: <Widget>[
-        _buildBody(context, S.of(context).category_copyright_1),
-        _buildBody(context, S.of(context).category_copyright_2),
+        _buildBody(context, S.of(context).category_copyright),
+        _buildButton(context),
       ],
     );
   }

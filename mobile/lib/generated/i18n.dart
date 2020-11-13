@@ -31,8 +31,7 @@ class S implements WidgetsLocalizations {
   String get bonus_to => "to";
   String get bonus_use_per_turn => "use per turn";
   String get bonus_uses_per_turn => "uses per turn";
-  String get category_copyright_1 => "This application is not affiliated with Ankama Studio.";
-  String get category_copyright_2 => "Artwork by Ankama (https://www.ankama.com).";
+  String get category_copyright => "This application is not affiliated with Ankama Studio. Artwork by Ankama (https://www.ankama.com).";
   String get category_equipment => "Equipment";
   String get category_loading => "Loading data...";
   String get category_pets => "Pets";
@@ -134,6 +133,7 @@ class S implements WidgetsLocalizations {
   String get set_items => "items";
   String get set_items_title => "Items";
   String get set_lvl => "lvl.";
+  String get close => "Close";
 }
 
 class $en extends S {
@@ -155,11 +155,9 @@ class $fr extends S {
   @override
   String get characteristic_lock => "tacle";
   @override
-  String get category_copyright_2 => "Artwork by Ankama (https://www.ankama.com).";
+  String get category_copyright => "Cette application n'est pas un product Ankama. Artwork by Ankama (https://www.ankama.com).";
   @override
   String get item_type_hat => "Chapeau";
-  @override
-  String get category_copyright_1 => "Cette application n'est pas un product Ankama.";
   @override
   String get item_type_staff => "Bâton";
   @override
@@ -372,6 +370,8 @@ class $fr extends S {
   String get item_type_dofus => "Dofus";
   @override
   String get characteristic_fire_damage => "dommage feu";
+  @override
+  String get close => "Fermer";
 }
 
 class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
