@@ -38,8 +38,15 @@ class CharacteristicFilter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final itemFilter = Provider.of<ItemFilter>(context);
+    final isSelected = itemFilter.hasCharacteristic(characteristic);
 
     return ChoiceChip(
+      shape: StadiumBorder(
+        side: BorderSide(
+          color: isSelected ? AppTheme.primary : Colors.transparent,
+          width: 1,
+        ),
+      ),
       label: Row(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
@@ -47,7 +54,7 @@ class CharacteristicFilter extends StatelessWidget {
           _buildLabel(context),
         ],
       ),
-      selected: itemFilter.hasCharacteristic(characteristic),
+      selected: isSelected,
       onSelected: (selected) {
         if (selected) {
           itemFilter.addCharacteristic(characteristic);

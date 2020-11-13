@@ -1,6 +1,7 @@
 import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/generated/i18n.dart';
+import 'package:dofus_items/utils/dofus_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -11,6 +12,12 @@ class ItemTitle extends StatelessWidget {
     final item = state.selectedItem;
 
     return SliverAppBar(
+      leading: IconButton(
+        icon: Icon(DofusIcons.arrow_left),
+        onPressed: () {
+          Navigator.pop(context);
+        },
+      ),
       forceElevated: true,
       backgroundColor: AppTheme.background,
       expandedHeight: 100,

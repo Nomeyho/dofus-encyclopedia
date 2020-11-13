@@ -35,8 +35,9 @@ class BonusDamages extends StatelessWidget {
     return Bonus(
       icon: 'assets/img/characteristics/AP.png',
       min: item.apCost,
-      suffix:
-          ' ${S.of(context).bonus_AP} (${item.utilizationPerTurn} ${S.of(context).bonus_use_per_turn})',
+      suffix: item.utilizationPerTurn > 1
+          ? '${S.of(context).bonus_AP} (${item.utilizationPerTurn} ${S.of(context).bonus_uses_per_turn})'
+          : '${S.of(context).bonus_AP} (1 ${S.of(context).bonus_use_per_turn})',
     );
   }
 

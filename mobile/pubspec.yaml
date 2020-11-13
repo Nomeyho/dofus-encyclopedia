@@ -39,6 +39,9 @@ flutter:
           weight: 400
         - asset: 'assets/fonts/Lato-Light.ttf'
           weight: 300
+    - family: DofusIcons
+      fonts:
+        - asset: 'assets/icons/DofusIcons.ttf'
 
 flutter_icons:
   android: true

@@ -1,6 +1,7 @@
 import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/domain/item_type.dart';
+import 'package:dofus_items/utils/dofus_icons.dart';
 import 'package:dofus_items/views/items_filter/items_filter_modal.dart';
 import 'package:dofus_items/widgets/fade_in.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +15,12 @@ class ItemsTitle extends StatelessWidget {
     final count = state.items.length;
 
     return SliverAppBar(
+      leading: IconButton(
+        icon: Icon(DofusIcons.arrow_left),
+        onPressed: () {
+          Navigator.pop(context);
+        },
+      ),
       backgroundColor: AppTheme.background,
       centerTitle: true,
       expandedHeight: 100,
@@ -55,7 +62,7 @@ class ItemsTitle extends StatelessWidget {
               return ItemsFilterModal();
             },
           ),
-          icon: Icon(Icons.filter_list),
+          icon: Icon(DofusIcons.ellipsis_v),
         ),
       ],
       pinned: true,

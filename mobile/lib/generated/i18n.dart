@@ -29,7 +29,8 @@ class S implements WidgetsLocalizations {
   String get bonus_range => "range";
   String get bonus_steal => "steal";
   String get bonus_to => "to";
-  String get bonus_use_per_turn => "use(s) per turn";
+  String get bonus_use_per_turn => "use per turn";
+  String get bonus_uses_per_turn => "uses per turn";
   String get category_copyright_1 => "This application is not affiliated with Ankama Studio.";
   String get category_copyright_2 => "Artwork by Ankama (https://www.ankama.com).";
   String get category_equipment => "Equipment";
@@ -226,7 +227,9 @@ class $fr extends S {
   @override
   String get characteristic_trap_damage => "dommage aux pièges";
   @override
-  String get bonus_use_per_turn => "utilisation(s) par tour";
+  String get bonus_use_per_turn => "utilisation par tour";
+  @override
+  String get bonus_uses_per_turn => "utilisations par tour";
   @override
   String get characteristic_attack_pm => "retrait PM";
   @override

@@ -27,7 +27,7 @@ class ItemsFilterModal extends StatelessWidget {
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.only(top: 24, left: 32, right: 32),
+            padding: const EdgeInsets.only(top: 16, left: 32, right: 32),
             child: Container(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
