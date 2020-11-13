@@ -68,9 +68,17 @@ class _BannerState extends State<Banner> {
     super.dispose();
   }
 
+  bool _keyBoardVisible() => MediaQuery.of(context).viewInsets.bottom > 0;
+
   double _width() => MediaQuery.of(context).size.width;
 
-  double _height() => _banner == null ? 0 : _banner.size.height.toDouble() + 10;
+  double _height() {
+    if (_banner == null || _keyBoardVisible()) {
+      return 0;
+    } else {
+      return _banner.size.height.toDouble() + 10;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
