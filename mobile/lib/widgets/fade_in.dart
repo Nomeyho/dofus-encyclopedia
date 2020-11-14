@@ -31,6 +31,7 @@ class _FadeInState extends State<FadeIn> with SingleTickerProviderStateMixin {
     super.didUpdateWidget(oldWidget);
   }
 
+  @override
   dispose() {
     _controller.dispose();
     super.dispose();

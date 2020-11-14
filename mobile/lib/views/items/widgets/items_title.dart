@@ -8,6 +8,55 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class ItemsTitle extends StatelessWidget {
+  Widget _backButton(BuildContext context) {
+    return IconButton(
+      icon: Icon(DofusIcons.left, size: 20),
+      onPressed: () {
+        Navigator.pop(context);
+      },
+    );
+  }
+
+  Widget _buildTitle(BuildContext context, ItemType itemType) {
+    return Text(
+      resolveTranslation(context, itemType),
+      style: TextStyle(
+        fontFamily: 'Lato',
+        fontWeight: FontWeight.w700,
+        fontSize: 16,
+        color: AppTheme.high_emphasis,
+      ),
+    );
+  }
+
+  Widget _buildSubtitle(BuildContext context, int count) {
+    return FadeIn(
+      child: Text(
+        '($count)',
+        style: TextStyle(
+          fontFamily: 'Lato',
+          fontWeight: FontWeight.w400,
+          fontSize: 10,
+          color: AppTheme.primary,
+        ),
+      ),
+      duration: Duration(milliseconds: 200),
+    );
+  }
+
+  Widget _buildFilterIcon(BuildContext context) {
+    return IconButton(
+      onPressed: () => showModalBottomSheet(
+        isScrollControlled: true,
+        context: context,
+        builder: (BuildContext context) {
+          return ItemsFilterModal();
+        },
+      ),
+      icon: Icon(Icons.more_vert_sharp),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
@@ -15,12 +64,7 @@ class ItemsTitle extends StatelessWidget {
     final count = state.items.length;
 
     return SliverAppBar(
-      leading: IconButton(
-        icon: Icon(DofusIcons.left, size: 20),
-        onPressed: () {
-          Navigator.pop(context);
-        },
-      ),
+      leading: _backButton(context),
       backgroundColor: AppTheme.background,
       centerTitle: true,
       expandedHeight: 100,
@@ -29,41 +73,13 @@ class ItemsTitle extends StatelessWidget {
         title: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
-            Text(
-              resolveTranslation(context, itemType),
-              style: TextStyle(
-                fontFamily: 'Lato',
-                fontWeight: FontWeight.w700,
-                fontSize: 16,
-                color: AppTheme.high_emphasis,
-              ),
-            ),
-            FadeIn(
-              child: Text(
-                '($count)',
-                style: TextStyle(
-                  fontFamily: 'Lato',
-                  fontWeight: FontWeight.w400,
-                  fontSize: 10,
-                  color: AppTheme.primary,
-                ),
-              ),
-              duration: Duration(milliseconds: 200),
-            )
+            _buildTitle(context, itemType),
+            _buildSubtitle(context, count),
           ],
         ),
       ),
       actions: <Widget>[
-        IconButton(
-          onPressed: () => showModalBottomSheet(
-            isScrollControlled: true,
-            context: context,
-            builder: (BuildContext context) {
-              return ItemsFilterModal();
-            },
-          ),
-          icon: Icon(Icons.more_vert_sharp),
-        ),
+        _buildFilterIcon(context),
       ],
       pinned: true,
       floating: false,

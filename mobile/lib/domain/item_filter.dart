@@ -3,11 +3,20 @@ import 'package:dofus_items/domain/item_type.dart';
 import 'package:flutter/material.dart';
 
 class ItemFilter with ChangeNotifier {
+  static final defaultMinlevel = 1;
+  static final defaultMaxlevel = 200;
+
   ItemType _type;
   String _name = '';
-  int _minLevel = 1;
-  int _maxLevel = 200;
+  int _minLevel = defaultMinlevel;
+  int _maxLevel = defaultMaxlevel;
   List<Characteristic> _characteristics = [];
+
+  bool get pristine =>
+      _name.isEmpty &&
+      _minLevel == defaultMinlevel &&
+      _maxLevel == defaultMaxlevel &&
+      _characteristics.isEmpty;
 
   ItemType get type => _type;
 
