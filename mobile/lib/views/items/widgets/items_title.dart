@@ -1,6 +1,7 @@
 import 'package:dofus_items/app_state.dart';
 import 'package:dofus_items/app_theme.dart';
 import 'package:dofus_items/domain/item_type.dart';
+import 'package:dofus_items/generated/i18n.dart';
 import 'package:dofus_items/utils/dofus_icons.dart';
 import 'package:dofus_items/views/items_filter/items_filter_modal.dart';
 import 'package:dofus_items/widgets/fade_in.dart';
@@ -44,16 +45,31 @@ class ItemsTitle extends StatelessWidget {
     );
   }
 
-  Widget _buildFilterIcon(BuildContext context) {
-    return IconButton(
-      onPressed: () => showModalBottomSheet(
-        isScrollControlled: true,
-        context: context,
-        builder: (BuildContext context) {
-          return ItemsFilterModal();
-        },
-      ),
-      icon: Icon(Icons.more_vert_sharp),
+  Widget _buildFilter(BuildContext context) {
+    return Wrap(
+      children: [
+        FlatButton(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          textColor: AppTheme.primary,
+          child: Text(
+            S.of(context).items_filters,
+            style: TextStyle(
+              fontFamily: 'Lato',
+              fontWeight: FontWeight.w700,
+              fontSize: 16,
+            ),
+          ),
+          onPressed: () => showModalBottomSheet(
+            isScrollControlled: true,
+            context: context,
+            builder: (BuildContext context) {
+              return ItemsFilterModal();
+            },
+          ),
+        )
+      ],
     );
   }
 
@@ -79,7 +95,7 @@ class ItemsTitle extends StatelessWidget {
         ),
       ),
       actions: <Widget>[
-        _buildFilterIcon(context),
+        _buildFilter(context),
       ],
       pinned: true,
       floating: false,
