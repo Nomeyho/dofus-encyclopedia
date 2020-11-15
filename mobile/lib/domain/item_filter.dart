@@ -12,12 +12,6 @@ class ItemFilter with ChangeNotifier {
   int _maxLevel = defaultMaxlevel;
   List<Characteristic> _characteristics = [];
 
-  bool get pristine =>
-      _name.isEmpty &&
-      _minLevel == defaultMinlevel &&
-      _maxLevel == defaultMaxlevel &&
-      _characteristics.isEmpty;
-
   ItemType get type => _type;
 
   set type(ItemType value) {

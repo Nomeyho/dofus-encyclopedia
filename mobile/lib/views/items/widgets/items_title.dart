@@ -76,7 +76,7 @@ class ItemsTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final state = Provider.of<AppState>(context);
-    final itemType = state.itemFilter.type;
+    final itemFilters = state.itemFilter;
     final count = state.items.length;
 
     return SliverAppBar(
@@ -89,7 +89,7 @@ class ItemsTitle extends StatelessWidget {
         title: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
-            _buildTitle(context, itemType),
+            _buildTitle(context, itemFilters.type),
             _buildSubtitle(context, count),
           ],
         ),
