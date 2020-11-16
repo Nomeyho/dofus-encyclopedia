@@ -17,7 +17,8 @@ Configure and execute the following:
     flutter format ../lib/data/set_data.dart
 ```
 
-## Android
+## Setup
+### Android
 Download `google-services.json` from Firebase and place the file under:
 ```
 mobile/android/app/google-services.json
@@ -29,13 +30,22 @@ mobile/android/app/key.jks
 ```
 and configure `mobile/android/key.properties`
 
-## iOS
+### iOS
 Download `GoogleService-Info.plist` and place the file under`(*with XCODE*):
 ```
 ios/Runner/GoogleService-Info.plist
 ```
 
-Resize screenshots
+## Release
+
+### Android
+
+Release
 ```
-sips -z 2732 2048 *.png
+flutter build appbundle
+``
+
+### iOS
+```
+flutter build ios
 ```
